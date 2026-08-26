@@ -52,18 +52,14 @@ export default function CmsNavigation() {
       )
       .sort((a, b) => a.order - b.order);
 
-  const toggleGroup = (slug: string) => {
-    setOpenGroup((current) =>
-      current === slug ? null : slug
-    );
-  };
-
   const isActive = (slug: string) =>
     location.pathname === `/${slug}`;
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-7xl items-center gap-4 px-5 py-3">
+      <nav className="mx-auto flex max-w-7xl items-center gap-6 px-5 py-3">
+        
+        {/* LOGO */}
         <Link
           to="/"
           className="flex shrink-0 items-center gap-3 font-bold"
@@ -76,12 +72,14 @@ export default function CmsNavigation() {
             />
           ) : null}
 
-          <span>
+          <span className="whitespace-nowrap">
             {content.site.shortName || content.site.name}
           </span>
         </Link>
 
-        <div className="flex items-center gap-2 overflow-x-auto">
+        {/* MENÚ */}
+        <div className="flex flex-1 items-center gap-2">
+          
           {standalonePages.map((page) => (
             <Link
               key={page.slug}
@@ -105,39 +103,66 @@ export default function CmsNavigation() {
                 key={group.slug}
                 className="relative shrink-0"
               >
+                {/* BOTÓN DEL GRUPO */}
                 <button
                   type="button"
-                  aria-haspopup="true"
+                  aria-haspopup="menu"
                   aria-expanded={isOpen}
-                  onClick={() => toggleGroup(group.slug)}
-                  className="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm opacity-80 transition hover:bg-white/10 hover:opacity-100"
+                  onClick={() =>
+                    setOpenGroup(
+                      isOpen ? null : group.slug
+                    )
+                  }
+                  className={`flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${
+                    isOpen
+                      ? "bg-white/10 opacity-100"
+                      : "opacity-80 hover:bg-white/10 hover:opacity-100"
+                  }`}
                 >
                   {group.name}
 
                   <ChevronDown
                     size={15}
-                    className={`transition-transform ${
+                    className={`transition-transform duration-200 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />
                 </button>
 
+                {/* DROPDOWN FLOTANTE */}
                 {isOpen && (
-                  <div className="absolute left-0 top-full mt-2 min-w-56 rounded-xl border border-white/10 bg-black/95 p-2 shadow-2xl backdrop-blur-xl">
-                    {children.map((child) => (
-                      <Link
-                        key={child.slug}
-                        to={`/${child.slug}`}
-                        onClick={() => setOpenGroup(null)}
-                        className={`block rounded-lg px-4 py-3 text-sm transition ${
-                          isActive(child.slug)
-                            ? "bg-white/10 opacity-100"
-                            : "opacity-80 hover:bg-white/10 hover:opacity-100"
-                        }`}
-                      >
-                        {child.name}
-                      </Link>
-                    ))}
+                  <div
+                    className="absolute left-1/2 top-full z-[100] mt-3 w-64 -translate-x-1/2 rounded-2xl border border-white/10 bg-[#0b0b0b] p-2 shadow-2xl"
+                    role="menu"
+                  >
+                    {/* PEQUEÑA PUNTA */}
+                    <div className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-l border-t border-white/10 bg-[#0b0b0b]" />
+
+                    <div className="relative">
+                      {children.map((child) => (
+                        <Link
+                          key={child.slug}
+                          to={`/${child.slug}`}
+                          role="menuitem"
+                          onClick={() => setOpenGroup(null)}
+                          className={`block rounded-xl px-4 py-3 text-sm transition ${
+                            isActive(child.slug)
+                              ? "bg-white/10 text-white"
+                              : "text-white/70 hover:bg-white/10 hover:text-white"
+                          }`}
+                        >
+                          <div className="font-medium">
+                            {child.name}
+                          </div>
+
+                          {child.description && (
+                            <div className="mt-1 line-clamp-2 text-xs text-white/40">
+                              {child.description}
+                            </div>
+                          )}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
