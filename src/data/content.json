@@ -1,0 +1,486 @@
+{
+  "team": [
+    {
+      "name": "Joan Sebastián Arango",
+      "role": "Líder",
+      "photo": "/images/equipo/miembro-1.jpg",
+      "blurb": "Guía al equipo, toma decisiones clave y se asegura de que todos entiendan las metas del proyecto y trabajen unidos para alcanzarlas."
+    },
+    {
+      "name": "Miguel Vásquez Medina",
+      "role": "Planificador",
+      "photo": "/images/equipo/miembro-2.jpg",
+      "blurb": "Organiza tareas, coordina actividades y monitorea el progreso del proyecto. También aporta su conocimiento musical al desarrollo del videojuego."
+    },
+    {
+      "name": "Isabela Betancur Vélez",
+      "role": "Creativa",
+      "photo": "/images/equipo/miembro-3.jpg",
+      "blurb": "Aporta ideas innovadoras y frescas, y se encarga de que la identidad visual del proyecto sea original y atractiva."
+    },
+    {
+      "name": "Miguel Ángel Vélez Duque",
+      "role": "Comunicador",
+      "photo": "/images/equipo/miembro-4.jpg",
+      "blurb": "Se asegura de que la información fluya dentro del equipo y hacia afuera, coordinando la comunicación con el colegio y la comunidad."
+    },
+    {
+      "name": "Samuel Tano Gómez",
+      "role": "Mediador",
+      "photo": "/images/equipo/miembro-5.jpg",
+      "blurb": "Ayuda a que el equipo trabaje de forma armoniosa y a resolver cualquier desacuerdo de manera justa y efectiva."
+    }
+  ],
+  "contextTiers": [
+    {
+      "scope": "Global",
+      "text": "Las temperaturas récord y las sequías extremas han incrementado la frecuencia e intensidad de los incendios forestales en todo el planeta. Gran parte del problema está conectado con la economía globalizada: en Sudamérica se destruyen bosques nativos para ampliar terrenos de ganadería y cultivo a gran escala.",
+      "source": "PNUMA, 2022 · WWF Colombia, 2024"
+    },
+    {
+      "scope": "Nacional",
+      "text": "Con la temporada seca y el fenómeno de El Niño, el Gobierno Nacional declaró el estado de desastre por el calor extremo. Casi el 95% de los incendios en Colombia se originan por descuidos humanos — colillas, basura o fogatas mal apagadas — agravados por la minería ilegal y la tala de bosques.",
+      "source": "UNGRD, 2024 · Gobierno Nacional, 2026 · UNAD, 2024"
+    },
+    {
+      "scope": "Local — Medellín",
+      "text": "En temporada seca, la vegetación de las montañas y parques urbanos entra en estrés hídrico severo. El corregimiento de San Cristóbal, las laderas de Robledo y los cerros tutelares son las zonas más afectadas, con consecuencias directas sobre el agua y el aire de toda la ciudad.",
+      "source": "Alcaldía de Medellín, 2026 · DAGRD, 2026 · SIATA, 2025"
+    }
+  ],
+  "bigNumbers": [
+    {
+      "value": "97",
+      "label": "incendios atendidos por bomberos en Medellín en lo corrido de 2026",
+      "source": "Alcaldía de Medellín, 2026"
+    },
+    {
+      "value": "12+",
+      "label": "incendios de gran magnitud registrados en cerros tutelares como El Volador, El Picacho, Pan de Azúcar y Tres Cruces",
+      "source": "DAGRD, 2026"
+    },
+    {
+      "value": "~95%",
+      "label": "de los incendios forestales en Colombia se originan por descuido humano",
+      "source": "UNGRD, 2024"
+    }
+  ],
+  "causes": [
+    "Dejar botellas de vidrio o colillas encendidas sobre pasto seco, que generan un 'efecto lupa' con la radiación solar.",
+    "Vegetación seca acumulada sin ningún tratamiento que retarde la combustión.",
+    "Fogatas y quemas agrícolas mal controladas, especialmente en épocas de sequía.",
+    "Deforestación para ampliar terrenos de ganadería y agricultura a gran escala.",
+    "Minería ilegal y tala de madera, que alteran el suelo y las fuentes de agua.",
+    "Urbanización informal en zonas de ladera, que deja pastizales secos altamente inflamables.",
+    "Falta de educación ambiental y de estrategias atractivas para enseñar a prevenir incendios."
+  ],
+  "consequences": [
+    {
+      "title": "Degradación del suelo",
+      "text": "Los incendios de alta intensidad destruyen la materia orgánica del suelo y eliminan los nutrientes necesarios para que la vegetación se regenere.",
+      "source": "FAO, 2020"
+    },
+    {
+      "title": "Pérdida de biodiversidad",
+      "text": "La fragmentación del hábitat causada por el fuego provoca pérdidas severas en la fauna y flora nativas de los ecosistemas andinos.",
+      "source": "Instituto Humboldt, 2018"
+    },
+    {
+      "title": "Contaminación del agua",
+      "text": "La escorrentía posterior a un incendio arrastra cenizas y sedimentos hacia quebradas y ríos, afectando su calidad y potabilidad.",
+      "source": "IDEAM, 2021"
+    },
+    {
+      "title": "Calidad del aire",
+      "text": "Las partículas finas liberadas por la quema de biomasa incrementan las consultas médicas urgentes por afecciones respiratorias.",
+      "source": "OPS/OMS, 2022"
+    }
+  ],
+  "ideasConsidered": [
+    {
+      "name": "Spray ignífugo inteligente",
+      "note": "La idea elegida: fácil de aplicar, portátil, no altera la apariencia del material tratado.",
+      "chosen": true
+    },
+    {
+      "name": "Pintura inteligente ignífuga",
+      "note": "Reacciona al calor creando una barrera térmica, pero su aplicación es más compleja y costosa.",
+      "chosen": false
+    },
+    {
+      "name": "Drones bomberos autónomos",
+      "note": "Detectan y apagan incendios con sensores térmicos, pero exceden el alcance técnico y de recursos del proyecto escolar.",
+      "chosen": false
+    }
+  ],
+  "researchQuestion": "¿Cómo desarrollar un spray ignífugo natural y biodegradable, junto con el diseño de un videojuego educativo, que contribuya a la prevención de incendios forestales y al fortalecimiento de la educación ambiental en las comunidades de Medellín?",
+  "generalObjective": "Desarrollar una alternativa integral para la prevención y mitigación de incendios forestales, mediante la formulación de un spray ignífugo natural y biodegradable y el diseño de un videojuego educativo e interactivo, con el propósito de fortalecer la educación y conciencia ambiental de la comunidad, fomentar prácticas responsables y contribuir a la prevención y reducción de los incendios forestales.",
+  "specificObjectives": [
+    "Diseñar y formular una mezcla ignífuga a partir de ingredientes biodegradables y de origen natural.",
+    "Evaluar la eficacia física y ambiental del spray frente a distintos tipos de vegetación propensa a incendios en zonas de ladera de Medellín.",
+    "Diseñar e implementar la narrativa, mecánica y componentes interactivos del videojuego \"Llamas en el Bosque\".",
+    "Evaluar el impacto educativo del videojuego en la sensibilización ambiental de la comunidad objetivo."
+  ],
+  "references": [
+    "Aguilar-Garavito, M., Quintana, A., Córdova, D., & Rodríguez-Buriticá, S. (2018). Entender el fuego es promover nuestra resiliencia. Instituto Humboldt.",
+    "Alcaldía de Medellín. (2026). La Administración Distrital refuerza el plan de contingencia por temporada de menos lluvias.",
+    "Costes, L., Laoutid, F., Brohez, S., & Dubois, P. (2017). Bio-based flame retardants: When nature meets fire protection. Materials Science and Engineering: R: Reports, 117, 1–25.",
+    "Ballard, H. L., Evans, E., Sturtevant, V. E., & Jakes, P. (2012). The evolution of Smokey Bear: Environmental education about wildfire for youth. The Journal of Environmental Education, 43(4), 227–240.",
+    "Departamento Administrativo de Gestión del Riesgo de Desastres (DAGRD). (2026). Reporte oficial de atención a emergencias e incendios de cobertura vegetal en los cerros tutelares. Alcaldía de Medellín.",
+    "Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). (2020). Global Forest Resources Assessment 2020: Informe principal.",
+    "Gobierno Nacional de Colombia. (2026). Decreto oficial de declaratoria de desastre nacional por variabilidad climática y condiciones extremas. UNGRD.",
+    "Huang, T., Feng, Z., Paes, D., Ying, F., Zhao, X., Kinateder, M., Langer, E. R., & Lovreglio, R. (2025). Gamification for wildfire education and safety training: A systematic literature review and meta-analysis. Journal of Computer Assisted Learning, 41(5).",
+    "Instituto de Hidrología, Meteorología y Estudios Ambientales (IDEAM). (2021). Calidad del agua en Colombia.",
+    "Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. (2018). Biodiversidad 2018: Estado y tendencias de la biodiversidad continental de Colombia.",
+    "Ministerio de Ambiente y Desarrollo Sostenible. (2021). Los incendios forestales: causas antrópicas, deforestación y efectos sobre la biodiversidad en Colombia.",
+    "Mukherjee, S., Uddin, K. M. A., Turku, I., Rohumaa, A., & Lipponen, J. (2025). Bio-based flame retardants derived from forest industry: An approach towards circular economy. Resources, Environment and Sustainability, 21.",
+    "Organización Panamericana de la Salud (OPS/OMS). (2022). Calidad del aire.",
+    "Pacheco, R., Skulska, I., Sequeira, A. C., & Colaço, M. C. (2024). Wildfire education: A review across the globe. En Fire Hazards: Socio-Economic and Regional Issues (pp. 29–41). Springer.",
+    "Programa de las Naciones Unidas para el Medio Ambiente (PNUMA) & GRID-Arendal. (2022). Spreading like wildfire: The rising threat of extraordinary landscape fires.",
+    "Sistema de Alerta Temprana de Medellín y el Valle de Aburrá (SIATA). (2025). Tecnología y monitoreo de cámaras térmicas para la susceptibilidad de incendios de cobertura vegetal en zonas de ladera.",
+    "Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD). (2024). Reporte y estadísticas sobre el origen antrópico y manejo del riesgo de incendios en el territorio colombiano.",
+    "Universidad Nacional Abierta y a Distancia (UNAD). (2024). Minería ilegal y tala de madera: impactos sobre ríos y bosques en Colombia.",
+    "WWF Colombia. (2024). ¿Por qué se reactivaron los incendios forestales? Sequía e incendios en Colombia y Sudamérica: causas y efectos."
+  ],
+  "teamHistory": [
+    {
+      "title": "Un tema para todo el ciclo escolar",
+      "text": "En una clase de tecnología, el equipo recibió el reto de elegir un tema de investigación para trabajar durante varios años, de 6° a 11°. Entre varias opciones, decidieron enfocarse en los incendios forestales y su prevención."
+    },
+    {
+      "title": "¿Por qué \"Ice and Fire\"?",
+      "text": "El nombre nace del contraste entre el hielo (firmeza, calma, pensar antes de actuar) y el fuego (pasión, energía, motivación para actuar). El equipo sintió que esas dos fuerzas opuestas representaban bien su forma de trabajar juntos."
+    },
+    {
+      "title": "Un cambio en el equipo",
+      "text": "En 2025, uno de los integrantes fundadores del equipo se retiró del colegio para dedicarse al patinaje de alto rendimiento. Samuel Tano Gómez se unió al equipo poco después, asumiendo un rol activo en la mediación y organización del grupo."
+    },
+    {
+      "title": "De un videojuego a un proyecto dual",
+      "text": "El proyecto comenzó enfocado únicamente en el videojuego educativo. Con el acompañamiento docente, el equipo entendió que la sensibilización por sí sola no bastaba, y se sumó el desarrollo del spray ignífugo natural como respuesta física y científica al problema."
+    }
+  ],
+  "videos": [
+    {
+      "title": "Presentación del proyecto y árbol de problemas",
+      "youtubeId": "TfiEPPK5n-c"
+    },
+    {
+      "title": "¿Quién es cada uno?",
+      "youtubeId": "gSkmuVM1sXw"
+    }
+  ],
+  "schedule": [
+    {
+      "date": "28/08/2026",
+      "phase": "Planeación",
+      "activity": "Definición y diseño del objetivo general.",
+      "deliverable": "Plan Pro V3 actualizado.",
+      "owner": "Joan Sebastián y Samuel Tano"
+    },
+    {
+      "date": "04/09/2026",
+      "phase": "Diseño",
+      "activity": "Grabación de videos de presentación individual de cada integrante, en la institución.",
+      "deliverable": "Archivos de video individuales recopilados.",
+      "owner": "Isabela Betancur y Miguel Vásquez"
+    },
+    {
+      "date": "07/09/2026",
+      "phase": "Actualización",
+      "activity": "Actualización de la página web con lo nuevo.",
+      "deliverable": "Página web actualizada.",
+      "owner": "Samuel Tano y Joan Sebastián"
+    },
+    {
+      "date": "11/09/2026",
+      "phase": "Investigación",
+      "activity": "Análisis de artículos científicos sobre componentes ignífugos, gamificación e investigaciones previas.",
+      "deliverable": "Fichas bibliográficas y análisis de antecedentes.",
+      "owner": "Miguel Ángel Vélez"
+    },
+    {
+      "date": "18/09/2026",
+      "phase": "Sistematización",
+      "activity": "Actualización y organización de bitácoras de trabajo.",
+      "deliverable": "Bitácoras al día con avances documentados.",
+      "owner": "Samuel Tano"
+    },
+    {
+      "date": "25/09/2026",
+      "phase": "Diseño gráfico",
+      "activity": "Estructuración y consolidación del póster digital.",
+      "deliverable": "Póster digital terminado.",
+      "owner": "Isabela Betancur"
+    },
+    {
+      "date": "02/10/2026",
+      "phase": "Edición audiovisual",
+      "activity": "Grabación y edición del video de presentación oficial del equipo.",
+      "deliverable": "Video final de presentación editado.",
+      "owner": "Miguel Vásquez, Joan Sebastián e Isabela Betancur"
+    },
+    {
+      "date": "09/10/2026",
+      "phase": "Continuación de investigaciones",
+      "activity": "Realización y documentación de artículos verídicos y reales.",
+      "deliverable": "Documento de análisis de artículos.",
+      "owner": "Miguel Ángel Vélez"
+    },
+    {
+      "date": "16/10/2026",
+      "phase": "Desarrollo tecnológico",
+      "activity": "Programación del prototipo funcional del videojuego \"Llamas en el Bosque\" y ajuste de mecánicas.",
+      "deliverable": "Versión alpha del videojuego jugable.",
+      "owner": "Joan Sebastián Arango"
+    },
+    {
+      "date": "19/10/2026",
+      "phase": "Correcciones y aprendizaje",
+      "activity": "Aprendizaje mutuo entre integrantes para la mejora grupal.",
+      "deliverable": "Escritos de lo aprendido para el portafolio.",
+      "owner": "Miguel Ángel Vélez"
+    },
+    {
+      "date": "23/10/2026",
+      "phase": "Revisión docente",
+      "activity": "Revisión del docente sobre la funcionalidad del videojuego.",
+      "deliverable": "Documento de recomendación o aprobación docente.",
+      "owner": "Joan Sebastián y Samuel Tano"
+    },
+    {
+      "date": "27/10/2026",
+      "phase": "Revisión del portafolio",
+      "activity": "Revisión ortográfica y de formato del portafolio físico y digital.",
+      "deliverable": "Portafolio con correcciones hechas.",
+      "owner": "Todo el equipo"
+    },
+    {
+      "date": "30/10/2026",
+      "phase": "Consolidación final",
+      "activity": "Análisis de resultados finales, revisión de bitácoras y diseño del estand.",
+      "deliverable": "Informe escrito final compilado.",
+      "owner": "Isabela Betancur, Miguel Ángel Vélez y Miguel Vásquez"
+    },
+    {
+      "date": "Noviembre 2026",
+      "phase": "Sustentación",
+      "activity": "Presentación final, exhibición del spray biodegradable y muestra interactiva del videojuego.",
+      "deliverable": "Sustentación oficial y entrega de bitácoras.",
+      "owner": "Todo el equipo"
+    }
+  ],
+  "antecedents": [
+    {
+      "author": "PNUMA & GRID-Arendal, 2022",
+      "note": "El aumento de temperaturas récord y sequías extremas ha incrementado la frecuencia e intensidad de los incendios forestales en todo el planeta."
+    },
+    {
+      "author": "Costes et al., 2017",
+      "note": "Los retardantes de fuego de base biológica (\"bio-based flame retardants\") surgen como alternativa a los químicos convencionales para la protección contra el fuego."
+    },
+    {
+      "author": "Mukherjee et al., 2025",
+      "note": "Los retardantes de base biológica derivados de la industria forestal son una alternativa prometedora alineada con la economía circular."
+    },
+    {
+      "author": "Huang et al., 2025",
+      "note": "Una revisión sistemática confirma que las experiencias gamificadas mejoran significativamente la educación y la seguridad frente a incendios forestales."
+    },
+    {
+      "author": "Pacheco et al., 2024",
+      "note": "Los programas de educación ambiental sobre incendios fortalecen el conocimiento y modifican actitudes frente al uso responsable de los recursos naturales."
+    },
+    {
+      "author": "Ballard et al., 2012",
+      "note": "La evolución del ícono \"Smokey Bear\" muestra décadas de educación ambiental efectiva sobre incendios forestales dirigida a jóvenes."
+    },
+    {
+      "author": "Instituto Humboldt, 2018",
+      "note": "Entender el fuego es promover la resiliencia de los ecosistemas colombianos frente a la pérdida de biodiversidad."
+    },
+    {
+      "author": "FAO, 2020",
+      "note": "Los incendios de alta intensidad destruyen la materia orgánica del suelo y eliminan los nutrientes necesarios para la regeneración vegetal."
+    },
+    {
+      "author": "WWF Colombia, 2024",
+      "note": "Las quemas ilegales de tierra para expandir ganadería y agricultura, junto a veranos intensos, vuelven incontrolables los incendios forestales."
+    },
+    {
+      "author": "UNGRD, 2024",
+      "note": "Casi el 95% de los incendios forestales en Colombia se originan por descuidos humanos."
+    }
+  ],
+  "methodologyPhaseA": [
+    {
+      "step": "1. Selección de ingredientes",
+      "detail": "Se mezclan sustancias minerales de baja toxicidad — agua destilada, bicarbonato de sodio y sales minerales — en proporciones controladas."
+    },
+    {
+      "step": "2. Preparación de muestras",
+      "detail": "Se recolectan hojas secas y ramas de igual peso y tamaño, divididas en Muestra A (control, con agua) y Muestra B (tratada con el spray)."
+    },
+    {
+      "step": "3. Prueba de combustión controlada",
+      "detail": "Con acompañamiento docente en el laboratorio del colegio, se aplica calor a una distancia fija de 5 cm sobre ambas muestras."
+    },
+    {
+      "step": "4. Registro de variables",
+      "detail": "Se mide el tiempo de ignición y el porcentaje de vegetación consumida, registrando los datos en una bitácora de laboratorio."
+    }
+  ],
+  "methodologyPhaseB": [
+    {
+      "step": "1. Diseño de mecánicas",
+      "detail": "Programación de escenarios que simulan el cuidado del bosque, la recolección de basura y la aplicación del spray."
+    },
+    {
+      "step": "2. Pilotaje",
+      "detail": "Selección de una muestra escolar de 15 compañeros de grado octavo para probar el videojuego."
+    },
+    {
+      "step": "3. Evaluación del impacto",
+      "detail": "Encuesta antes y después de jugar (pre-test y post-test) para verificar el aprendizaje sobre causas y prevención de incendios."
+    }
+  ],
+  "sprayIngredients": [
+    "Aloe vera",
+    "Bicarbonato de sodio",
+    "Arcilla",
+    "Extractos naturales"
+  ],
+  "gameLevels": [
+    {
+      "name": "Zona de Frontera",
+      "desc": "Alex controla un incendio incipiente con mangueras y herramientas básicas, aprendiendo a identificar fuentes de fuego y establecer un perímetro de seguridad."
+    },
+    {
+      "name": "El Corazón del Bosque",
+      "desc": "El fuego se ha extendido. Alex trabaja en equipo usando ataque directo y contrafuego, y rescata animales atrapados en las llamas."
+    },
+    {
+      "name": "Llanura Desértica",
+      "desc": "El viento aviva las llamas en condiciones extremas. Alex administra tiempo y recursos, y usa aviones cisterna para apagar el fuego desde el aire."
+    },
+    {
+      "name": "La Montaña",
+      "desc": "Un incendio amenaza un pequeño pueblo. Alex debe evacuar a los residentes mientras combate el fuego y enfrenta deslizamientos de tierra."
+    },
+    {
+      "name": "El Fin del Verano",
+      "desc": "El fuego llega a un área protegida con una especie en peligro. Alex une fuerzas con bomberos y voluntarios para una última operación de rescate."
+    }
+  ],
+  "gameMechanics": [
+    "Apagado de incendios con agua, tierra y herramientas especializadas.",
+    "Rescate de animales y personas atrapadas.",
+    "Gestión de recursos: administrar agua y equipo mientras se avanza por el mapa.",
+    "Estrategia: planificar el ataque al fuego según el viento y el terreno."
+  ],
+  "steam": [
+    {
+      "letter": "S",
+      "word": "Science",
+      "es": "Ciencia",
+      "text": "Aplicamos el método científico para investigar, formular hipótesis, experimentar y analizar resultados — por ejemplo, probando cómo reaccionan distintos materiales al fuego, al agua o a la presión."
+    },
+    {
+      "letter": "T",
+      "word": "Technology",
+      "es": "Tecnología",
+      "text": "Usamos programas digitales, simuladores y recursos tecnológicos para crear prototipos, diseños y presentaciones más dinámicas del proyecto."
+    },
+    {
+      "letter": "E",
+      "word": "Engineering",
+      "es": "Ingeniería",
+      "text": "Diseñamos paso a paso la estructura del proyecto: construir el prototipo del spray, armar maquetas y anticipar fallas para encontrar alternativas más eficientes."
+    },
+    {
+      "letter": "A",
+      "word": "Arts",
+      "es": "Artes",
+      "text": "Le damos identidad al proyecto: colores, dibujos, presentaciones visuales y la forma en que contamos la historia del equipo y su investigación."
+    },
+    {
+      "letter": "M",
+      "word": "Mathematics",
+      "es": "Matemáticas",
+      "text": "Organizamos datos, calculamos proporciones y verificamos la viabilidad de la propuesta — por ejemplo, al medir materiales o analizar resultados de encuestas."
+    },
+    {
+      "letter": "H",
+      "word": "Humanities",
+      "es": "Humanidades",
+      "text": "Reflexionamos sobre la importancia social y ética del proyecto: cómo esta propuesta puede mejorar la vida de una comunidad y respetar su cultura."
+    }
+  ],
+  "timeline": [
+    {
+      "month": "Enero",
+      "text": "Actualización de los recursos del equipo; salida de un integrante fundador e ingreso de un nuevo compañero al proyecto."
+    },
+    {
+      "month": "Marzo",
+      "text": "Trabajo continuo de documentación y organización del equipo."
+    },
+    {
+      "month": "Abril",
+      "text": "Formalización del documento de estructura metodológica del proyecto, con la pregunta de investigación y objetivos definidos."
+    },
+    {
+      "month": "Junio",
+      "text": "Avance en la investigación y en la construcción del marco teórico del proyecto."
+    },
+    {
+      "month": "Julio",
+      "text": "Continuación del proceso de investigación y trabajo en equipo."
+    },
+    {
+      "month": "Agosto",
+      "text": "Registro de avances y ajustes del equipo sobre el proyecto."
+    },
+    {
+      "month": "Septiembre",
+      "text": "Seguimiento del proyecto y del trabajo colaborativo."
+    },
+    {
+      "month": "Octubre",
+      "text": "Cierre del ciclo de bitácoras del periodo, con evaluación del equipo en la muestra institucional."
+    }
+  ],
+  "steamHIntro": "El modelo STEAM+H es la práctica pedagógica del Colegio Loyola que integra distintas áreas del conocimiento para enriquecer el aprendizaje: en cualquier asignatura se pueden aplicar métodos y herramientas propios de otras materias.",
+  "sprayWhy": "Los métodos actuales de prevención suelen ser costosos, contaminantes o poco accesibles en zonas rurales. Spray Fire busca ser una alternativa natural, biodegradable y de bajo costo que cualquier comunidad pueda aplicar antes de que empiece el fuego.",
+  "sprayHow": "Se aplica directamente sobre vegetación seca, madera o superficies plásticas propensas a incendiarse. Al secarse, forma una capa que retarda la combustión frente a una fuente de calor o chispa, dando más tiempo de reacción antes de que el fuego se propague.",
+  "sprayAdvantages": [
+    "Ingredientes naturales y no tóxicos, seguros para la vegetación y el suelo.",
+    "Biodegradable: no dejar residuos químicos persistentes en el ecosistema.",
+    "Envase portátil en spray, fácil de aplicar sin equipo especializado.",
+    "Bajo costo comparado con retardantes comerciales."
+  ],
+  "sprayLimitations": [
+    "No reemplaza los sistemas profesionales de los organismos de emergencia — es una medida preventiva, no de extinción.",
+    "Su efectividad frente a lluvia y tiempo de exposición aún está en fase de prueba.",
+    "Los resultados de laboratorio todavía no están consolidados (ver Metodología)."
+  ],
+  "gamePurpose": "Más que entretenimiento, \"Llamas en el Bosque\" es la otra mitad de la solución: mientras el spray actúa sobre el terreno, el juego actúa sobre la conciencia de quien lo juega, mostrando de forma interactiva por qué se originan los incendios y cómo prevenirlos.",
+  "evolutionStory": [
+    {
+      "title": "Nace la idea",
+      "text": "En una clase de tecnología, el equipo decide investigar los incendios forestales como su tema para todo el ciclo escolar (6° a 11°). El proyecto comienza enfocado únicamente en un videojuego educativo."
+    },
+    {
+      "title": "Se evalúan alternativas",
+      "text": "El equipo hace una lluvia de ideas de soluciones físicas posibles — desde pintura ignífuga hasta drones bomberos — antes de decidirse por un spray natural."
+    },
+    {
+      "title": "El proyecto se vuelve dual",
+      "text": "Bajo la orientación docente, el equipo entiende que el videojuego, aunque valioso, no bastaba por sí solo. Se suma el spray ignífugo natural como respuesta física y científica al problema."
+    },
+    {
+      "title": "Ice and Fire hoy",
+      "text": "El proyecto combina un producto científico (el spray) con una herramienta educativa (el videojuego), presentado ante la comunidad institucional con buena acogida."
+    }
+  ]
+}

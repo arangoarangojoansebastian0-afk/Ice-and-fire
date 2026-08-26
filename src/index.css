@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Sora", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-void: #0b1220;
+  --color-void-2: #0e1626;
+  --color-surface: #121b2e;
+  --color-surface-2: #182338;
+
+  --color-fire-50: #fff2ea;
+  --color-fire-300: #ffb347;
+  --color-fire-500: #ff5a2a;
+  --color-fire-700: #c23a12;
+
+  --color-ice-100: #d6f3ff;
+  --color-ice-300: #8fdcf2;
+  --color-ice-500: #5ec4e0;
+  --color-ice-700: #2d7fa0;
+
+  --color-forest-400: #4a9d6d;
+  --color-forest-600: #2e7d4f;
+
+  --color-ink: #f3f5f7;
+  --color-ink-muted: #9aa5b1;
+  --color-ink-faint: #5b6673;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-void);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-fire-500);
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* subtle grain / noise overlay used on dark sections */
+.bg-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
