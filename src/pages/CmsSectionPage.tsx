@@ -32,10 +32,14 @@ export default function CmsSectionPage() {
     return <div className="mx-auto max-w-4xl px-6 py-32 text-center"><h1 className="text-4xl font-bold">Página no encontrada</h1></div>;
   }
 
-  if (page.type === "external" && page.externalUrl) {
-    window.location.href = page.externalUrl;
-    return null;
-  }
+  if (
+  page.type === "external" &&
+  "externalUrl" in page &&
+  typeof page.externalUrl === "string"
+) {
+  window.location.href = page.externalUrl;
+  return null;
+}
 
   const Section = page.section ? sections[page.section] : undefined;
 
