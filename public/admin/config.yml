@@ -21,13 +21,12 @@ slug:
   clean_accents: true
 
 collections:
-
   - name: pages
-    label: "📄 Páginas y pestañas"
-    description: "Crea, ordena, oculta y configura las páginas que aparecen en el menú."
+    label: "Páginas y pestañas"
+    description: "Organiza qué contenido aparece dentro de cada página. Puedes agregar, ocultar y ordenar secciones."
     files:
       - name: navigation
-        label: "Navegación del sitio"
+        label: "Navegación y estructura"
         file: src/data/pages.json
         format: json
         fields:
@@ -36,65 +35,52 @@ collections:
             widget: list
             summary: "{{name}} → /{{slug}}"
             fields:
-              - name: name
-                label: "Nombre de la pestaña"
-                widget: string
-              - name: slug
-                label: "URL"
-                widget: string
-                hint: "Ejemplo: investigacion. No uses / al inicio."
-              - name: description
-                label: "Descripción"
-                widget: text
-                required: false
-              - name: visible
-                label: "Visible"
-                widget: boolean
-                default: true
-              - name: inMenu
-                label: "Mostrar en el menú"
-                widget: boolean
-                default: true
-              - name: order
-                label: "Orden"
-                widget: number
-                value_type: int
-                default: 10
+              - {name: name, label: "Nombre de la página", widget: string}
+              - {name: slug, label: "URL", widget: string}
+              - {name: description, label: "Descripción", widget: text, required: false}
+              - {name: visible, label: "Página visible", widget: boolean, default: true}
+              - {name: inMenu, label: "Mostrar en el menú", widget: boolean, default: true}
+              - {name: order, label: "Orden en el menú", widget: number, value_type: int, default: 10}
               - name: type
                 label: "Tipo de página"
                 widget: select
-                options:
-                  - "section"
-                  - "blocks"
-                  - "team"
-                  - "external"
-              - name: section
-                label: "Sección existente"
-                widget: select
-                required: false
-                options:
-                  - "Problem"
-                  - "Research"
-                  - "Antecedents"
-                  - "Methodology"
-                  - "Spray"
-                  - "Game"
-                  - "Steam"
-                  - "Schedule"
-                  - "Timeline"
-                  - "Videos"
-                  - "Gallery"
-                  - "Team"
-                  - "Poster"
-                  - "Contact"
-                  - "History"
-                  - "Journey"
+                options: ["section", "blocks", "team", "external"]
               - name: externalUrl
                 label: "URL externa"
                 widget: string
                 required: false
+              - name: sections
+                label: "Secciones que aparecen en esta página"
+                widget: list
+                required: false
+                summary: "{{order}} — {{label}} ({{section}})"
+                fields:
+                  - {name: id, label: "ID", widget: string, required: false}
+                  - {name: label, label: "Título visible", widget: string, required: false}
+                  - name: section
+                    label: "Sección"
+                    widget: select
+                    options:
+                      - Problem
+                      - History
+                      - Journey
+                      - Research
+                      - Antecedents
+                      - Methodology
+                      - Spray
+                      - Game
+                      - Steam
+                      - Schedule
+                      - Timeline
+                      - Videos
+                      - Gallery
+                      - Team
+                      - Poster
+                      - Contact
+                  - {name: visible, label: "Mostrar", widget: boolean, default: true}
+                  - {name: order, label: "Orden dentro de la página", widget: number, value_type: int, default: 10}
               - name: blocks
-                label: "Bloques de contenido"
+                label: "Bloques personalizados"
                 widget: list
                 required: false
                 types:
@@ -102,118 +88,63 @@ collections:
                     label: "Texto"
                     widget: object
                     fields:
-                      - name: title
-                        label: Título
-                        widget: string
-                        required: false
-                      - name: text
-                        label: Texto
-                        widget: markdown
+                      - {name: title, label: "Título", widget: string, required: false}
+                      - {name: text, label: "Texto", widget: markdown}
                   - name: image
                     label: "Imagen"
                     widget: object
                     fields:
-                      - name: image
-                        label: Imagen
-                        widget: image
-                      - name: title
-                        label: Título
-                        widget: string
-                        required: false
-                      - name: alt
-                        label: Texto alternativo
-                        widget: string
-                        required: false
+                      - {name: image, label: "Imagen", widget: image}
+                      - {name: title, label: "Título", widget: string, required: false}
+                      - {name: alt, label: "Texto alternativo", widget: string, required: false}
                   - name: video
                     label: "Video"
                     widget: object
                     fields:
-                      - name: title
-                        label: Título
-                        widget: string
-                        required: false
-                      - name: url
-                        label: "URL de YouTube o video"
-                        widget: string
-                      - name: description
-                        label: Descripción
-                        widget: text
-                        required: false
+                      - {name: title, label: "Título", widget: string, required: false}
+                      - {name: url, label: "URL de YouTube", widget: string}
+                      - {name: description, label: "Descripción", widget: text, required: false}
                   - name: button
                     label: "Botón"
                     widget: object
                     fields:
-                      - name: text
-                        label: Texto
-                        widget: string
-                      - name: href
-                        label: Destino
-                        widget: string
-                      - name: newTab
-                        label: "Abrir en nueva pestaña"
-                        widget: boolean
-                        default: false
+                      - {name: title, label: "Texto", widget: string, required: false}
+                      - {name: text, label: "Texto alternativo", widget: string, required: false}
+                      - {name: href, label: "Destino", widget: string}
+                      - {name: newTab, label: "Abrir en nueva pestaña", widget: boolean, default: false}
                   - name: gallery
                     label: "Galería"
                     widget: object
                     fields:
-                      - name: title
-                        label: Título
-                        widget: string
-                        required: false
+                      - {name: title, label: "Título", widget: string, required: false}
                       - name: images
-                        label: Imágenes
+                        label: "Imágenes"
                         widget: list
-                        field:
-                          label: Imagen
-                          name: image
-                          widget: image
+                        field: {label: Imagen, name: image, widget: image}
                   - name: embed
                     label: "Contenido embebido"
                     widget: object
                     fields:
-                      - name: title
-                        label: Título
-                        widget: string
-                        required: false
-                      - name: url
-                        label: URL
-                        widget: string
-                      - name: height
-                        label: Alto
-                        widget: number
-                        default: 500
+                      - {name: title, label: "Título", widget: string, required: false}
+                      - {name: url, label: "URL", widget: string}
+                      - {name: height, label: "Alto", widget: number, default: 500}
                   - name: cards
                     label: "Tarjetas"
                     widget: object
                     fields:
-                      - name: title
-                        label: Título
-                        widget: string
-                        required: false
+                      - {name: title, label: "Título", widget: string, required: false}
                       - name: cards
-                        label: Tarjetas
+                        label: "Tarjetas"
                         widget: list
                         fields:
-                          - name: title
-                            label: Título
-                            widget: string
-                          - name: text
-                            label: Texto
-                            widget: text
-                            required: false
-                          - name: image
-                            label: Imagen
-                            widget: image
-                            required: false
-                          - name: href
-                            label: Enlace
-                            widget: string
-                            required: false
+                          - {name: title, label: "Título", widget: string}
+                          - {name: text, label: "Texto", widget: text, required: false}
+                          - {name: image, label: "Imagen", widget: image, required: false}
+                          - {name: href, label: "Enlace", widget: string, required: false}
 
   - name: site_content
-    label: "🧩 Contenido del proyecto"
-    description: "Edita todo el contenido científico, educativo y multimedia."
+    label: "Contenido del proyecto"
+    description: "Edita los datos que usan las secciones existentes."
     files:
       - name: content
         label: "Contenido de Ice and Fire"
@@ -221,7 +152,7 @@ collections:
         format: json
         fields:
           - name: site
-            label: "⚙️ Configuración"
+            label: "Configuración"
             widget: object
             fields:
               - {name: name, label: "Nombre", widget: string}
@@ -240,8 +171,9 @@ collections:
               - {name: showGallery, label: "Mostrar galería", widget: boolean, default: true}
               - {name: showPoster, label: "Mostrar póster", widget: boolean, default: true}
               - {name: showContact, label: "Mostrar contacto", widget: boolean, default: true}
+
           - name: team
-            label: "👥 Equipo"
+            label: "Equipo"
             widget: list
             fields:
               - {name: name, label: Nombre, widget: string}
@@ -256,142 +188,31 @@ collections:
                 widget: list
                 required: false
                 field: {label: Imagen, name: image, widget: image}
-          - name: contextTiers
-            label: "🌎 Problemática"
-            widget: list
-            fields:
-              - {name: scope, label: Alcance, widget: string}
-              - {name: text, label: Texto, widget: markdown}
-              - {name: source, label: Fuente, widget: string, required: false}
-          - name: bigNumbers
-            label: "Cifras destacadas"
-            widget: list
-            fields:
-              - {name: value, label: Cifra, widget: string}
-              - {name: label, label: Descripción, widget: text}
-              - {name: source, label: Fuente, widget: string}
-          - name: causes
-            label: Causas
-            widget: list
-            field: {label: Causa, name: cause, widget: text}
-          - name: consequences
-            label: Consecuencias
-            widget: list
-            fields:
-              - {name: title, label: Título, widget: string}
-              - {name: text, label: Texto, widget: text}
-              - {name: source, label: Fuente, widget: string}
-          - name: researchQuestion
-            label: "Pregunta de investigación"
-            widget: text
-          - name: generalObjective
-            label: "Objetivo general"
-            widget: text
-          - name: specificObjectives
-            label: "Objetivos específicos"
-            widget: list
-            field: {label: Objetivo, name: objective, widget: text}
-          - name: antecedents
-            label: Antecedentes
-            widget: list
-            fields:
-              - {name: author, label: Autor/Fuente, widget: string}
-              - {name: note, label: Hallazgo, widget: text}
-          - name: methodologyPhaseA
-            label: "Metodología — Spray"
-            widget: list
-            fields:
-              - {name: step, label: Paso, widget: string}
-              - {name: detail, label: Detalle, widget: text}
-          - name: methodologyPhaseB
-            label: "Metodología — Videojuego"
-            widget: list
-            fields:
-              - {name: step, label: Paso, widget: string}
-              - {name: detail, label: Detalle, widget: text}
-          - name: sprayWhy
-            label: "Spray Fire — ¿Por qué?"
-            widget: markdown
-          - name: sprayHow
-            label: "Spray Fire — ¿Cómo funciona?"
-            widget: markdown
-          - name: sprayIngredients
-            label: Ingredientes
-            widget: list
-            field: {label: Ingrediente, name: ingredient, widget: string}
-          - name: sprayAdvantages
-            label: Ventajas
-            widget: list
-            field: {label: Ventaja, name: advantage, widget: text}
-          - name: sprayLimitations
-            label: Limitaciones
-            widget: list
-            field: {label: Limitación, name: limitation, widget: text}
-          - name: gamePurpose
-            label: "Videojuego — Propósito"
-            widget: markdown
-          - name: gameLevels
-            label: "Videojuego — Niveles"
-            widget: list
-            fields:
-              - {name: name, label: Nombre, widget: string}
-              - {name: desc, label: Descripción, widget: text}
-          - name: gameMechanics
-            label: "Videojuego — Mecánicas"
-            widget: list
-            field: {label: Mecánica, name: mechanic, widget: text}
-          - name: steamHIntro
-            label: "STEAM+H — Introducción"
-            widget: markdown
-          - name: steam
-            label: "STEAM+H"
-            widget: list
-            fields:
-              - {name: letter, label: Letra, widget: string}
-              - {name: word, label: "Nombre en inglés", widget: string}
-              - {name: es, label: "Nombre en español", widget: string}
-              - {name: text, label: Descripción, widget: markdown}
-          - name: schedule
-            label: "📅 Cronograma"
-            widget: list
-            fields:
-              - {name: date, label: Fecha, widget: string}
-              - {name: phase, label: Fase, widget: string}
-              - {name: activity, label: Actividad, widget: text}
-              - {name: deliverable, label: Entregable, widget: text}
-              - {name: owner, label: Responsable, widget: string}
-          - name: timeline
-            label: "Línea de tiempo"
-            widget: list
-            fields:
-              - {name: month, label: Mes, widget: string}
-              - {name: text, label: Texto, widget: text}
-          - name: videos
-            label: "🎬 Videos"
-            widget: list
-            fields:
-              - {name: title, label: Título, widget: string}
-              - {name: youtubeId, label: "ID de YouTube", widget: string}
-          - name: references
-            label: "📚 Bibliografía"
-            widget: list
-            field: {label: Referencia, name: reference, widget: markdown}
-          - name: teamHistory
-            label: "📖 Historia del equipo"
-            widget: list
-            fields:
-              - {name: title, label: Título, widget: string}
-              - {name: text, label: Texto, widget: markdown}
-          - name: evolutionStory
-            label: "Evolución del proyecto"
-            widget: list
-            fields:
-              - {name: title, label: Título, widget: string}
-              - {name: text, label: Texto, widget: markdown}
-          - name: ideasConsidered
-            label: "Ideas consideradas"
-            widget: list
-            fields:
-              - {name: name, label: Nombre, widget: string}
-              - {name: note, label: Descripción, widget: text}
-              - {name: chosen, label: Elegida, widget: boolean, default: false}
+
+          - {name: contextTiers, label: "Problemática", widget: list, fields: [{name: scope, label: Alcance, widget: string}, {name: text, label: Texto, widget: markdown}, {name: source, label: Fuente, widget: string, required: false}]}
+          - {name: bigNumbers, label: "Cifras destacadas", widget: list, fields: [{name: value, label: Cifra, widget: string}, {name: label, label: Descripción, widget: text}, {name: source, label: Fuente, widget: string}]}
+          - {name: causes, label: Causas, widget: list, field: {label: Causa, name: cause, widget: text}}
+          - {name: consequences, label: Consecuencias, widget: list, fields: [{name: title, label: Título, widget: string}, {name: text, label: Texto, widget: text}, {name: source, label: Fuente, widget: string}]}
+          - {name: researchQuestion, label: "Pregunta de investigación", widget: text}
+          - {name: generalObjective, label: "Objetivo general", widget: text}
+          - {name: specificObjectives, label: "Objetivos específicos", widget: list, field: {label: Objetivo, name: objective, widget: text}}
+          - {name: antecedents, label: Antecedentes, widget: list, fields: [{name: author, label: Autor/Fuente, widget: string}, {name: note, label: Hallazgo, widget: text}]}
+          - {name: methodologyPhaseA, label: "Metodología — Spray", widget: list, fields: [{name: step, label: Paso, widget: string}, {name: detail, label: Detalle, widget: text}]}
+          - {name: methodologyPhaseB, label: "Metodología — Videojuego", widget: list, fields: [{name: step, label: Paso, widget: string}, {name: detail, label: Detalle, widget: text}]}
+          - {name: sprayWhy, label: "Spray Fire — ¿Por qué?", widget: markdown}
+          - {name: sprayHow, label: "Spray Fire — ¿Cómo funciona?", widget: markdown}
+          - {name: sprayIngredients, label: Ingredientes, widget: list, field: {label: Ingrediente, name: ingredient, widget: string}}
+          - {name: sprayAdvantages, label: Ventajas, widget: list, field: {label: Ventaja, name: advantage, widget: text}}
+          - {name: sprayLimitations, label: Limitaciones, widget: list, field: {label: Limitación, name: limitation, widget: text}}
+          - {name: gamePurpose, label: "Videojuego — Propósito", widget: markdown}
+          - {name: gameLevels, label: "Videojuego — Niveles", widget: list, fields: [{name: name, label: Nombre, widget: string}, {name: desc, label: Descripción, widget: text}]}
+          - {name: gameMechanics, label: "Videojuego — Mecánicas", widget: list, field: {label: Mecánica, name: mechanic, widget: text}}
+          - {name: steamHIntro, label: "STEAM+H — Introducción", widget: markdown}
+          - {name: steam, label: "STEAM+H", widget: list, fields: [{name: letter, label: Letra, widget: string}, {name: word, label: "Nombre en inglés", widget: string}, {name: es, label: "Nombre en español", widget: string}, {name: text, label: Descripción, widget: markdown}]}
+          - {name: schedule, label: "Cronograma", widget: list, fields: [{name: date, label: Fecha, widget: string}, {name: phase, label: Fase, widget: string}, {name: activity, label: Actividad, widget: text}, {name: deliverable, label: Entregable, widget: text}, {name: owner, label: Responsable, widget: string}]}
+          - {name: timeline, label: "Línea de tiempo", widget: list, fields: [{name: month, label: Mes, widget: string}, {name: text, label: Texto, widget: text}]}
+          - {name: videos, label: Videos, widget: list, fields: [{name: title, label: Título, widget: string}, {name: youtubeId, label: "ID de YouTube", widget: string}]}
+          - {name: references, label: Bibliografía, widget: list, field: {label: Referencia, name: reference, widget: markdown}}
+          - {name: teamHistory, label: "Historia del equipo", widget: list, fields: [{name: title, label: Título, widget: string}, {name: text, label: Texto, widget: markdown}]}
+          - {name: evolutionStory, label: "Evolución del proyecto", widget: list, fields: [{name: title, label: Título, widget: string}, {name: text, label: Texto, widget: markdown}]}
+          - {name: ideasConsidered, label: "Ideas consideradas", widget: list, fields: [{name: name, label: Nombre, widget: string}, {name: note, label: Descripción, widget: text}, {name: chosen, label: Elegida, widget: boolean, default: false}]}

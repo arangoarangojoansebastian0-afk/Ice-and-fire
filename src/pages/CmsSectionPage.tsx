@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import pagesData from "../data/pages.json";
 import CmsBlockRenderer from "../components/CmsBlockRenderer";
@@ -21,47 +20,26 @@ import Poster from "../sections/Poster";
 import Contact from "../sections/Contact";
 
 const sections: Record<string, React.ComponentType> = {
-  Problem,
-  History,
-  Journey,
-  Research,
-  Antecedents,
-  Methodology,
-  Spray,
-  Game,
-  Steam,
-  Schedule,
-  Timeline,
-  Videos,
-  Gallery,
-  Team,
-  Poster,
-  Contact,
+  Problem, History, Journey, Research, Antecedents, Methodology, Spray,
+  Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact
+};
+
+type PageSection = {
+  id?: string;
+  section?: string;
+  label?: string;
+  visible?: boolean;
+  order?: number;
 };
 
 export default function CmsSectionPage() {
   const { slug } = useParams();
-
   const page = pagesData.pages.find((p) => p.slug === slug);
-
-  useEffect(() => {
-    if (
-      page &&
-      page.type === "external" &&
-      "externalUrl" in page &&
-      typeof page.externalUrl === "string" &&
-      page.externalUrl.length > 0
-    ) {
-      window.location.href = page.externalUrl;
-    }
-  }, [page]);
 
   if (!page || !page.visible) {
     return (
       <div className="mx-auto max-w-4xl px-6 py-32 text-center">
-        <h1 className="text-4xl font-bold">
-          Página no encontrada
-        </h1>
+        <h1 className="text-4xl font-bold">Página no encontrada</h1>
       </div>
     );
   }
@@ -70,41 +48,56 @@ export default function CmsSectionPage() {
     page.type === "external" &&
     "externalUrl" in page &&
     typeof page.externalUrl === "string" &&
-    page.externalUrl.length > 0
+    page.externalUrl.trim()
   ) {
+    window.location.href = page.externalUrl;
     return null;
   }
 
-  const Section = page.section
-    ? sections[page.section]
-    : undefined;
+  const configuredSections: PageSection[] =
+    "sections" in page && Array.isArray(page.sections)
+      ? page.sections
+      : page.section
+        ? [{ section: page.section, visible: true, order: 0 }]
+        : [];
+
+  const orderedSections = [...configuredSections]
+    .filter((item) => item.visible !== false && typeof item.section === "string")
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-16">
       <header className="mb-12">
-        <h1 className="text-4xl font-bold md:text-6xl">
-          {page.name}
-        </h1>
-
+        <h1 className="text-4xl md:text-6xl font-bold">{page.name}</h1>
         {page.description && (
-          <p className="mt-4 max-w-3xl text-lg opacity-70">
-            {page.description}
-          </p>
+          <p className="mt-4 max-w-3xl text-lg opacity-70">{page.description}</p>
         )}
       </header>
 
-      {Section ? <Section /> : null}
+      <div className="space-y-20">
+        {orderedSections.map((item, index) => {
+          const Section = item.section ? sections[item.section] : undefined;
 
-      {page.blocks?.length ? (
-        <div className="mt-16 space-y-12">
-          {page.blocks.map((block, index) => (
-            <CmsBlockRenderer
-              key={index}
-              block={block}
-            />
-          ))}
-        </div>
-      ) : null}
+          if (!Section) return null;
+
+          return (
+            <div key={`${item.section}-${item.id ?? index}`}>
+              {item.label && item.label !== page.name ? (
+                <h2 className="mb-8 text-2xl font-bold">{item.label}</h2>
+              ) : null}
+              <Section />
+            </div>
+          );
+        })}
+
+        {"blocks" in page && Array.isArray(page.blocks) && page.blocks.length > 0 ? (
+          <div className="space-y-12">
+            {page.blocks.map((block, index) => (
+              <CmsBlockRenderer key={index} block={block} />
+            ))}
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }

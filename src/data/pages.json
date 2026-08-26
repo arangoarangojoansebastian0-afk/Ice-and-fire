@@ -3,139 +3,182 @@
     {
       "name": "Investigación",
       "slug": "investigacion",
-      "description": "Pregunta, objetivos, antecedentes y metodología.",
+      "description": "Todo el contenido científico y de desarrollo del proyecto.",
       "visible": true,
       "inMenu": true,
-      "order": 10,
-      "type": "group",
+      "order": 20,
+      "type": "section",
+      "sections": [
+        {
+          "id": "problem",
+          "label": "Problemática",
+          "section": "Problem",
+          "visible": true,
+          "order": 10
+        },
+        {
+          "id": "research",
+          "label": "Investigación científica",
+          "section": "Research",
+          "visible": true,
+          "order": 20
+        },
+        {
+          "id": "antecedents",
+          "label": "Antecedentes",
+          "section": "Antecedents",
+          "visible": true,
+          "order": 30
+        },
+        {
+          "id": "methodology",
+          "label": "Metodología",
+          "section": "Methodology",
+          "visible": true,
+          "order": 40
+        },
+        {
+          "id": "spray",
+          "label": "Spray Fire",
+          "section": "Spray",
+          "visible": true,
+          "order": 50
+        },
+        {
+          "id": "game",
+          "label": "Videojuego",
+          "section": "Game",
+          "visible": true,
+          "order": 60
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "name": "STEAM+H",
+      "slug": "steam-h",
+      "description": "Integración de ciencia, tecnología, ingeniería, artes, matemáticas y humanidades.",
+      "visible": true,
+      "inMenu": true,
+      "order": 30,
+      "type": "section",
+      "sections": [
+        {
+          "id": "steam",
+          "label": "STEAM+H",
+          "section": "Steam",
+          "visible": true,
+          "order": 10
+        }
+      ],
       "blocks": []
     },
     {
       "name": "Equipo",
       "slug": "equipo",
-      "description": "Integrantes y perfiles individuales.",
+      "description": "Integrantes, historia, cronograma y contenido multimedia del equipo.",
       "visible": true,
       "inMenu": true,
-      "order": 20,
-      "type": "group",
+      "order": 10,
+      "type": "section",
+      "sections": [
+        {
+          "id": "team",
+          "label": "Integrantes",
+          "section": "Team",
+          "visible": true,
+          "order": 10
+        },
+        {
+          "id": "history",
+          "label": "Historia",
+          "section": "History",
+          "visible": true,
+          "order": 20
+        },
+        {
+          "id": "schedule",
+          "label": "Cronograma",
+          "section": "Schedule",
+          "visible": true,
+          "order": 30
+        },
+        {
+          "id": "timeline",
+          "label": "Línea de tiempo",
+          "section": "Timeline",
+          "visible": true,
+          "order": 40
+        },
+        {
+          "id": "multimedia",
+          "label": "Videos",
+          "section": "Videos",
+          "visible": true,
+          "order": 50
+        },
+        {
+          "id": "gallery",
+          "label": "Galería",
+          "section": "Gallery",
+          "visible": true,
+          "order": 60
+        },
+        {
+          "id": "poster",
+          "label": "Póster",
+          "section": "Poster",
+          "visible": true,
+          "order": 70
+        }
+      ],
       "blocks": []
     },
     {
-      "inMenu": true,
-      "section": "Problem",
-      "blocks": [],
-      "parent": "investigacion",
-      "name": "Problemática",
-      "slug": "problematica",
-      "order": 10,
-      "visible": true,
-      "type": "section",
-      "description": "Problemática global, nacional y local."
-    },
-    {
-      "inMenu": true,
-      "section": "Research",
-      "blocks": [],
-      "parent": "investigacion",
-      "name": "Investigación",
-      "slug": "investigacion-contenido",
-      "order": 20,
-      "visible": true,
-      "type": "section",
-      "description": "Pregunta, objetivos, antecedentes y metodología."
-    },
-    {
-      "inMenu": true,
-      "section": "Spray",
-      "blocks": [],
-      "parent": "investigacion",
-      "name": "Spray Fire",
-      "slug": "spray-fire",
-      "order": 30,
-      "visible": true,
-      "type": "section",
-      "description": "La solución física y científica del proyecto."
-    },
-    {
-      "inMenu": true,
-      "section": "Game",
-      "blocks": [],
-      "parent": "investigacion",
-      "name": "Videojuego",
-      "slug": "videojuego",
-      "order": 40,
-      "visible": true,
-      "type": "section",
-      "description": "Llamas en el Bosque."
-    },
-    {
-      "inMenu": true,
-      "blocks": [],
-      "parent": "investigacion",
       "name": "Bibliografía",
       "slug": "bibliografia",
-      "order": 50,
+      "description": "Fuentes y referencias del proyecto.",
       "visible": true,
+      "inMenu": true,
+      "order": 90,
       "type": "blocks",
-      "description": "Fuentes y referencias del proyecto."
+      "sections": [],
+      "blocks": []
     },
     {
-      "inMenu": true,
-      "section": "Schedule",
-      "blocks": [],
-      "parent": "equipo",
-      "name": "Cronograma",
-      "slug": "cronograma",
-      "order": 10,
+      "name": "Spray Fire",
+      "slug": "spray-fire",
+      "description": "La solución física y científica del proyecto.",
       "visible": true,
-      "type": "section",
-      "description": "Actividades, responsables y entregables."
-    },
-    {
       "inMenu": true,
-      "section": "History",
-      "blocks": [],
-      "parent": "equipo",
-      "name": "Historia",
-      "slug": "historia",
-      "order": 20,
-      "visible": true,
-      "type": "section",
-      "description": "Historia y evolución del equipo."
-    },
-    {
-      "inMenu": true,
-      "blocks": [],
-      "parent": "equipo",
-      "name": "Multimedia",
-      "slug": "multimedia",
-      "order": 30,
-      "visible": true,
-      "type": "blocks",
-      "description": "Videos, fotografías y material visual."
-    },
-    {
-      "inMenu": true,
-      "section": null,
-      "blocks": [],
-      "parent": "equipo",
-      "name": "Integrantes",
-      "slug": "integrantes",
       "order": 40,
-      "visible": true,
-      "type": "team",
-      "description": "Conoce a los integrantes del equipo."
+      "type": "section",
+      "section": "Spray",
+      "sections": [],
+      "blocks": []
     },
     {
-      "inMenu": true,
-      "section": "Steam",
-      "blocks": [],
-      "name": "STEAM+H",
-      "slug": "steam-h",
-      "order": 60,
+      "name": "Videojuego",
+      "slug": "videojuego",
+      "description": "Llamas en el Bosque.",
       "visible": true,
+      "inMenu": true,
+      "order": 50,
       "type": "section",
-      "description": "Integración de ciencia, tecnología, ingeniería, artes, matemáticas y humanidades."
+      "section": "Game",
+      "sections": [],
+      "blocks": []
+    },
+    {
+      "name": "Inicio",
+      "slug": "inicio",
+      "description": "Contenido de la página principal.",
+      "visible": false,
+      "inMenu": false,
+      "order": 0,
+      "type": "blocks",
+      "sections": [],
+      "blocks": []
     }
   ]
 }
