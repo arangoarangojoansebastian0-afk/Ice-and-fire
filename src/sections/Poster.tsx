@@ -1,11 +1,7 @@
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
 import { FileImage } from "lucide-react";
-
-// TODO(Joan): reemplazar este arreglo vacío con las rutas reales del póster
-// (ej. "/images/poster/poster-1.jpg") en cuanto subas el archivo del póster
-// científico a public/images/poster/.
-const posterImages: string[] = [];
+import { posterImages } from "../data/content";
 
 export default function Poster() {
   return (
@@ -23,15 +19,8 @@ export default function Poster() {
             <div className="mt-12 flex flex-col items-center gap-4 rounded-2xl border border-dashed border-white/15 bg-white/[0.02] px-8 py-20 text-center">
               <FileImage size={32} className="text-ink-faint" />
               <p className="max-w-sm text-sm text-ink-muted">
-                El póster todavía no se ha cargado en este sitio. Súbelo en{" "}
-                <code className="rounded bg-white/10 px-1.5 py-0.5 text-xs">
-                  public/images/poster/
-                </code>{" "}
-                y añade su ruta en{" "}
-                <code className="rounded bg-white/10 px-1.5 py-0.5 text-xs">
-                  src/sections/Poster.tsx
-                </code>
-                .
+                El póster todavía no se ha cargado. Súbelo desde el CMS, en la
+                sección “Contenido del proyecto → Póster científico”.
               </p>
             </div>
           ) : (

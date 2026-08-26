@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowDown } from "lucide-react";
+import content from "../data/content.json";
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -10,6 +11,12 @@ export default function Hero() {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
+  // Load from CMS content with fallback
+  const heroData = content.home || {
+    title: "Ice and Fire",
+    description: "Un spray ignífugo natural y un videojuego educativo, creados por cinco estudiantes de 8° para frenar los incendios forestales en Medellín antes de que empiecen.",
+  };
 
   return (
     <section
@@ -42,13 +49,19 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="max-w-4xl text-balance font-display text-6xl font-semibold leading-[0.95] tracking-tight text-ink sm:text-7xl lg:text-8xl"
         >
-          <span className="bg-gradient-to-r from-ice-300 to-ice-500 bg-clip-text text-transparent">
-            Ice
-          </span>{" "}
-          and{" "}
-          <span className="bg-gradient-to-r from-fire-300 to-fire-500 bg-clip-text text-transparent">
-            Fire
-          </span>
+          {heroData.title === "Ice and Fire" ? (
+            <>
+              <span className="bg-gradient-to-r from-ice-300 to-ice-500 bg-clip-text text-transparent">
+                Ice
+              </span>{" "}
+              and{" "}
+              <span className="bg-gradient-to-r from-fire-300 to-fire-500 bg-clip-text text-transparent">
+                Fire
+              </span>
+            </>
+          ) : (
+            heroData.title
+          )}
         </motion.h1>
 
         <motion.p
@@ -57,9 +70,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="max-w-xl text-balance text-lg text-ink-muted sm:text-xl"
         >
-          Un spray ignífugo natural y un videojuego educativo, creados por
-          cinco estudiantes de 8° para frenar los incendios forestales en
-          Medellín antes de que empiecen.
+          {heroData.description}
         </motion.p>
 
         <motion.div

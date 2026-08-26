@@ -3,19 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import pagesData from "../data/pages.json";
 import content from "../data/content.json";
-
-type Page = {
-  name: string;
-  slug: string;
-  description?: string;
-  visible: boolean;
-  inMenu: boolean;
-  order: number;
-  type: string;
-  section?: string;
-  blocks?: unknown[];
-  parent?: string;
-};
+import type { Page } from "../types/cms";
 
 export default function CmsNavigation() {
   const location = useLocation();
@@ -26,7 +14,7 @@ export default function CmsNavigation() {
   const groups = pages
     .filter(
       (page) =>
-        page.type === "group" &&
+        page.type === "section" &&  // Cambiado de "group" a "section"
         page.visible &&
         page.inMenu
     )
@@ -35,7 +23,7 @@ export default function CmsNavigation() {
   const standalonePages = pages
     .filter(
       (page) =>
-        page.type !== "group" &&
+        page.type !== "section" &&  // Cambiado de "group" a "section"
         !page.parent &&
         page.visible &&
         page.inMenu
@@ -57,7 +45,7 @@ export default function CmsNavigation() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-7xl items-center gap-6 px-5 py-3">
+      <nav className="mx-auto flex max-w-7xl items-center gap-4 overflow-x-auto px-5 py-3">
         
         {/* LOGO */}
         <Link
@@ -78,7 +66,7 @@ export default function CmsNavigation() {
         </Link>
 
         {/* MENÚ */}
-        <div className="flex flex-1 items-center gap-2">
+        <div className="flex min-w-max flex-1 items-center gap-2">
           
           {standalonePages.map((page) => (
             <Link

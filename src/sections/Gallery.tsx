@@ -2,38 +2,36 @@ import { useEffect, useRef, useState } from "react";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-
-const photos = [
-  "/images/equipo/galeria-1.jpg",
-  "/images/equipo/galeria-2.jpg",
-  "/images/equipo/galeria-3.jpg",
-  "/images/equipo/miembro-1.jpg",
-  "/images/equipo/miembro-2.jpg",
-  "/images/equipo/miembro-3.jpg",
-  "/images/equipo/miembro-4.jpg",
-  "/images/equipo/miembro-5.jpg",
-];
+import { gallery } from "../data/content";
 
 export default function Gallery() {
   const [index, setIndex] = useState(0);
   const [lightbox, setLightbox] = useState(false);
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
+  const photos = gallery;
 
   function next() {
-    setIndex((i) => (i + 1) % photos.length);
+    setIndex((i) => (photos.length ? (i + 1) % photos.length : 0));
   }
+
   function prev() {
-    setIndex((i) => (i - 1 + photos.length) % photos.length);
+    setIndex((i) => (photos.length ? (i - 1 + photos.length) % photos.length : 0));
   }
 
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced || lightbox) return;
-    timer.current = setInterval(next, 4500);
+    if (reduced || lightbox || photos.length === 0) return;
+    timer.current = setInterval(() => {
+      setIndex((current) => (current + 1) % photos.length);
+    }, 4500);
     return () => {
       if (timer.current) clearInterval(timer.current);
     };
-  }, [lightbox]);
+  }, [lightbox, photos.length]);
+
+  if (photos.length === 0) {
+    return null;
+  }
 
   return (
     <section id="galeria" className="relative bg-void-2 px-6 py-28 lg:px-10">

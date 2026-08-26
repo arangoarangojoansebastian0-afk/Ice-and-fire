@@ -20,28 +20,26 @@ export default function Footer() {
           <div>
             <p className="mb-3 font-semibold text-ink">Proyecto</p>
             <ul className="space-y-2 text-ink-muted">
-              <li><a href="/#historia" className="hover:text-ink">Historia</a></li>
-              <li><a href="/#investigacion" className="hover:text-ink">Investigación</a></li>
-              <li><a href="/#antecedentes" className="hover:text-ink">Antecedentes</a></li>
-              <li><a href="/#spray" className="hover:text-ink">Spray Fire</a></li>
-              <li><a href="/#videojuego" className="hover:text-ink">Videojuego</a></li>
+              <li><Link to="/investigacion" className="hover:text-ink">Investigación</Link></li>
+              <li><Link to="/investigacion#antecedentes" className="hover:text-ink">Antecedentes</Link></li>
+              <li><Link to="/spray-fire" className="hover:text-ink">Spray Fire</Link></li>
+              <li><Link to="/videojuego" className="hover:text-ink">Videojuego</Link></li>
             </ul>
           </div>
           <div>
             <p className="mb-3 font-semibold text-ink">Equipo</p>
             <ul className="space-y-2 text-ink-muted">
-              <li><a href="/#equipo" className="hover:text-ink">Quiénes somos</a></li>
-              <li><a href="/#videos" className="hover:text-ink">Videos</a></li>
-              <li><a href="/#bitacoras" className="hover:text-ink">Bitácoras</a></li>
-              <li><a href="/#cronograma" className="hover:text-ink">Cronograma</a></li>
-              <li><a href="/#poster" className="hover:text-ink">Póster</a></li>
+              <li><Link to="/equipo" className="hover:text-ink">Quiénes somos</Link></li>
+              <li><Link to="/equipo#videos" className="hover:text-ink">Videos</Link></li>
+              <li><Link to="/equipo#bitacoras" className="hover:text-ink">Bitácoras</Link></li>
+              <li><Link to="/equipo#cronograma" className="hover:text-ink">Cronograma</Link></li>
+              <li><Link to="/equipo#poster" className="hover:text-ink">Póster</Link></li>
             </ul>
           </div>
           <div>
             <p className="mb-3 font-semibold text-ink">Contacto</p>
             <ul className="space-y-2 text-ink-muted">
-              <li><a href="/#contacto" className="hover:text-ink">Escríbenos</a></li>
-              <li><a href="/#galeria" className="hover:text-ink">Galería</a></li>
+              <li><Link to="/equipo#galeria" className="hover:text-ink">Galería</Link></li>
             </ul>
           </div>
           <div>

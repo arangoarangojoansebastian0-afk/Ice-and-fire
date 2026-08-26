@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import pagesData from "../data/pages.json";
 import CmsBlockRenderer from "../components/CmsBlockRenderer";
+import NotFound from "./NotFound";
 
 import Problem from "../sections/Problem";
 import History from "../sections/History";
@@ -18,44 +20,57 @@ import Gallery from "../sections/Gallery";
 import Team from "../sections/Team";
 import Poster from "../sections/Poster";
 import Contact from "../sections/Contact";
+import Hero from "../sections/Hero";
 
-const sections: Record<string, React.ComponentType> = {
-  Problem, History, Journey, Research, Antecedents, Methodology, Spray,
-  Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact
-};
+import type { Page, PageSection, SectionType } from "../types/cms";
 
-type PageSection = {
-  id?: string;
-  section?: string;
-  label?: string;
-  visible?: boolean;
-  order?: number;
+const sections: Record<SectionType, React.ComponentType> = {
+  Problem,
+  History,
+  Journey,
+  Research,
+  Antecedents,
+  Methodology,
+  Spray,
+  Game,
+  Steam,
+  Schedule,
+  Timeline,
+  Videos,
+  Gallery,
+  Team,
+  Poster,
+  Contact,
+  Hero,
 };
 
 export default function CmsSectionPage() {
   const { slug } = useParams();
-  const page = pagesData.pages.find((p) => p.slug === slug);
+  const pages = pagesData.pages as Page[];
+  const page = pages.find((p) => p.slug === slug);
+
+  const externalUrl =
+    page?.type === "external" &&
+    page.externalUrl
+      ? page.externalUrl.trim()
+      : "";
+
+  useEffect(() => {
+    if (externalUrl) {
+      window.location.assign(externalUrl);
+    }
+  }, [externalUrl]);
 
   if (!page || !page.visible) {
-    return (
-      <div className="mx-auto max-w-4xl px-6 py-32 text-center">
-        <h1 className="text-4xl font-bold">Página no encontrada</h1>
-      </div>
-    );
+    return <NotFound />;
   }
 
-  if (
-    page.type === "external" &&
-    "externalUrl" in page &&
-    typeof page.externalUrl === "string" &&
-    page.externalUrl.trim()
-  ) {
-    window.location.href = page.externalUrl;
-    return null;
+  if (externalUrl) {
+    return <p className="px-6 py-32 text-center text-ink-muted">Redirigiendo…</p>;
   }
 
   const configuredSections: PageSection[] =
-    "sections" in page && Array.isArray(page.sections)
+    page.sections && Array.isArray(page.sections)
       ? page.sections
       : page.section
         ? [{ section: page.section, visible: true, order: 0 }]
@@ -76,9 +91,13 @@ export default function CmsSectionPage() {
 
       <div className="space-y-20">
         {orderedSections.map((item, index) => {
+          // Safe lookup for components. If section type is unknown, ignore it safely.
           const Section = item.section ? sections[item.section] : undefined;
 
-          if (!Section) return null;
+          if (!Section) {
+            console.warn(`Sección desconocida: ${item.section}`);
+            return null;
+          }
 
           return (
             <div key={`${item.section}-${item.id ?? index}`}>
@@ -90,7 +109,7 @@ export default function CmsSectionPage() {
           );
         })}
 
-        {"blocks" in page && Array.isArray(page.blocks) && page.blocks.length > 0 ? (
+        {page.blocks && Array.isArray(page.blocks) && page.blocks.length > 0 ? (
           <div className="space-y-12">
             {page.blocks.map((block, index) => (
               <CmsBlockRenderer key={index} block={block} />

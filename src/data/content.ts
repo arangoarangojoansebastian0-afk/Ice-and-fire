@@ -28,3 +28,5 @@ export const sprayAdvantages = content.sprayAdvantages;
 export const sprayLimitations = content.sprayLimitations;
 export const gamePurpose = content.gamePurpose;
 export const evolutionStory = content.evolutionStory;
+export const gallery = content.gallery;
+export const posterImages = content.posterImages;
