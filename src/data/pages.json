@@ -1,0 +1,111 @@
+{
+  "pages": [
+    {
+      "name": "Problemática",
+      "slug": "problematica",
+      "description": "Problemática global, nacional y local.",
+      "visible": true,
+      "inMenu": true,
+      "order": 20,
+      "type": "section",
+      "section": "Problem",
+      "blocks": []
+    },
+    {
+      "name": "Investigación",
+      "slug": "investigacion",
+      "description": "Pregunta, objetivos, antecedentes y metodología.",
+      "visible": true,
+      "inMenu": true,
+      "order": 30,
+      "type": "section",
+      "section": "Research",
+      "blocks": []
+    },
+    {
+      "name": "Spray Fire",
+      "slug": "spray-fire",
+      "description": "La solución física y científica del proyecto.",
+      "visible": true,
+      "inMenu": true,
+      "order": 40,
+      "type": "section",
+      "section": "Spray",
+      "blocks": []
+    },
+    {
+      "name": "Videojuego",
+      "slug": "videojuego",
+      "description": "Llamas en el Bosque.",
+      "visible": true,
+      "inMenu": true,
+      "order": 50,
+      "type": "section",
+      "section": "Game",
+      "blocks": []
+    },
+    {
+      "name": "STEAM+H",
+      "slug": "steam-h",
+      "description": "Integración de ciencia, tecnología, ingeniería, artes, matemáticas y humanidades.",
+      "visible": true,
+      "inMenu": true,
+      "order": 60,
+      "type": "section",
+      "section": "Steam",
+      "blocks": []
+    },
+    {
+      "name": "Cronograma",
+      "slug": "cronograma",
+      "description": "Actividades, responsables y entregables.",
+      "visible": true,
+      "inMenu": true,
+      "order": 70,
+      "type": "section",
+      "section": "Schedule",
+      "blocks": []
+    },
+    {
+      "name": "Historia",
+      "slug": "historia",
+      "description": "Historia y evolución del equipo.",
+      "visible": true,
+      "inMenu": true,
+      "order": 80,
+      "type": "section",
+      "section": "History",
+      "blocks": []
+    },
+    {
+      "name": "Multimedia",
+      "slug": "multimedia",
+      "description": "Videos, fotografías y material visual.",
+      "visible": true,
+      "inMenu": true,
+      "order": 90,
+      "type": "blocks",
+      "blocks": []
+    },
+    {
+      "name": "Equipo",
+      "slug": "equipo",
+      "description": "Integrantes y perfiles individuales.",
+      "visible": true,
+      "inMenu": true,
+      "order": 10,
+      "type": "team",
+      "blocks": []
+    },
+    {
+      "name": "Bibliografía",
+      "slug": "bibliografia",
+      "description": "Fuentes y referencias del proyecto.",
+      "visible": true,
+      "inMenu": true,
+      "order": 100,
+      "type": "blocks",
+      "blocks": []
+    }
+  ]
+}

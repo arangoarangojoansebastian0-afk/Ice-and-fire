@@ -1,43 +1,17 @@
 import { Link, useParams } from "react-router-dom";
 import content from "../data/content.json";
 
+function slugify(name: string) {
+  return name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-");
+}
+
 export default function TeamMember() {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams();
+  const member = content.team.find((p) => slugify(p.name) === id);
 
-  const member = content.team.find((person) => {
-    const personId = person.name
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/\s+/g, "-");
+  if (!member) return <div className="px-6 py-32 text-center"><h1 className="text-4xl font-bold">Integrante no encontrado</h1><Link className="mt-6 inline-block" to="/equipo">← Volver al equipo</Link></div>;
 
-    return personId === id;
-  });
-
-  if (!member) {
-    return (
-      <section className="min-h-screen flex items-center justify-center px-6">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">
-            Integrante no encontrado
-          </h1>
-
-          <p className="mb-6">
-            El perfil que buscas no existe.
-          </p>
-
-          <Link
-            to="/"
-            className="inline-block px-6 py-3 rounded-lg"
-          >
-            Volver al inicio
-          </Link>
-        </div>
-      </section>
-    );
-  }
-
-  const extendedMember = member as typeof member & {
+  const extra = member as typeof member & {
     biography?: string;
     autobiography?: string;
     function?: string;
@@ -45,108 +19,22 @@ export default function TeamMember() {
     gallery?: string[];
   };
 
-  const biography =
-    extendedMember.biography ||
-    extendedMember.autobiography ||
-    member.blurb;
-
   return (
-    <section className="min-h-screen py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-
-        <Link
-          to="/"
-          className="inline-block mb-10 opacity-70 hover:opacity-100"
-        >
-          ← Volver al equipo
-        </Link>
-
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-
-          <div>
-            {member.photo && (
-              <img
-                src={member.photo}
-                alt={member.name}
-                className="w-full max-w-md mx-auto rounded-2xl object-cover"
-              />
-            )}
-          </div>
-
-          <div>
-            <p className="text-sm uppercase tracking-widest opacity-60 mb-2">
-              {member.role}
-            </p>
-
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {member.name}
-            </h1>
-
-            <h2 className="text-2xl font-semibold mb-3">
-              Función
-            </h2>
-
-            <p className="leading-relaxed opacity-80">
-              {extendedMember.function || member.blurb}
-            </p>
-          </div>
-
+    <section className="mx-auto max-w-6xl px-6 py-20">
+      <Link to="/equipo" className="opacity-70 hover:opacity-100">← Volver al equipo</Link>
+      <div className="mt-10 grid gap-12 md:grid-cols-2">
+        <div>{member.photo && <img src={member.photo} alt={member.name} className="w-full rounded-3xl object-cover" />}</div>
+        <div>
+          <p className="text-sm uppercase tracking-widest opacity-60">{member.role}</p>
+          <h1 className="mt-2 text-5xl font-bold">{member.name}</h1>
+          <h2 className="mt-10 text-2xl font-bold">Función</h2>
+          <p className="mt-3 whitespace-pre-line opacity-80">{extra.function || member.blurb}</p>
+          <h2 className="mt-10 text-2xl font-bold">Autobiografía</h2>
+          <p className="mt-3 whitespace-pre-line opacity-80">{extra.biography || extra.autobiography || member.blurb}</p>
         </div>
-
-        <div className="mt-16 max-w-4xl">
-
-          <h2 className="text-3xl font-bold mb-5">
-            Autobiografía
-          </h2>
-
-          <p className="leading-relaxed whitespace-pre-line opacity-80">
-            {biography}
-          </p>
-
-        </div>
-
-        {extendedMember.video && (
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold mb-6">
-              Video
-            </h2>
-
-            <div className="aspect-video w-full max-w-4xl">
-              <iframe
-                className="w-full h-full rounded-2xl"
-                src={extendedMember.video}
-                title={`Video de ${member.name}`}
-                allowFullScreen
-              />
-            </div>
-          </div>
-        )}
-
-        {extendedMember.gallery &&
-          extendedMember.gallery.length > 0 && (
-            <div className="mt-16">
-
-              <h2 className="text-3xl font-bold mb-6">
-                Galería
-              </h2>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {extendedMember.gallery.map(
-                  (image, index) => (
-                    <img
-                      key={`${image}-${index}`}
-                      src={image}
-                      alt={`${member.name} ${index + 1}`}
-                      className="w-full aspect-square object-cover rounded-xl"
-                    />
-                  )
-                )}
-              </div>
-
-            </div>
-          )}
-
       </div>
+      {extra.video && <div className="mt-16"><h2 className="mb-5 text-3xl font-bold">Video</h2><div className="aspect-video"><iframe className="h-full w-full rounded-2xl" src={extra.video.includes("youtube") ? extra.video.replace("watch?v=", "embed/") : extra.video} title={member.name} allowFullScreen /></div></div>}
+      {extra.gallery?.length ? <div className="mt-16"><h2 className="mb-6 text-3xl font-bold">Galería</h2><div className="grid grid-cols-2 md:grid-cols-4 gap-4">{extra.gallery.map((src, i) => <img key={i} src={src} alt="" className="aspect-square rounded-xl object-cover" />)}</div></div> : null}
     </section>
   );
 }
