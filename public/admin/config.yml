@@ -1,250 +1,281 @@
 local_backend: true
+
 backend:
   name: github
-  repo: TU_USUARIO/TU_REPOSITORIO
+  repo: arangoarangojoansebastian0-afk/Ice-and-fire
   branch: main
-  base_url: https://api.github.com
-  auth_endpoint: auth
+  base_url: https://iceandfire-psi.vercel.app
+  auth_endpoint: api/auth
+  api_root: https://api.github.com
+
 media_folder: public/images/uploads
 public_folder: /images/uploads
-site_url: https://TU_DOMINIO.com
-display_url: https://TU_DOMINIO.com
+
+site_url: https://iceandfire-psi.vercel.app
+display_url: https://iceandfire-psi.vercel.app
+
 locale: es
+
 slug:
   encoding: unicode
   clean_accents: true
+
 collections:
-- name: site_content
-  label: Contenido del sitio
-  description: Edita textos, equipo, cronograma, videos, imágenes y contenido del proyecto sin tocar código.
-  files:
-  - name: content
-    label: Contenido de Ice and Fire
-    file: src/data/content.json
-    format: json
-    fields:
-    - name: team
-      label: Equipo
-      widget: list
-      fields:
-      - name: name
-        label: Nombre
-        widget: string
-      - name: role
-        label: Rol
-        widget: string
-      - name: photo
-        label: Foto
-        widget: image
-        required: false
-      - name: blurb
-        label: Descripción
-        widget: text
-    - name: contextTiers
-      label: Contexto
-      widget: list
-      fields:
-      - name: scope
-        label: Alcance
-        widget: string
-      - name: text
-        label: Texto
-        widget: text
-      - name: source
-        label: Fuente
-        widget: string
-    - name: bigNumbers
-      label: Cifras destacadas
-      widget: list
-      fields:
-      - name: value
-        label: Cifra
-        widget: string
-      - name: label
-        label: Descripción
-        widget: text
-      - name: source
-        label: Fuente
-        widget: string
-    - name: causes
-      label: Causas
-      widget: list
-    - name: consequences
-      label: Consecuencias
-      widget: list
-      fields:
-      - name: title
-        label: Título
-        widget: string
-      - name: text
-        label: Texto
-        widget: text
-      - name: source
-        label: Fuente
-        widget: string
-    - name: ideasConsidered
-      label: Ideas consideradas
-      widget: list
-      fields:
-      - name: name
-        label: Nombre
-        widget: string
-      - name: note
-        label: Descripción
-        widget: text
-      - name: chosen
-        label: Elegida
-        widget: boolean
-        default: false
-    - name: researchQuestion
-      label: Pregunta de investigación
-      widget: text
-    - name: generalObjective
-      label: Objetivo general
-      widget: text
-    - name: references
-      label: Bibliografía
-      widget: list
-    - name: references
-      label: Bibliografía
-      widget: list
-      fields: ''
-    - name: teamHistory
-      label: Historia del equipo
-      widget: list
-      fields:
-      - name: title
-        label: Título
-        widget: string
-      - name: text
-        label: Texto
-        widget: text
-    - name: videos
-      label: Videos
-      widget: list
-      fields:
-      - name: title
-        label: Título
-        widget: string
-      - name: youtubeId
-        label: ID de YouTube
-        widget: string
-    - name: schedule
-      label: Cronograma
-      widget: list
-      fields:
-      - name: date
-        label: Fecha
-        widget: string
-      - name: phase
-        label: Fase
-        widget: string
-      - name: activity
-        label: Actividad
-        widget: text
-      - name: deliverable
-        label: Entregable
-        widget: text
-      - name: owner
-        label: Responsable
-        widget: string
-    - name: antecedents
-      label: Antecedentes
-      widget: list
-      fields:
-      - name: author
-        label: Autor / fuente
-        widget: string
-      - name: note
-        label: Hallazgo
-        widget: text
-    - name: methodologyPhaseA
-      label: Metodología — Spray
-      widget: list
-      fields:
-      - name: step
-        label: Paso
-        widget: string
-      - name: detail
-        label: Detalle
-        widget: text
-    - name: methodologyPhaseB
-      label: Metodología — Videojuego
-      widget: list
-      fields:
-      - name: step
-        label: Paso
-        widget: string
-      - name: detail
-        label: Detalle
-        widget: text
-    - name: sprayIngredients
-      label: Ingredientes del spray
-      widget: list
-    - name: gameLevels
-      label: Niveles del videojuego
-      widget: list
-      fields:
-      - name: name
-        label: Nombre
-        widget: string
-      - name: desc
-        label: Descripción
-        widget: text
-    - name: gameMechanics
-      label: Mecánicas del videojuego
-      widget: list
-    - name: steam
-      label: STEAM+H
-      widget: list
-      fields:
-      - name: letter
-        label: Letra
-        widget: string
-      - name: word
-        label: Nombre en inglés
-        widget: string
-      - name: es
-        label: Nombre en español
-        widget: string
-      - name: text
-        label: Descripción
-        widget: text
-    - name: timeline
-      label: Línea de tiempo
-      widget: list
-      fields:
-      - name: month
-        label: Mes
-        widget: string
-      - name: text
-        label: Texto
-        widget: text
-    - name: steamHIntro
-      label: Introducción STEAM+H
-      widget: text
-    - name: sprayWhy
-      label: ¿Por qué Spray Fire?
-      widget: text
-    - name: sprayHow
-      label: ¿Cómo funciona?
-      widget: text
-    - name: sprayAdvantages
-      label: Ventajas
-      widget: list
-    - name: sprayLimitations
-      label: Limitaciones
-      widget: list
-    - name: gamePurpose
-      label: Propósito del videojuego
-      widget: text
-    - name: evolutionStory
-      label: Evolución del proyecto
-      widget: list
-      fields:
-      - name: title
-        label: Título
-        widget: string
-      - name: text
-        label: Texto
-        widget: text
+  - name: site_content
+    label: Contenido del sitio
+    description: Edita textos, equipo, cronograma, videos, imágenes y contenido del proyecto sin tocar código.
+
+    files:
+      - name: content
+        label: Contenido de Ice and Fire
+        file: src/data/content.json
+        format: json
+
+        fields:
+          - name: team
+            label: Equipo
+            widget: list
+            fields:
+              - name: name
+                label: Nombre
+                widget: string
+              - name: role
+                label: Rol
+                widget: string
+              - name: photo
+                label: Foto
+                widget: image
+                required: false
+              - name: blurb
+                label: Descripción
+                widget: text
+
+          - name: contextTiers
+            label: Contexto
+            widget: list
+            fields:
+              - name: scope
+                label: Alcance
+                widget: string
+              - name: text
+                label: Texto
+                widget: text
+              - name: source
+                label: Fuente
+                widget: string
+
+          - name: bigNumbers
+            label: Cifras destacadas
+            widget: list
+            fields:
+              - name: value
+                label: Cifra
+                widget: string
+              - name: label
+                label: Descripción
+                widget: text
+              - name: source
+                label: Fuente
+                widget: string
+
+          - name: causes
+            label: Causas
+            widget: list
+
+          - name: consequences
+            label: Consecuencias
+            widget: list
+            fields:
+              - name: title
+                label: Título
+                widget: string
+              - name: text
+                label: Texto
+                widget: text
+              - name: source
+                label: Fuente
+                widget: string
+
+          - name: ideasConsidered
+            label: Ideas consideradas
+            widget: list
+            fields:
+              - name: name
+                label: Nombre
+                widget: string
+              - name: note
+                label: Descripción
+                widget: text
+              - name: chosen
+                label: Elegida
+                widget: boolean
+                default: false
+
+          - name: researchQuestion
+            label: Pregunta de investigación
+            widget: text
+
+          - name: generalObjective
+            label: Objetivo general
+            widget: text
+
+          - name: references
+            label: Bibliografía
+            widget: list
+
+          - name: teamHistory
+            label: Historia del equipo
+            widget: list
+            fields:
+              - name: title
+                label: Título
+                widget: string
+              - name: text
+                label: Texto
+                widget: text
+
+          - name: videos
+            label: Videos
+            widget: list
+            fields:
+              - name: title
+                label: Título
+                widget: string
+              - name: youtubeId
+                label: ID de YouTube
+                widget: string
+
+          - name: schedule
+            label: Cronograma
+            widget: list
+            fields:
+              - name: date
+                label: Fecha
+                widget: string
+              - name: phase
+                label: Fase
+                widget: string
+              - name: activity
+                label: Actividad
+                widget: text
+              - name: deliverable
+                label: Entregable
+                widget: text
+              - name: owner
+                label: Responsable
+                widget: string
+
+          - name: antecedents
+            label: Antecedentes
+            widget: list
+            fields:
+              - name: author
+                label: Autor / fuente
+                widget: string
+              - name: note
+                label: Hallazgo
+                widget: text
+
+          - name: methodologyPhaseA
+            label: Metodología — Spray
+            widget: list
+            fields:
+              - name: step
+                label: Paso
+                widget: string
+              - name: detail
+                label: Detalle
+                widget: text
+
+          - name: methodologyPhaseB
+            label: Metodología — Videojuego
+            widget: list
+            fields:
+              - name: step
+                label: Paso
+                widget: string
+              - name: detail
+                label: Detalle
+                widget: text
+
+          - name: sprayIngredients
+            label: Ingredientes del spray
+            widget: list
+
+          - name: gameLevels
+            label: Niveles del videojuego
+            widget: list
+            fields:
+              - name: name
+                label: Nombre
+                widget: string
+              - name: desc
+                label: Descripción
+                widget: text
+
+          - name: gameMechanics
+            label: Mecánicas del videojuego
+            widget: list
+
+          - name: steam
+            label: STEAM+H
+            widget: list
+            fields:
+              - name: letter
+                label: Letra
+                widget: string
+              - name: word
+                label: Nombre en inglés
+                widget: string
+              - name: es
+                label: Nombre en español
+                widget: string
+              - name: text
+                label: Descripción
+                widget: text
+
+          - name: timeline
+            label: Línea de tiempo
+            widget: list
+            fields:
+              - name: month
+                label: Mes
+                widget: string
+              - name: text
+                label: Texto
+                widget: text
+
+          - name: steamHIntro
+            label: Introducción STEAM+H
+            widget: text
+
+          - name: sprayWhy
+            label: ¿Por qué Spray Fire?
+            widget: text
+
+          - name: sprayHow
+            label: ¿Cómo funciona?
+            widget: text
+
+          - name: sprayAdvantages
+            label: Ventajas
+            widget: list
+
+          - name: sprayLimitations
+            label: Limitaciones
+            widget: list
+
+          - name: gamePurpose
+            label: Propósito del videojuego
+            widget: text
+
+          - name: evolutionStory
+            label: Evolución del proyecto
+            widget: list
+            fields:
+              - name: title
+                label: Título
+                widget: string
+              - name: text
+                label: Texto
+                widget: text
