@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import content from "./data/content.json";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./sections/Hero";
@@ -18,11 +19,14 @@ import Gallery from "./sections/Gallery";
 import Team from "./sections/Team";
 import Poster from "./sections/Poster";
 import Contact from "./sections/Contact";
+import TeamMember from "./pages/TeamMember";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
 function Home() {
+  const site = content.site || ({} as any);
+
   return (
     <>
       <Hero />
@@ -36,12 +40,12 @@ function Home() {
       <Game />
       <Steam />
       <Schedule />
-      <Timeline />
-      <Videos />
-      <Gallery />
-      <Team />
-      <Poster />
-      <Contact />
+      {site.showTimeline !== false && <Timeline />}
+      {site.showVideos !== false && <Videos />}
+      {site.showGallery !== false && <Gallery />}
+      {site.showTeam !== false && <Team />}
+      {site.showPoster !== false && <Poster />}
+      {site.showContact !== false && <Contact />}
     </>
   );
 }
@@ -53,6 +57,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/equipo/:id" element={<TeamMember />} />
           <Route path="/privacidad" element={<Privacy />} />
           <Route path="/terminos" element={<Terms />} />
           <Route path="*" element={<NotFound />} />

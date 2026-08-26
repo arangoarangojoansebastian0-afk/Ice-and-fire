@@ -1,4 +1,21 @@
 {
+  
+  "site": {
+    "name": "Ice and Fire",
+    "shortName": "Ice and Fire",
+    "description": "Proyecto científico y educativo para la prevención de incendios forestales.",
+    "logo": "/images/uploads/logo.png",
+    "favicon": "/images/uploads/favicon.png",
+    "banner": "/images/uploads/banner.png",
+    "bannerTitle": "Ice and Fire",
+    "bannerSubtitle": "Ciencia, tecnología y educación para prevenir incendios forestales.",
+    "primaryColor": "#000000",
+    "secondaryColor": "#ffffff",
+    "showTeam": true,
+    "showTimeline": true,
+    "showVideos": true
+  },
+
   "gameLevels": [
     {
       "name": "Zona de Frontera",
