@@ -7,7 +7,7 @@ import TeamMember from "./pages/TeamMember";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
-import content from "./data/content.json";
+
 
 function Home() {
   return <Hero />;
