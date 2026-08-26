@@ -134,7 +134,7 @@
       "slug": "steam-h",
       "order": 60,
       "visible": true,
-      "type": "blocks",
+      "type": "section",
       "description": "Integración de ciencia, tecnología, ingeniería, artes, matemáticas y humanidades."
     }
   ]
