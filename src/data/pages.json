@@ -1,86 +1,10 @@
 {
   "pages": [
     {
-      "name": "Investigación",
-      "slug": "investigacion",
-      "description": "Todo el contenido científico y de desarrollo del proyecto.",
-      "visible": true,
       "inMenu": true,
-      "order": 20,
-      "type": "section",
-      "sections": [
-        {
-          "id": "problem",
-          "label": "Problemática",
-          "section": "Problem",
-          "visible": true,
-          "order": 10
-        },
-        {
-          "id": "research",
-          "label": "Investigación científica",
-          "section": "Research",
-          "visible": true,
-          "order": 20
-        },
-        {
-          "id": "antecedents",
-          "label": "Antecedentes",
-          "section": "Antecedents",
-          "visible": true,
-          "order": 30
-        },
-        {
-          "id": "methodology",
-          "label": "Metodología",
-          "section": "Methodology",
-          "visible": true,
-          "order": 40
-        },
-        {
-          "id": "spray",
-          "label": "Spray Fire",
-          "section": "Spray",
-          "visible": true,
-          "order": 50
-        },
-        {
-          "id": "game",
-          "label": "Videojuego",
-          "section": "Game",
-          "visible": true,
-          "order": 60
-        }
-      ],
-      "blocks": []
-    },
-    {
-      "name": "STEAM+H",
-      "slug": "steam-h",
-      "description": "Integración de ciencia, tecnología, ingeniería, artes, matemáticas y humanidades.",
-      "visible": true,
-      "inMenu": true,
-      "order": 30,
-      "type": "section",
-      "sections": [
-        {
-          "id": "steam",
-          "label": "STEAM+H",
-          "section": "Steam",
-          "visible": true,
-          "order": 10
-        }
-      ],
-      "blocks": []
-    },
-    {
+      "blocks": [],
       "name": "Equipo",
       "slug": "equipo",
-      "description": "Integrantes, historia, cronograma y contenido multimedia del equipo.",
-      "visible": true,
-      "inMenu": true,
-      "order": 10,
-      "type": "section",
       "sections": [
         {
           "id": "team",
@@ -132,53 +56,129 @@
           "order": 70
         }
       ],
-      "blocks": []
+      "order": 10,
+      "visible": true,
+      "type": "section",
+      "description": "Integrantes, historia, cronograma y contenido multimedia del equipo."
     },
     {
+      "inMenu": true,
+      "blocks": [],
+      "name": "Investigación",
+      "slug": "investigacion",
+      "sections": [
+        {
+          "id": "problem",
+          "label": "Problemática",
+          "section": "Problem",
+          "visible": true,
+          "order": 10
+        },
+        {
+          "id": "research",
+          "label": "Investigación científica",
+          "section": "Research",
+          "visible": true,
+          "order": 20
+        },
+        {
+          "id": "antecedents",
+          "label": "Antecedentes",
+          "section": "Antecedents",
+          "visible": true,
+          "order": 30
+        },
+        {
+          "id": "methodology",
+          "label": "Metodología",
+          "section": "Methodology",
+          "visible": true,
+          "order": 40
+        },
+        {
+          "id": "spray",
+          "label": "Spray Fire",
+          "section": "Spray",
+          "visible": true,
+          "order": 50
+        },
+        {
+          "id": "game",
+          "label": "Videojuego",
+          "section": "Game",
+          "visible": true,
+          "order": 60
+        }
+      ],
+      "order": 20,
+      "visible": true,
+      "type": "section",
+      "description": "Todo el contenido científico y de desarrollo del proyecto."
+    },
+    {
+      "inMenu": true,
+      "blocks": [],
+      "name": "STEAM+H",
+      "slug": "steam-h",
+      "sections": [
+        {
+          "id": "steam",
+          "label": "STEAM+H",
+          "section": "Steam",
+          "visible": true,
+          "order": 10
+        }
+      ],
+      "order": 30,
+      "visible": true,
+      "type": "section",
+      "description": "Integración de ciencia, tecnología, ingeniería, artes, matemáticas y humanidades."
+    },
+    {
+      "inMenu": true,
+      "blocks": [],
       "name": "Bibliografía",
       "slug": "bibliografia",
-      "description": "Fuentes y referencias del proyecto.",
-      "visible": true,
-      "inMenu": true,
-      "order": 90,
-      "type": "blocks",
       "sections": [],
-      "blocks": []
+      "order": 90,
+      "visible": true,
+      "type": "blocks",
+      "description": "Fuentes y referencias del proyecto."
     },
     {
+      "inMenu": true,
+      "section": "Spray",
+      "blocks": [],
       "name": "Spray Fire",
       "slug": "spray-fire",
-      "description": "La solución física y científica del proyecto.",
-      "visible": true,
-      "inMenu": true,
-      "order": 40,
-      "type": "section",
-      "section": "Spray",
       "sections": [],
-      "blocks": []
+      "order": 40,
+      "visible": true,
+      "type": "section",
+      "description": "La solución física y científica del proyecto."
     },
     {
+      "inMenu": true,
+      "section": "Game",
+      "blocks": [],
       "name": "Videojuego",
       "slug": "videojuego",
-      "description": "Llamas en el Bosque.",
-      "visible": true,
-      "inMenu": true,
-      "order": 50,
-      "type": "section",
-      "section": "Game",
       "sections": [],
-      "blocks": []
+      "order": 50,
+      "visible": true,
+      "type": "section",
+      "description": "Llamas en el Bosque."
     },
     {
+      "inMenu": false,
+      "blocks": [],
       "name": "Inicio",
       "slug": "inicio",
-      "description": "Contenido de la página principal.",
-      "visible": false,
-      "inMenu": false,
-      "order": 0,
-      "type": "blocks",
       "sections": [],
-      "blocks": []
+      "order": 0,
+      "visible": false,
+      "type": "blocks",
+      "description": "Contenido de la página principal."
     }
   ]
 }
