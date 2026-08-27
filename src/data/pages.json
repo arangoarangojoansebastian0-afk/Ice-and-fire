@@ -154,7 +154,7 @@
       "description": "Fuentes y referencias del proyecto."
     },
     {
-      "inMenu": true,
+      "inMenu": false,
       "blocks": [],
       "name": "Spray Fire",
       "slug": "spray-fire",
@@ -168,7 +168,7 @@
         }
       ],
       "order": 40,
-      "visible": true,
+      "visible": false,
       "type": "section",
       "description": "La solución física y científica del proyecto."
     },
