@@ -117,25 +117,7 @@ export default function TeamMember() {
   };
 
   // Test function to verify the fix works correctly
-  const testYouTubeShorts = () => {
-    console.log("Testing YouTube Shorts URL detection:");
-    
-    // Test case from the problem
-    const testUrl = "https://youtube.com/shorts/65oHz_aAlaQ";
-    const isYouTube = isYouTubeVideo(testUrl);
-    const embedUrl = getYouTubeEmbedUrl(testUrl);
-    
-    console.log("Input:", testUrl);
-    console.log("isYouTubeVideo result:", isYouTube);
-    console.log("getYouTubeEmbedUrl result:", embedUrl);
-    
-    // Should be true for isYouTubeVideo and convert to embed URL
-    if (isYouTube && embedUrl === "https://www.youtube.com/embed/65oHz_aAlaQ") {
-      console.log("✅ Test PASSED: YouTube Shorts correctly handled");
-    } else {
-      console.log("❌ Test FAILED: YouTube Shorts not properly handled");
-    }
-  };
+  
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
