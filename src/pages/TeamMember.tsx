@@ -39,19 +39,6 @@ export default function TeamMember() {
     );
   };
 
-  // Helper function to determine if a video is a local file
-  const isLocalVideo = (videoUrl?: string) => {
-    if (!videoUrl) return false;
-    // Check if it's a local path or URL that would point to a video file
-    return (
-      videoUrl.includes(".mp4") || 
-      videoUrl.includes(".webm") || 
-      videoUrl.includes(".ogg") || 
-      videoUrl.includes(".mov") ||
-      videoUrl.startsWith("/") // starts with / means it's likely a relative path
-    );
-  };
-
   // Helper function to convert YouTube URLs to embed format
   const getYouTubeEmbedUrl = (videoField?: string) => {
     if (!videoField) return null;
