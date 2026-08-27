@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import content from "../data/content.json";
 import { slugify } from "../lib/slug";
-import { Link } from "react-router-dom";
-import content from "../data/content.json";
-import { slugify } from "../lib/slug";
-import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon, MailIcon } from "lucide-react";
+import { Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon } from "../components/SocialIcons";
 import type { TeamMember } from "../types/cms";
 
 const socialIcons = {
@@ -12,7 +10,7 @@ const socialIcons = {
   linkedin: LinkedinIcon,
   instagram: InstagramIcon,
   twitter: TwitterIcon,
-  email: MailIcon,
+  email: Mail,
 };
 
 export default function Team() {

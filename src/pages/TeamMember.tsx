@@ -1,14 +1,15 @@
 import { Link, useParams } from "react-router-dom";
 import content from "../data/content.json";
 import { slugify } from "../lib/slug";
-import { Github, Linkedin, Instagram, Twitter, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon } from "../components/SocialIcons";
 import type { TeamMember } from "../types/cms";
 
 const socialIcons = {
-  github: Github,
-  linkedin: Linkedin,
-  instagram: Instagram,
-  twitter: Twitter,
+  github: GithubIcon,
+  linkedin: LinkedinIcon,
+  instagram: InstagramIcon,
+  twitter: TwitterIcon,
   email: Mail,
 };
 

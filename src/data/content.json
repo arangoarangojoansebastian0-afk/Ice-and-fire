@@ -223,10 +223,6 @@
       "note": "Casi el 95% de los incendios forestales en Colombia se originan por descuidos humanos."
     }
   ],
-  "spray": {
-    "why": "no se",
-    "how": "no se"
-  },
   "steam": [
     {
       "letter": "S",
@@ -288,9 +284,6 @@
     }
   ],
   "generalObjective": "Desarrollar una alternativa integral para la prevención y mitigación de incendios forestales, mediante la formulación de un spray ignífugo natural y biodegradable y el diseño de un videojuego educativo e interactivo, con el propósito de fortalecer la educación y conciencia ambiental de la comunidad, fomentar prácticas responsables y contribuir a la prevención y reducción de los incendios forestales.",
-  "game": {
-    "purpose": "no se"
-  },
   "steamHIntro": "El modelo STEAM+H es la práctica pedagógica del Colegio Loyola que integra distintas áreas del conocimiento para enriquecer el aprendizaje: en cualquier asignatura se pueden aplicar métodos y herramientas propios de otras materias.",
   "ideasConsidered": [
     {
@@ -483,8 +476,14 @@
       "visible": true,
       "order": 10,
       "socialLinks": [
-        { "platform": "github", "url": "https://github.com/joanarango" },
-        { "platform": "email", "url": "joan.arango@example.com" }
+        {
+          "platform": "github",
+          "url": "https://github.com/joanarango"
+        },
+        {
+          "platform": "email",
+          "url": "joan.arango@example.com"
+        }
       ]
     },
     {
@@ -495,7 +494,10 @@
       "visible": true,
       "order": 20,
       "socialLinks": [
-        { "platform": "linkedin", "url": "https://linkedin.com/in/miguelvasquez" }
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/miguelvasquez"
+        }
       ]
     },
     {
@@ -506,7 +508,10 @@
       "visible": true,
       "order": 30,
       "socialLinks": [
-        { "platform": "instagram", "url": "https://instagram.com/isabelabetancur" }
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/isabelabetancur"
+        }
       ]
     },
     {
@@ -526,7 +531,10 @@
       "visible": true,
       "order": 50,
       "socialLinks": [
-        { "platform": "twitter", "url": "https://twitter.com/samueltano" }
+        {
+          "platform": "twitter",
+          "url": "https://twitter.com/samueltano"
+        }
       ]
     }
   ],

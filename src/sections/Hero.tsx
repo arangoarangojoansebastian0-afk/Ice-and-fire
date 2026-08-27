@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { ArrowDown } from "lucide-react";
 import content from "../data/content.json";
 
@@ -79,18 +80,18 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="flex flex-wrap gap-4 pt-2"
         >
-          <a
-            href="#investigacion"
+          <Link
+            to="/investigacion"
             className="rounded-full bg-gradient-to-r from-fire-500 to-fire-300 px-7 py-3.5 text-sm font-semibold text-void shadow-lg shadow-fire-500/20 transition-transform hover:scale-[1.03]"
           >
             Conocer el proyecto
-          </a>
-          <a
-            href="#metodologia"
+          </Link>
+          <Link
+            to="/investigacion#metodologia"
             className="rounded-full border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-semibold text-ink backdrop-blur transition-colors hover:bg-white/10"
           >
             Explorar la investigación
-          </a>
+          </Link>
         </motion.div>
       </motion.div>
 

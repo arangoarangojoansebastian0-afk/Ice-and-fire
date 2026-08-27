@@ -1,32 +1,419 @@
 backend:
   name: github
-  repo: icefire-project/icefire-web
+  repo: arangoarangojoansebastian0-afk/Ice-and-fire
   branch: main
-  squash_merges: true
+  base_url: https://iceandfire-psi.vercel.app
+  auth_endpoint: api/auth
   api_root: https://api.github.com
+  squash_merges: true
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
+site_url: https://iceandfire-psi.vercel.app
+display_url: https://iceandfire-psi.vercel.app
+
 locale: es
 
+slug:
+  encoding: unicode
+  clean_accents: true
+
 collections:
-  - name: pages
-    label: P�ginas
-    folder: src/data/pages
+  # ─────────────────────────────────────────────
+  - name: paginas
+    label: "📑 Páginas y menú"
+    files:
+      - name: pages
+        label: Páginas del sitio
+        file: src/data/pages.json
+        fields:
+          - label: Páginas
+            name: pages
+            widget: list
+            summary: "{{fields.name}} (/{{fields.slug}})"
+            fields:
+              - { label: Nombre visible en el menú, name: name, widget: string }
+              - { label: "Slug (parte de la URL, sin espacios ni tildes)", name: slug, widget: string }
+              - { label: Descripción, name: description, widget: text, required: false }
+              - { label: Visible en el sitio, name: visible, widget: boolean, default: true }
+              - { label: Mostrar en el menú, name: inMenu, widget: boolean, default: true }
+              - { label: Orden en el menú, name: order, widget: number, default: 10 }
+              - label: Tipo de página
+                name: type
+                widget: select
+                options:
+                  - { label: "Usa secciones existentes del sitio", value: section }
+                  - { label: "Se arma con bloques (texto, imagen, video...)", value: blocks }
+                  - { label: "Página de un integrante del equipo", value: team }
+                  - { label: "Enlace externo", value: external }
+              - label: "Si es una sola sección (opcional, para páginas simples)"
+                name: section
+                widget: select
+                required: false
+                options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero]
+              - label: "Si combina varias secciones existentes"
+                name: sections
+                widget: list
+                required: false
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: Identificador interno, name: id, widget: string }
+                  - { label: Título visible arriba de la sección, name: label, widget: string, required: false }
+                  - label: Sección
+                    name: section
+                    widget: select
+                    options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero]
+                  - { label: Visible, name: visible, widget: boolean, default: true }
+                  - { label: Orden, name: order, widget: number, default: 10 }
+              - label: "Si se arma con bloques (tipo = blocks)"
+                name: blocks
+                widget: list
+                required: false
+                summary: "{{fields.type}} — {{fields.title}}"
+                fields:
+                  - label: Tipo de bloque
+                    name: type
+                    widget: select
+                    options: [text, image, video, button, gallery, embed, cards, reusable]
+                  - { label: Título, name: title, widget: string, required: false }
+                  - { label: Texto, name: text, widget: text, required: false }
+                  - { label: Imagen, name: image, widget: image, required: false }
+                  - { label: Texto alternativo de la imagen, name: alt, widget: string, required: false }
+                  - { label: "URL (video o contenido embebido)", name: url, widget: string, required: false }
+                  - { label: Descripción, name: description, widget: text, required: false }
+                  - { label: "Enlace (para botones)", name: href, widget: string, required: false }
+                  - { label: "¿Abrir en pestaña nueva?", name: newTab, widget: boolean, required: false, default: false }
+                  - label: Imágenes (para galería)
+                    name: images
+                    widget: list
+                    required: false
+                    field: { label: Imagen, name: src, widget: image }
+                  - { label: "Alto en píxeles (para contenido embebido)", name: height, widget: number, required: false }
+                  - label: Tarjetas
+                    name: cards
+                    widget: list
+                    required: false
+                    summary: "{{fields.title}}"
+                    fields:
+                      - { label: Título, name: title, widget: string, required: false }
+                      - { label: Texto, name: text, widget: text, required: false }
+                      - { label: Imagen, name: image, widget: image, required: false }
+                      - { label: Enlace, name: href, widget: string, required: false }
+                  - { label: "ID del bloque reutilizable (tipo = reusable)", name: reusableBlockId, widget: string, required: false }
+              - { label: "Página padre (para submenús, opcional)", name: parent, widget: string, required: false }
+              - { label: "URL externa (solo si tipo = external)", name: externalUrl, widget: string, required: false }
+
+  # ─────────────────────────────────────────────
+  - name: bloques_reutilizables
+    label: "🧩 Bloques reutilizables"
+    folder: src/data/reusable
+    create: true
     extension: json
     format: json
-    create: true
-    delete: false
+    identifier_field: id
     fields:
-      - { label: P�ginas, name: pages, widget: list, field: { label: P�gina, name: page, widget: object, fields: [
-            { label: Slug, name: slug, widget: string },
-            { label: Nombre, name: name, widget: string },
-            { label: Tipo, name: type, widget: select, options: [page, group] },
-            { label: Visible, name: visible, widget: boolean },
-            { label: En Men�, name: inMenu, widget: boolean },
-            { label: Orden, name: order, widget: number },
-            { label: Descripci�n, name: description, widget: string },
-            { label: Padre, name: parent, widget: string }
-          ]} 
-        }
+      - { label: "ID (sin espacios, para referenciarlo desde una página)", name: id, widget: string }
+      - { label: Título, name: title, widget: string, required: false }
+      - label: Tipo de bloque
+        name: type
+        widget: select
+        options: [text, image, video, button, gallery, embed, cards]
+      - { label: Texto, name: text, widget: text, required: false }
+      - { label: Imagen, name: image, widget: image, required: false }
+      - { label: "URL (video o embebido)", name: url, widget: string, required: false }
+      - { label: Descripción, name: description, widget: text, required: false }
+      - { label: Enlace, name: href, widget: string, required: false }
+
+  # ─────────────────────────────────────────────
+  - name: config
+    label: "⚙️ Configuración"
+    files:
+      - name: general
+        label: Nombre, logo e inicio
+        file: src/data/content.json
+        fields:
+          - label: Sitio
+            name: site
+            widget: object
+            fields:
+              - { label: Nombre completo, name: name, widget: string }
+              - { label: Nombre corto (para el menú), name: shortName, widget: string }
+              - { label: Logo, name: logo, widget: image, required: false }
+          - label: Portada (Hero)
+            name: home
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+
+  # ─────────────────────────────────────────────
+  - name: equipo
+    label: "👥 Equipo"
+    files:
+      - name: integrantes
+        label: Integrantes
+        file: src/data/content.json
+        fields:
+          - label: Integrantes
+            name: team
+            widget: list
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: Nombre completo, name: name, widget: string }
+              - { label: Rol, name: role, widget: string }
+              - { label: Foto, name: photo, widget: image, required: false }
+              - { label: Descripción corta, name: blurb, widget: text }
+              - { label: "Función (texto largo, opcional)", name: function, widget: text, required: false }
+              - { label: "Autobiografía (texto largo, opcional)", name: biography, widget: text, required: false }
+              - { label: "Video (enlace de YouTube)", name: video, widget: string, required: false }
+              - label: Galería personal
+                name: gallery
+                widget: list
+                required: false
+                field: { label: Foto, name: src, widget: image }
+              - { label: Visible en el sitio, name: visible, widget: boolean, default: true }
+              - { label: Orden, name: order, widget: number, default: 10 }
+              - label: Redes sociales
+                name: socialLinks
+                widget: list
+                required: false
+                summary: "{{fields.platform}}"
+                fields:
+                  - label: Plataforma
+                    name: platform
+                    widget: select
+                    options: [github, linkedin, instagram, twitter, email]
+                  - { label: "Enlace o correo", name: url, widget: string }
+
+  # ─────────────────────────────────────────────
+  - name: historia_equipo
+    label: "📖 Historia del equipo"
+    files:
+      - name: historia
+        label: Historia y evolución
+        file: src/data/content.json
+        fields:
+          - label: Historia
+            name: teamHistory
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Texto, name: text, widget: text }
+          - label: Cómo llegamos a la solución
+            name: evolutionStory
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Texto, name: text, widget: text }
+          - label: Alternativas que consideramos
+            name: ideasConsidered
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Nombre de la idea, name: name, widget: string }
+              - { label: Nota, name: note, widget: text }
+              - { label: "¿Fue la idea elegida?", name: chosen, widget: boolean, default: false }
+
+  # ─────────────────────────────────────────────
+  - name: problematica
+    label: "🌎 Problemática"
+    files:
+      - name: problematica
+        label: Global / Nacional / Medellín
+        file: src/data/content.json
+        fields:
+          - label: Contexto por escala
+            name: contextTiers
+            widget: list
+            summary: "{{fields.scope}}"
+            fields:
+              - { label: "Alcance (Global, Nacional, Local...)", name: scope, widget: string }
+              - { label: Texto, name: text, widget: text }
+              - { label: Fuente, name: source, widget: string }
+          - label: Cifras grandes
+            name: bigNumbers
+            widget: list
+            summary: "{{fields.value}}"
+            fields:
+              - { label: "Valor (ej. 97, 12+, ~95%)", name: value, widget: string }
+              - { label: Descripción de la cifra, name: label, widget: text }
+              - { label: Fuente, name: source, widget: string }
+          - label: Causas
+            name: causes
+            widget: list
+          - label: Consecuencias
+            name: consequences
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Texto, name: text, widget: text }
+              - { label: Fuente, name: source, widget: string }
+
+  # ─────────────────────────────────────────────
+  - name: investigacion
+    label: "🔬 Investigación"
+    files:
+      - name: investigacion
+        label: Pregunta, objetivos y metodología
+        file: src/data/content.json
+        fields:
+          - { label: Pregunta de investigación, name: researchQuestion, widget: text }
+          - { label: Objetivo general, name: generalObjective, widget: text }
+          - label: Objetivos específicos
+            name: specificObjectives
+            widget: list
+          - label: Antecedentes (resumen para la web)
+            name: antecedents
+            widget: list
+            summary: "{{fields.author}}"
+            fields:
+              - { label: Autor y año, name: author, widget: string }
+              - { label: Nota, name: note, widget: text }
+          - label: Metodología — Fase A (Spray)
+            name: methodologyPhaseA
+            widget: list
+            summary: "{{fields.step}}"
+            fields:
+              - { label: Paso, name: step, widget: string }
+              - { label: Detalle, name: detail, widget: text }
+          - label: Metodología — Fase B (Videojuego)
+            name: methodologyPhaseB
+            widget: list
+            summary: "{{fields.step}}"
+            fields:
+              - { label: Paso, name: step, widget: string }
+              - { label: Detalle, name: detail, widget: text }
+
+  # ─────────────────────────────────────────────
+  - name: bibliografia
+    label: "📚 Bibliografía"
+    files:
+      - name: bibliografia
+        label: Bibliografía completa
+        file: src/data/content.json
+        fields:
+          - label: Referencias
+            name: references
+            widget: list
+
+  # ─────────────────────────────────────────────
+  - name: spray
+    label: "🔥 Spray Fire"
+    files:
+      - name: spray
+        label: Spray Fire
+        file: src/data/content.json
+        fields:
+          - { label: "¿Por qué se creó?", name: sprayWhy, widget: text }
+          - { label: "¿Cómo funciona?", name: sprayHow, widget: text }
+          - label: Ingredientes
+            name: sprayIngredients
+            widget: list
+          - label: Ventajas
+            name: sprayAdvantages
+            widget: list
+          - label: Limitaciones
+            name: sprayLimitations
+            widget: list
+
+  # ─────────────────────────────────────────────
+  - name: videojuego
+    label: "🎮 Videojuego"
+    files:
+      - name: videojuego
+        label: Llamas en el Bosque
+        file: src/data/content.json
+        fields:
+          - { label: Propósito del videojuego, name: gamePurpose, widget: text }
+          - label: Niveles
+            name: gameLevels
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Nombre del nivel, name: name, widget: string }
+              - { label: Descripción, name: desc, widget: text }
+          - label: Mecánicas
+            name: gameMechanics
+            widget: list
+
+  # ─────────────────────────────────────────────
+  - name: steam
+    label: "🧪 STEAM+H"
+    files:
+      - name: steam
+        label: Modelo STEAM+H
+        file: src/data/content.json
+        fields:
+          - { label: Introducción, name: steamHIntro, widget: text }
+          - label: Las 6 letras
+            name: steam
+            widget: list
+            summary: "{{fields.letter}} — {{fields.es}}"
+            fields:
+              - { label: Letra, name: letter, widget: string }
+              - { label: Palabra en inglés, name: word, widget: string }
+              - { label: Palabra en español, name: es, widget: string }
+              - { label: Texto explicativo, name: text, widget: text }
+
+  # ─────────────────────────────────────────────
+  - name: cronograma
+    label: "📅 Cronograma"
+    files:
+      - name: cronograma
+        label: Cronograma y bitácoras
+        file: src/data/content.json
+        fields:
+          - label: Actividades
+            name: schedule
+            widget: list
+            summary: "{{fields.date}} — {{fields.phase}}"
+            fields:
+              - { label: Fecha, name: date, widget: string }
+              - { label: Fase, name: phase, widget: string }
+              - { label: Actividad, name: activity, widget: text }
+              - { label: Entregable, name: deliverable, widget: text }
+              - { label: Responsable(s), name: owner, widget: string }
+          - label: Bitácoras (línea de tiempo mensual)
+            name: timeline
+            widget: list
+            summary: "{{fields.month}}"
+            fields:
+              - { label: Mes, name: month, widget: string }
+              - { label: Resumen del mes, name: text, widget: text }
+
+  # ─────────────────────────────────────────────
+  - name: videos
+    label: "🎬 Videos"
+    files:
+      - name: videos
+        label: Videos del equipo
+        file: src/data/content.json
+        fields:
+          - label: Videos generales (YouTube)
+            name: videos
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: "ID de YouTube (lo que va después de v=)", name: youtubeId, widget: string }
+
+  # ─────────────────────────────────────────────
+  - name: imagenes
+    label: "🖼️ Imágenes"
+    files:
+      - name: imagenes
+        label: Galería y póster
+        file: src/data/content.json
+        fields:
+          - label: Fotos de la galería
+            name: gallery
+            widget: list
+            field: { label: Foto, name: image, widget: image }
+          - label: Páginas del póster
+            name: posterImages
+            widget: list
+            field: { label: Imagen del póster, name: image, widget: image }
