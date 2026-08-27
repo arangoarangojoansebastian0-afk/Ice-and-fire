@@ -1,15 +1,4 @@
 {
-  "gallery": [
-    "/images/equipo/galeria-1.jpg",
-    "/images/equipo/galeria-2.jpg",
-    "/images/equipo/galeria-3.jpg",
-    "/images/equipo/miembro-1.jpg",
-    "/images/equipo/miembro-2.jpg",
-    "/images/equipo/miembro-3.jpg",
-    "/images/equipo/miembro-4.jpg",
-    "/images/equipo/miembro-5.jpg"
-  ],
-  "posterImages": [],
   "gameLevels": [
     {
       "name": "Zona de Frontera",
@@ -85,6 +74,7 @@
     }
   ],
   "sprayHow": "Se aplica directamente sobre vegetación seca, madera o superficies plásticas propensas a incendiarse. Al secarse, forma una capa que retarda la combustión frente a una fuente de calor o chispa, dando más tiempo de reacción antes de que el fuego se propague.",
+  "posterImages": [],
   "site": {
     "shortName": "Ice and Fire",
     "logo": "/images/uploads/captura-de-pantalla-2026-08-14-103707.png",
@@ -284,6 +274,16 @@
     }
   ],
   "generalObjective": "Desarrollar una alternativa integral para la prevención y mitigación de incendios forestales, mediante la formulación de un spray ignífugo natural y biodegradable y el diseño de un videojuego educativo e interactivo, con el propósito de fortalecer la educación y conciencia ambiental de la comunidad, fomentar prácticas responsables y contribuir a la prevención y reducción de los incendios forestales.",
+  "gallery": [
+    "/images/equipo/galeria-1.jpg",
+    "/images/equipo/galeria-2.jpg",
+    "/images/equipo/galeria-3.jpg",
+    "/images/equipo/miembro-1.jpg",
+    "/images/equipo/miembro-2.jpg",
+    "/images/equipo/miembro-3.jpg",
+    "/images/equipo/miembro-4.jpg",
+    "/images/equipo/miembro-5.jpg"
+  ],
   "steamHIntro": "El modelo STEAM+H es la práctica pedagógica del Colegio Loyola que integra distintas áreas del conocimiento para enriquecer el aprendizaje: en cualquier asignatura se pueden aplicar métodos y herramientas propios de otras materias.",
   "ideasConsidered": [
     {
@@ -478,11 +478,15 @@
       "socialLinks": [
         {
           "platform": "github",
-          "url": "https://github.com/joanarango"
+          "url": "https://github.com/arangoarangojoansebastian0-afk"
         },
         {
           "platform": "email",
-          "url": "joan.arango@example.com"
+          "url": "arangoarangojoansebastian0@gmail.com"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/arango.joan0"
         }
       ]
     },
@@ -495,8 +499,12 @@
       "order": 20,
       "socialLinks": [
         {
-          "platform": "linkedin",
-          "url": "https://linkedin.com/in/miguelvasquez"
+          "platform": "email",
+          "url": "miguel.example@gmail.com"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/miguel95090/"
         }
       ]
     },
@@ -510,7 +518,7 @@
       "socialLinks": [
         {
           "platform": "instagram",
-          "url": "https://instagram.com/isabelabetancur"
+          "url": "https://www.instagram.com/zzia_909/"
         }
       ]
     },
@@ -521,7 +529,12 @@
       "blurb": "Mi función como mediador es ayudar a mantener una buena convivencia y comunicación dentro del equipo. Cuando tenemos diferentes opiniones o se presenta algún conflicto entre los integrantes, escucho las diferentes posiciones y ayudo a encontrar una solución que sea justa para todos. También trato de que todos tengan la oportunidad de expresar sus ideas y de que las decisiones se tomen respetando las opiniones de los demás. Si algún compañero tiene dificultades con una tarea o existe un problema que está afectando al equipo, ayudo a buscar una solución. Mi objetivo es mantener la unión del grupo, evitar que los conflictos afecten nuestro trabajo y conseguir que podamos trabajar de manera respetuosa y colaborativa.",
       "visible": true,
       "order": 40,
-      "socialLinks": []
+      "socialLinks": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/velez222026/"
+        }
+      ]
     },
     {
       "name": "Samuel Tano Gómez",
