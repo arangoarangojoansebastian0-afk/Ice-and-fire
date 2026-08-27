@@ -35,6 +35,7 @@ export default function TeamMember() {
     return (
       videoUrl.includes("youtube.com/watch") || 
       videoUrl.includes("youtu.be/") ||
+      videoUrl.includes("youtube.com/shorts/") ||
       (videoUrl.length === 11 && !videoUrl.includes("."))
     );
   };
@@ -50,19 +51,40 @@ export default function TeamMember() {
     
     // If it's a full YouTube URL with watch?v=
     if (videoField.includes("youtube.com/watch?v=")) {
-      const url = new URL(videoField);
-      const videoId = url.searchParams.get('v');
-      if (videoId && isValidYouTubeId(videoId)) {
-        return `https://www.youtube.com/embed/${videoId}`;
+      try {
+        const url = new URL(videoField);
+        const videoId = url.searchParams.get('v');
+        if (videoId && isValidYouTubeId(videoId)) {
+          return `https://www.youtube.com/embed/${videoId}`;
+        }
+      } catch (e) {
+        // Invalid URL, continue to other checks
       }
     }
     
     // If it's a youtu.be URL
     if (videoField.includes("youtu.be/")) {
-      const url = new URL(videoField);
-      const videoId = url.pathname.substring(1); // Remove leading slash
-      if (isValidYouTubeId(videoId)) {
-        return `https://www.youtube.com/embed/${videoId}`;
+      try {
+        const url = new URL(videoField);
+        const videoId = url.pathname.substring(1); // Remove leading slash
+        if (isValidYouTubeId(videoId)) {
+          return `https://www.youtube.com/embed/${videoId}`;
+        }
+      } catch (e) {
+        // Invalid URL, continue to other checks
+      }
+    }
+    
+    // If it's a YouTube Shorts URL (youtube.com/shorts/)
+    if (videoField.includes("youtube.com/shorts/")) {
+      try {
+        const url = new URL(videoField);
+        const videoId = url.pathname.substring(1); // Remove leading slash
+        if (videoId && isValidYouTubeId(videoId)) {
+          return `https://www.youtube.com/embed/${videoId}`;
+        }
+      } catch (e) {
+        // Invalid URL, continue to other checks
       }
     }
     
@@ -73,10 +95,14 @@ export default function TeamMember() {
     
     // Handle URLs with additional parameters like ?t=30s or &t=30s
     if (videoField.includes("youtube.com/watch")) {
-      const url = new URL(videoField);
-      const videoId = url.searchParams.get('v');
-      if (videoId && isValidYouTubeId(videoId)) {
-        return `https://www.youtube.com/embed/${videoId}`;
+      try {
+        const url = new URL(videoField);
+        const videoId = url.searchParams.get('v');
+        if (videoId && isValidYouTubeId(videoId)) {
+          return `https://www.youtube.com/embed/${videoId}`;
+        }
+      } catch (e) {
+        // Invalid URL, continue to other checks
       }
     }
     
@@ -88,6 +114,27 @@ export default function TeamMember() {
     // YouTube IDs are 11 characters long and contain only valid characters
     const youtubeIdRegex = /^[a-zA-Z0-9_-]{11}$/;
     return youtubeIdRegex.test(id);
+  };
+
+  // Test function to verify the fix works correctly
+  const testYouTubeShorts = () => {
+    console.log("Testing YouTube Shorts URL detection:");
+    
+    // Test case from the problem
+    const testUrl = "https://youtube.com/shorts/65oHz_aAlaQ";
+    const isYouTube = isYouTubeVideo(testUrl);
+    const embedUrl = getYouTubeEmbedUrl(testUrl);
+    
+    console.log("Input:", testUrl);
+    console.log("isYouTubeVideo result:", isYouTube);
+    console.log("getYouTubeEmbedUrl result:", embedUrl);
+    
+    // Should be true for isYouTubeVideo and convert to embed URL
+    if (isYouTube && embedUrl === "https://www.youtube.com/embed/65oHz_aAlaQ") {
+      console.log("✅ Test PASSED: YouTube Shorts correctly handled");
+    } else {
+      console.log("❌ Test FAILED: YouTube Shorts not properly handled");
+    }
   };
 
   return (
