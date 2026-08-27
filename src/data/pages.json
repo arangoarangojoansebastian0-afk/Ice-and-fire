@@ -139,7 +139,15 @@
       "blocks": [],
       "name": "Bibliografía",
       "slug": "bibliografia",
-      "sections": [],
+      "sections": [
+        {
+          "id": "bibliography",
+          "label": "Bibliografía",
+          "section": "Bibliography",
+          "visible": true,
+          "order": 10
+        }
+      ],
       "order": 90,
       "visible": true,
       "type": "blocks",
@@ -147,11 +155,18 @@
     },
     {
       "inMenu": true,
-      "section": "Spray",
       "blocks": [],
       "name": "Spray Fire",
       "slug": "spray-fire",
-      "sections": [],
+      "sections": [
+        {
+          "id": "spray",
+          "label": "Spray Fire",
+          "section": "Spray",
+          "visible": true,
+          "order": 10
+        }
+      ],
       "order": 40,
       "visible": true,
       "type": "section",
@@ -159,11 +174,18 @@
     },
     {
       "inMenu": true,
-      "section": "Game",
       "blocks": [],
       "name": "Videojuego",
       "slug": "videojuego",
-      "sections": [],
+      "sections": [
+        {
+          "id": "game",
+          "label": "Videojuego",
+          "section": "Game",
+          "visible": true,
+          "order": 10
+        }
+      ],
       "order": 50,
       "visible": true,
       "type": "section",
