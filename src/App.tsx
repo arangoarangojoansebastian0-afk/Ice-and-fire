@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
 import CmsNavigation from "./components/CmsNavigation";
@@ -8,12 +9,12 @@ import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import ScrollToHash from "./components/ScrollToHash";
-
-
+ 
+ 
 function Home() {
   return <Hero />;
 }
-
+ 
 export default function App() {
   return (
     <div className="min-h-screen bg-void">
@@ -30,6 +31,8 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }
+ 
