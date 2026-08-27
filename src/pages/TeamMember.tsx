@@ -190,11 +190,13 @@ export default function TeamMember() {
           <div className="aspect-video">
             {isYouTubeVideo(member.video) ? (
              <iframe
-              className="h-full w-full rounded-2xl border border-white/10"
-              src={getYouTubeEmbedUrl(member.video) || ""}
-               title={member.name}
-              allowFullScreen
-             />
+  className="h-full w-full rounded-2xl border border-white/10"
+  src={getYouTubeEmbedUrl(member.video) || ""}
+  title={member.name}
+  allowFullScreen
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+/>
+
 
             ) : (
               <video
