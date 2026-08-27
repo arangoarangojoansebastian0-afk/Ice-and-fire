@@ -173,7 +173,7 @@
       "description": "La solución física y científica del proyecto."
     },
     {
-      "inMenu": true,
+      "inMenu": false,
       "blocks": [],
       "name": "Videojuego",
       "slug": "videojuego",
@@ -187,7 +187,7 @@
         }
       ],
       "order": 50,
-      "visible": true,
+      "visible": false,
       "type": "section",
       "description": "Llamas en el Bosque."
     },
