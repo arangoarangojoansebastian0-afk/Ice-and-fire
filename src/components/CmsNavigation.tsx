@@ -11,25 +11,8 @@ export default function CmsNavigation() {
 
   const pages = pagesData.pages as Page[];
 
-  const groups = pages
-    .filter(
-      (page) =>
-        page.type === "section" &&  // Cambiado de "group" a "section"
-        page.visible &&
-        page.inMenu
-    )
-    .sort((a, b) => a.order - b.order);
-
-  const standalonePages = pages
-    .filter(
-      (page) =>
-        page.type !== "section" &&  // Cambiado de "group" a "section"
-        !page.parent &&
-        page.visible &&
-        page.inMenu
-    )
-    .sort((a, b) => a.order - b.order);
-
+  // Una página solo se muestra como desplegable si realmente tiene hijos.
+  // El tipo "section" describe su contenido, no su jerarquía del menú.
   const getChildren = (parentSlug: string) =>
     pages
       .filter(
@@ -39,6 +22,26 @@ export default function CmsNavigation() {
           page.inMenu
       )
       .sort((a, b) => a.order - b.order);
+
+  const groups = pages
+    .filter(
+      (page) =>
+        !!page.parent === false &&
+        page.visible &&
+        page.inMenu &&
+        getChildren(page.slug).length > 0
+    )
+    .sort((a, b) => a.order - b.order);
+
+  const standalonePages = pages
+    .filter(
+      (page) =>
+        !page.parent &&
+        page.visible &&
+        page.inMenu &&
+        getChildren(page.slug).length === 0
+    )
+    .sort((a, b) => a.order - b.order);
 
   const isActive = (slug: string) =>
     location.pathname === `/${slug}`;
