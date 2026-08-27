@@ -463,7 +463,7 @@
       "name": "Joan Sebastián Arango",
       "role": "Líder",
       "photo": "/images/uploads/img_20260729_064923-1-.jpg",
-      "blurb": "Mi función como líder es dirigir y coordinar al equipo durante todo el desarrollo del proyecto. Me encargo de organizar al grupo, tomar decisiones importantes y asegurarme de que todos los integrantes estén cumpliendo con sus responsabilidades. También escucho las ideas y opiniones de mis compañeros para tomar decisiones que beneficien al proyecto. Cuando aparece algún problema, ayudo a buscar una solución y trato de mantener al equipo enfocado en nuestro objetivo. Además, represento al grupo en reuniones, exposiciones y actividades relacionadas con el proyecto. Mi trabajo no consiste en hacer todas las tareas, sino en orientar, apoyar y coordinar al equipo para que podamos trabajar de manera organizada y alcanzar nuestras metas.",
+      "blurb": "Mi función como líder es dirigir y coordinar al equipo durante el desarrollo del proyecto. Me encargo de organizar las tareas, tomar decisiones importantes y asegurarme de que todos cumplan con sus responsabilidades. También escucho las ideas de mis compañeros, ayudo a resolver problemas y mantengo al equipo enfocado en nuestros objetivos. Además, represento al grupo en reuniones, exposiciones y actividades del proyecto.\n",
       "visible": true,
       "order": 10,
       "socialLinks": [
@@ -479,15 +479,11 @@
           "platform": "instagram",
           "url": "https://www.instagram.com/arango.joan0"
         }
-      ]
+      ],
+      "biography": "Mi nombre es Joan Sebastián Arango Arango. Nací el 8 de septiembre de 2011 en la Clínica Prado, a las 9:40 de la mañana.\n\nSoy hijo de Melisa Arango y Rubén Darío Arango. Tengo dos hermanos mayores: Estefanía, de 20 años, y Juan Manuel, de 18. Estefanía estudia en la universidad y Juan Manuel está en décimo grado y juega fútbol.\n\nDesde pequeño me han gustado mucho los computadores, la tecnología y aprender cosas nuevas. Actualmente estudio en el Colegio Loyola y me interesan especialmente la programación, la robótica y el desarrollo de videojuegos. Empecé a programar porque me llamaba la atención poder crear mis propias ideas usando un computador. Con el tiempo, este interés se convirtió en una de las cosas que más disfruto hacer.\n\nTambién me gusta estudiar y participar en diferentes proyectos. Me gusta experimentar, aprender por mi cuenta y buscar soluciones cuando algo no funciona. A veces puedo tener dificultades para concentrarme, pero trato de seguir aprendiendo y mejorar cada día. También tengo algunas dificultades relacionadas con mi oído.\n\nUno de los recuerdos que más me ha marcado fue la muerte de mi padrastro, ocurrida el 22 de diciembre de 2023. Él fue como un segundo padre para mí, ya que vivió conmigo desde que yo tenía 3 años. Su pérdida me hizo reflexionar mucho sobre la importancia de valorar a las personas mientras están con nosotros. También entendí que nuestras palabras pueden afectar a los demás y que debemos pensar antes de decir cosas que puedan lastimar.\n\nCuando era más pequeño también me gustaba hacer videos y soñaba con ser youtuber. Aunque ese proyecto no funcionó como esperaba, me ayudó a descubrir que me gustaba crear cosas y compartirlas con otras personas. De niño era bastante mimado y lloraba con facilidad, pero con los años fui cambiando y me volví una persona más seria e independiente.\n\nHoy sigo descubriendo qué quiero hacer en el futuro. Sé que la tecnología, la programación y la robótica son áreas que me apasionan, y quiero seguir aprendiendo para algún día crear proyectos que sean útiles y que también puedan ayudar a otras personas.\n"
     },
     {
       "name": "Miguel Vásquez Medina",
-      "role": "Planificador",
-      "photo": "/images/equipo/miembro-2.jpg",
-      "blurb": "Mi función como planificador es organizar las actividades y tareas necesarias para desarrollar correctamente nuestro proyecto. Me encargo de establecer qué debemos hacer, en qué orden debemos hacerlo, quién puede encargarse de cada tarea y cuáles son las fechas importantes que debemos cumplir. También llevo un control de los avances del equipo y reviso qué actividades ya terminamos y cuáles todavía están pendientes. Si se presenta un retraso o algún problema con la organización, ayudo a reorganizar las actividades para que podamos continuar avanzando. Mi objetivo es que el equipo tenga claro qué debe hacer en cada momento y que podamos cumplir con nuestro cronograma sin dejar tareas importantes para el último momento.",
-      "visible": true,
-      "order": 20,
       "socialLinks": [
         {
           "platform": "email",
@@ -498,37 +494,46 @@
           "url": "https://www.instagram.com/miguel95090/"
         }
       ],
-      "video": "https://youtu.be/65oHz_aAlaQ?list=PLZOG2TDk2YxA"
+      "order": 20,
+      "visible": true,
+      "photo": "/images/equipo/miembro-2.jpg",
+      "biography": "Mi nombre es Miguel Vásquez Medina. Nací el 5 de febrero de 2013, a la 1:36 de la tarde en la Clínica Comfenalco. Mis padres son Daniela Medina y Deiver Erney Vásquez Piedrahíta.\nDe mi infancia no recuerdo mucho, pero sí sé que cuando tenía 8 meses me quemé la mano con agua hirviendo, lo que me dejó una cicatriz en la izquierda y una pequeña protuberancia en el anular derecho. También recuerdo que en el jardín me molestaban mucho; un día decidí defenderme, pero aun así me castigaron a mí, y después me sacaron de esa escuela.\nA los 8 años descubrí algo difícil: vi unos mensajes de mi mamá que me impactaron bastante, y aunque mis papás ya estaban separados, esa situación me marcó.\nEn la primaria me costaba hacer amigos porque casi no socializaba, pero con el tiempo eso cambió y ya no se aprovechan de mí como antes.\nCuando llegué al colegio Loyola me sentí raro al inicio, pues era un ambiente muy distinto, pero todo salió mejor de lo que esperaba. Al principio mi mejor amistad fue con Isabela Betancur, ya que nos llevábamos muy bien. Más tarde, con los grupos colaborativos, conocí a más personas y ahora mi mejor amigo es Miguel Ángel, aunque eso me haya alejado un poco de Isabela.",
+      "role": "Planificador",
+      "video": "https://www.youtube.com/shorts/65oHz_aAlaQ?feature=share",
+      "blurb": "Mi función como planificador es organizar las actividades y tareas del proyecto, definiendo qué debemos hacer, quién se encarga de cada tarea y las fechas que debemos cumplir. También llevo un control de los avances y reviso las actividades pendientes. Si surge algún retraso o problema, ayudo a reorganizar el trabajo para que el equipo pueda seguir avanzando y cumplir con el cronograma."
     },
     {
       "name": "Isabela Betancur Vélez",
-      "role": "Creativa",
-      "photo": "/images/uploads/img_20260729_064755.jpg",
-      "blurb": "Mi función como creativa es aportar ideas nuevas, diferentes y originales que ayuden a mejorar nuestro proyecto. Me encargo de buscar maneras innovadoras de solucionar los problemas que encontramos durante el proceso y de hacer que nuestro proyecto sea más llamativo e interesante. También puedo participar en el diseño de elementos visuales, prototipos, presentaciones, juegos, páginas web u otros recursos que utilicemos. Cuando una idea no funciona, busco diferentes alternativas para encontrar una mejor solución. Trabajo junto con mis compañeros para convertir las ideas en propuestas que realmente puedan aplicarse. Mi objetivo es aportar creatividad al proyecto y ayudar a que se diferencie de otros trabajos.",
-      "visible": true,
-      "order": 30,
       "socialLinks": [
         {
           "platform": "instagram",
           "url": "https://www.instagram.com/zzia_909/"
         }
       ],
-      "video": "https://youtu.be/hYOO5jN1RDM?list=PLZOG2TDk2YxA"
+      "order": 30,
+      "visible": true,
+      "photo": "/images/uploads/img_20260729_064755.jpg",
+      "biography": "\nMi nombre es Isabela Betancur Vélez, tengo 14 años y vivo en Castilla con mi mamá y mi abuela. Mis papás se separaron, y aunque quiero mucho a mi papá, ahora mi vida está enfocada en mi familia materna.\nMi primaria fue muy difícil: muchas niñas me rechazaban e inventaban rumores sobre mí. Sin embargo, encontré apoyo en los niños y, sobre todo, en un compañero que me hizo sentir feliz y acompañada.\nEn el Loyola, al que ingresé en 2024, las cosas cambiaron. Allí las chicas y chicos me tratan bien, me siento aceptada y querida, algo que nunca había vivido antes.\nMe encanta dibujar, es mi pasión, y también disfruto del skateboarding, ver anime, comer y dormir. No me gusta la crueldad, el maltrato animal, el abuso y tampoco como carne porque pienso en los animales.\nMis talentos son dibujar y cantar, formas en las que expreso mis emociones: amor, ira, alegría o tristeza.\nMi sueño es ser una gran artista, bióloga terrestre o veterinaria, y vivir en el campo, rodeada de naturaleza y junto a mi familia.",
+      "role": "Creativa",
+      "video": "https://www.youtube.com/shorts/hYOO5jN1RDM?feature=share",
+      "blurb": "Mi función como creativa es aportar ideas nuevas y originales que ayuden a mejorar el proyecto. Busco soluciones innovadoras a los problemas y formas de hacer que nuestro trabajo sea más llamativo e interesante. También participo en el diseño de elementos visuales, prototipos, presentaciones y otros recursos. Trabajo con mis compañeros para convertir las ideas en propuestas que podamos aplicar al proyecto."
     },
     {
       "name": "Miguel Ángel Vélez Duque",
-      "role": "Mediador",
-      "photo": "/images/uploads/velez.webp",
-      "blurb": "Mi función como mediador es ayudar a mantener una buena convivencia y comunicación dentro del equipo. Cuando tenemos diferentes opiniones o se presenta algún conflicto entre los integrantes, escucho las diferentes posiciones y ayudo a encontrar una solución que sea justa para todos. También trato de que todos tengan la oportunidad de expresar sus ideas y de que las decisiones se tomen respetando las opiniones de los demás. Si algún compañero tiene dificultades con una tarea o existe un problema que está afectando al equipo, ayudo a buscar una solución. Mi objetivo es mantener la unión del grupo, evitar que los conflictos afecten nuestro trabajo y conseguir que podamos trabajar de manera respetuosa y colaborativa.",
-      "visible": true,
-      "order": 40,
       "socialLinks": [
         {
           "platform": "instagram",
           "url": "https://www.instagram.com/velez222026/"
         }
       ],
-      "video": "https://youtu.be/uRvIRokrrsc?list=PLZOG2TDk2YxA"
+      "order": 40,
+      "visible": true,
+      "photo": "/images/uploads/velez.webp",
+      "gallery": [],
+      "biography": "Hola, me llamo Miguel Ángel Vélez Duque. Nací el 16 de julio de 2013 en la clínica Bolivariana, más específicamente en el barrio Alfonso López, donde nací, crecí y actualmente vivo.\nEn la escuela y en el barrio hay muchas personas amables. Vivo con mis dos padres, a quienes quiero mucho y con quienes convivo muy bien.\nTengo varios recuerdos, pero uno muy especial es cuando mis papás me llevaban al centro comercial a jugar en una piscina de pelotas que pusieron por el estreno de \"Cómo entrenar a tu dragón\".\nOtro recuerdo es cuando me llevaban al zoológico.\nUn momento feliz fue cuando me volví representante estudiantil del colegio. Esto me llevó a tener muchos amigos y, aunque ahora no tenga tantos, tengo amigos reales con los que me divierto. Al igual que con los anteriores, sin duda, esa fue una de mis mejores etapas favoritas de la vida. ",
+      "role": "Mediador",
+      "video": "https://youtu.be/uRvIRokrrsc?list=PLZOG2TDk2YxA",
+      "blurb": "Mi función como mediador es mantener una buena convivencia y comunicación en el equipo. Escucho las diferentes opiniones, ayudo a resolver conflictos y busco soluciones justas. También procuro que todos puedan expresar sus ideas y que trabajemos con respeto, unión y colaboración.\n"
     },
     {
       "name": "Samuel Tano Gómez",
