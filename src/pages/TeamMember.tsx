@@ -202,7 +202,9 @@ export default function TeamMember() {
               <video
                 controls
                 playsInline
-                className="h-full w-full rounded-2xl border border-white/10"
+                preload="metadata"
+                poster={member.photo}
+                className="h-full w-full rounded-2xl border border-white/10 bg-black/40"
                 src={member.video}
               >
                 Tu navegador no soporta el elemento de video.

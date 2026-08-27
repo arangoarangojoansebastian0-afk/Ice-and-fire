@@ -166,7 +166,14 @@ collections:
               - { label: Descripción corta, name: blurb, widget: text }
               - { label: "Función (texto largo, opcional)", name: function, widget: text, required: false }
               - { label: "Autobiografía (texto largo, opcional)", name: biography, widget: text, required: false }
-              - { label: "Video (enlace de YouTube)", name: video, widget: string, required: false }
+              - label: "Video (sube un archivo .mp4 O pega un enlace: YouTube, Shorts, youtu.be, u otro link directo)"
+                name: video
+                widget: file
+                required: false
+                choose_url: true
+                media_folder: "/public/videos/equipo"
+                public_folder: "/videos/equipo"
+                hint: "Puedes subir un video normal, un Short, o un archivo .mp4 desde tu computador. También puedes pegar un enlace de YouTube/Shorts en vez de subir un archivo."
               - label: Galería personal
                 name: gallery
                 widget: list
