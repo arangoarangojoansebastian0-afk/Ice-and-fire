@@ -65,7 +65,7 @@ export default function TeamMember() {
     if (videoField.includes("youtube.com/watch?v=")) {
       const url = new URL(videoField);
       const videoId = url.searchParams.get('v');
-      if (videoId) {
+      if (videoId && isValidYouTubeId(videoId)) {
         return `https://www.youtube.com/embed/${videoId}`;
       }
     }
@@ -74,15 +74,33 @@ export default function TeamMember() {
     if (videoField.includes("youtu.be/")) {
       const url = new URL(videoField);
       const videoId = url.pathname.substring(1); // Remove leading slash
-      return `https://www.youtube.com/embed/${videoId}`;
+      if (isValidYouTubeId(videoId)) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
     }
     
     // If it's just a YouTube ID (11 characters)
-    if (videoField.length === 11 && !videoField.includes(".")) {
+    if (videoField.length === 11 && !videoField.includes(".") && isValidYouTubeId(videoField)) {
       return `https://www.youtube.com/embed/${videoField}`;
     }
     
+    // Handle URLs with additional parameters like ?t=30s or &t=30s
+    if (videoField.includes("youtube.com/watch")) {
+      const url = new URL(videoField);
+      const videoId = url.searchParams.get('v');
+      if (videoId && isValidYouTubeId(videoId)) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+    
     return null;
+  };
+
+  // Helper function to validate YouTube ID format
+  const isValidYouTubeId = (id: string) => {
+    // YouTube IDs are 11 characters long and contain only valid characters
+    const youtubeIdRegex = /^[a-zA-Z0-9_-]{11}$/;
+    return youtubeIdRegex.test(id);
   };
 
   return (
