@@ -29,6 +29,62 @@ export default function TeamMember() {
     );
   }
 
+  // Helper function to determine if a video is a YouTube URL
+  const isYouTubeVideo = (videoUrl?: string) => {
+    if (!videoUrl) return false;
+    return (
+      videoUrl.includes("youtube.com/watch") || 
+      videoUrl.includes("youtu.be/") ||
+      (videoUrl.length === 11 && !videoUrl.includes("."))
+    );
+  };
+
+  // Helper function to determine if a video is a local file
+  const isLocalVideo = (videoUrl?: string) => {
+    if (!videoUrl) return false;
+    // Check if it's a local path or URL that would point to a video file
+    return (
+      videoUrl.includes(".mp4") || 
+      videoUrl.includes(".webm") || 
+      videoUrl.includes(".ogg") || 
+      videoUrl.includes(".mov") ||
+      videoUrl.startsWith("/") // starts with / means it's likely a relative path
+    );
+  };
+
+  // Helper function to convert YouTube URLs to embed format
+  const getYouTubeEmbedUrl = (videoField?: string) => {
+    if (!videoField) return null;
+    
+    // If it's already an embed URL, return as is
+    if (videoField.includes("youtube.com/embed")) {
+      return videoField;
+    }
+    
+    // If it's a full YouTube URL with watch?v=
+    if (videoField.includes("youtube.com/watch?v=")) {
+      const url = new URL(videoField);
+      const videoId = url.searchParams.get('v');
+      if (videoId) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+    
+    // If it's a youtu.be URL
+    if (videoField.includes("youtu.be/")) {
+      const url = new URL(videoField);
+      const videoId = url.pathname.substring(1); // Remove leading slash
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+    
+    // If it's just a YouTube ID (11 characters)
+    if (videoField.length === 11 && !videoField.includes(".")) {
+      return `https://www.youtube.com/embed/${videoField}`;
+    }
+    
+    return null;
+  };
+
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
       <Link to="/equipo" className="opacity-70 hover:opacity-100 transition-opacity">
@@ -98,18 +154,24 @@ export default function TeamMember() {
         <div className="mt-16">
           <h2 className="mb-5 text-3xl font-bold">Video</h2>
           <div className="aspect-video">
-            <iframe
-              className="h-full w-full rounded-2xl border border-white/10"
-              src={
-                member.video.includes("youtube.com/watch")
-                  ? member.video.replace("watch?v=", "embed/")
-                  : member.video.includes("youtu.be/")
-                    ? member.video.replace("youtu.be/", "youtube.com/embed/")
-                    : member.video
-              }
-              title={member.name}
-              allowFullScreen
-            />
+            {isYouTubeVideo(member.video) ? (
+              <iframe
+                className="h-full w-full rounded-2xl border border-white/10"
+                src={getYouTubeEmbedUrl(member.video) || ""}
+                title={member.name}
+                allowFullScreen
+                sandbox="allow-scripts allow-same-origin"
+              />
+            ) : (
+              <video
+                controls
+                playsInline
+                className="h-full w-full rounded-2xl border border-white/10"
+                src={member.video}
+              >
+                Tu navegador no soporta el elemento de video.
+              </video>
+            )}
           </div>
         </div>
       )}
