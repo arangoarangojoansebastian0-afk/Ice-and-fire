@@ -189,13 +189,13 @@ export default function TeamMember() {
           <h2 className="mb-5 text-3xl font-bold">Video</h2>
           <div className="aspect-video">
             {isYouTubeVideo(member.video) ? (
-              <iframe
-                className="h-full w-full rounded-2xl border border-white/10"
-                src={getYouTubeEmbedUrl(member.video) || ""}
-                title={member.name}
-                allowFullScreen
-                sandbox="allow-scripts allow-same-origin"
-              />
+             <iframe
+              className="h-full w-full rounded-2xl border border-white/10"
+              src={getYouTubeEmbedUrl(member.video) || ""}
+               title={member.name}
+              allowFullScreen
+             />
+
             ) : (
               <video
                 controls
