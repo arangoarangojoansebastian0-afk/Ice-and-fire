@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { Mail, ArrowUpRight } from "lucide-react";
-
-const CONTACT_EMAIL = "icefire.loyola@example.com";
+import { CONTACT_EMAIL, buildGmailComposeUrl } from "../sections/Contact";
 
 export default function Footer() {
   return (
@@ -32,6 +31,21 @@ export default function Footer() {
               </span>
             </span>
             <ArrowUpRight size={16} className="ml-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
+
+          {/* Si el botón de arriba no abre nada (dispositivo sin cliente de
+              correo configurado), este link abre Gmail en el navegador. */}
+          <a
+            href={buildGmailComposeUrl(
+              CONTACT_EMAIL,
+              "Recomendación, carta o sugerencia — Ice and Fire",
+              ""
+            )}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 inline-block text-xs text-ink-faint hover:text-ink hover:underline"
+          >
+            ¿No se abrió nada? Envíalo desde Gmail
           </a>
         </div>
 

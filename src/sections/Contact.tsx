@@ -1,9 +1,29 @@
 import { useState } from "react";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
-import { Mail, Send, CheckCircle2 } from "lucide-react";
+import { Mail, Send, CheckCircle2, ExternalLink } from "lucide-react";
 
-const CONTACT_EMAIL = "icefire.loyola@example.com"; // TODO(Joan): reemplazar por el correo real del equipo
+// Correo oficial del equipo. Todo lo que llega por el formulario o por los
+// enlaces de "escribir" en el sitio se dirige aquí.
+export const CONTACT_EMAIL = "iceandfirejmmi@gmail.com";
+
+// Construye un link de Gmail (versión web) para redactar un correo.
+// Es más confiable que "mailto:" porque no depende de tener un cliente de
+// correo configurado en el navegador o el computador/celular.
+export function buildGmailComposeUrl(to: string, subject: string, body: string) {
+  const params = new URLSearchParams({
+    view: "cm",
+    fs: "1",
+    to,
+    su: subject,
+    body,
+  });
+  return `https://mail.google.com/mail/?${params.toString()}`;
+}
+
+export function buildMailtoUrl(to: string, subject: string, body: string) {
+  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -11,11 +31,13 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
 
+  const subject = `Mensaje desde la web — ${name || "Sin nombre"}`;
+  const body = `${message}\n\n— ${name} (${email})`;
+
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`Mensaje desde la web — ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    // Intento 1: abrir el cliente de correo del dispositivo (Outlook, Mail, etc.)
+    window.location.href = buildMailtoUrl(CONTACT_EMAIL, subject, body);
     setSent(true);
   }
 
@@ -80,17 +102,32 @@ export default function Contact() {
               />
             </div>
 
-            <button
-              type="submit"
-              className="flex items-center gap-2 rounded-full bg-gradient-to-r from-fire-500 to-fire-300 px-6 py-3 text-sm font-semibold text-void transition-transform hover:scale-[1.02]"
-            >
-              <Send size={16} /> Enviar mensaje
-            </button>
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="submit"
+                className="flex items-center gap-2 rounded-full bg-gradient-to-r from-fire-500 to-fire-300 px-6 py-3 text-sm font-semibold text-void transition-transform hover:scale-[1.02]"
+              >
+                <Send size={16} /> Enviar mensaje
+              </button>
+
+              {/* Respaldo: si "Enviar mensaje" no abrió nada (pasa cuando el
+                  dispositivo no tiene un cliente de correo configurado), esto
+                  abre Gmail directamente en el navegador con todo ya escrito. */}
+              <a
+                href={buildGmailComposeUrl(CONTACT_EMAIL, subject, body)}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-medium text-ink-muted transition-colors hover:border-ice-500/40 hover:text-ink"
+              >
+                <ExternalLink size={14} /> ¿No se abrió nada? Envíalo desde Gmail
+              </a>
+            </div>
 
             {sent && (
               <p className="flex items-center gap-2 text-xs text-forest-400">
-                <CheckCircle2 size={14} /> Se abrió tu cliente de correo para
-                enviar el mensaje.
+                <CheckCircle2 size={14} /> Se abrió (o debería abrirse) tu
+                cliente de correo con el mensaje listo para enviar. Si no pasó
+                nada, usa el botón "Envíalo desde Gmail" de arriba.
               </p>
             )}
           </form>
