@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { Mail, ArrowUpRight } from "lucide-react";
+
+const CONTACT_EMAIL = "icefire.loyola@example.com";
 
 export default function Footer() {
   return (
@@ -14,6 +17,22 @@ export default function Footer() {
             Proyecto de investigación del grado 8°4 — I.E. Colegio Loyola para
             la Ciencia y la Innovación, Medellín. Secretaría de Educación.
           </p>
+
+          <a
+            href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Recomendación, carta o sugerencia — Ice and Fire")}`}
+            className="group mt-6 inline-flex items-center gap-3 rounded-2xl border border-fire-400/30 bg-fire-500/10 px-5 py-3 text-sm font-semibold text-ink transition-all hover:-translate-y-0.5 hover:border-fire-400/60 hover:bg-fire-500/20"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-fire-500 to-fire-300 text-void shadow-lg shadow-fire-500/20">
+              <Mail size={17} />
+            </span>
+            <span className="text-left">
+              <span className="block">Enviar recomendación o carta</span>
+              <span className="mt-0.5 block text-xs font-normal text-ink-muted">
+                También puedes enviarnos una sugerencia
+              </span>
+            </span>
+            <ArrowUpRight size={16} className="ml-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
         </div>
 
         <div className="grid grid-cols-2 gap-8 text-sm sm:grid-cols-4">
