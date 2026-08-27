@@ -1,9 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import content from "../data/content.json";
 import { slugify } from "../lib/slug";
-import { Mail } from "lucide-react";
+import { Mail, ExternalLink } from "lucide-react";
 import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon } from "../components/SocialIcons";
 import type { TeamMember } from "../types/cms";
+import { CONTACT_EMAIL, buildGmailComposeUrl, buildMailtoUrl } from "../sections/Contact";
 
 const socialIcons = {
   github: GithubIcon,
@@ -28,6 +29,18 @@ export default function TeamMember() {
       </div>
     );
   }
+
+  // Correo personal del integrante (si lo cargó en el CMS bajo "Redes sociales").
+  const personalEmailLink = member.socialLinks?.find((l) => l.platform === "email");
+  const personalEmail = personalEmailLink?.url.replace(/^mailto:/, "");
+
+  // Si no tiene correo propio, el mensaje se dirige al correo general del
+  // equipo, pero mencionando al integrante en el asunto para que igual le
+  // llegue la referencia.
+  const writeToEmail = personalEmail || CONTACT_EMAIL;
+  const writeToSubject = personalEmail
+    ? `Mensaje para ${member.name} — Ice and Fire`
+    : `Mensaje para ${member.name} (aún sin correo propio) — Ice and Fire`;
 
   // Helper function to determine if a video is a YouTube URL
   const isYouTubeVideo = (videoUrl?: string) => {
@@ -169,6 +182,35 @@ export default function TeamMember() {
                   );
                 })}
               </div>
+            )}
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink-faint">
+              Escríbele a {member.name.split(" ")[0]}
+            </p>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <a
+                href={buildMailtoUrl(writeToEmail, writeToSubject, "")}
+                className="flex items-center gap-2 rounded-full bg-gradient-to-r from-fire-500 to-fire-300 px-5 py-2.5 text-sm font-semibold text-void transition-transform hover:scale-[1.02]"
+              >
+                <Mail size={16} /> Enviar correo
+              </a>
+              <a
+                href={buildGmailComposeUrl(writeToEmail, writeToSubject, "")}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2.5 text-xs font-medium text-ink-muted transition-colors hover:border-ice-500/40 hover:text-ink"
+              >
+                <ExternalLink size={13} /> ¿No se abrió nada? Usar Gmail
+              </a>
+            </div>
+            {!personalEmail && (
+              <p className="mt-3 text-xs text-ink-faint">
+                {member.name.split(" ")[0]} todavía no ha cargado su correo
+                personal en el sitio, así que tu mensaje llegará al correo
+                general del equipo mencionando a quién va dirigido.
+              </p>
             )}
           </div>
 
