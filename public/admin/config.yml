@@ -51,7 +51,7 @@ collections:
                 name: section
                 widget: select
                 required: false
-                options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero]
+                options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence]
               - label: "Si combina varias secciones existentes"
                 name: sections
                 widget: list
@@ -63,7 +63,7 @@ collections:
                   - label: Sección
                     name: section
                     widget: select
-                    options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero]
+                    options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence]
                   - { label: Visible, name: visible, widget: boolean, default: true }
                   - { label: Orden, name: order, widget: number, default: 10 }
               - label: "Si se arma con bloques (tipo = blocks)"
@@ -140,12 +140,25 @@ collections:
               - { label: Nombre completo, name: name, widget: string }
               - { label: Nombre corto (para el menú), name: shortName, widget: string }
               - { label: Logo, name: logo, widget: image, required: false }
-          - label: Portada (Hero)
-            name: home
-            widget: object
+              - label: Redes sociales del sitio (aparecen en el pie de página)
+                name: socialLinks
+                widget: list
+                required: false
+                summary: "{{fields.platform}}"
+                fields:
+                  - label: Plataforma
+                    name: platform
+                    widget: select
+                    options: [github, linkedin, instagram, twitter, email]
+                  - { label: "Enlace o correo", name: url, widget: string }
+          - label: Logos institucionales (pie de página)
+            name: partnerLogos
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
             fields:
-              - { label: Título, name: title, widget: string }
-              - { label: Descripción, name: description, widget: text }
+              - { label: Nombre de la institución, name: name, widget: string }
+              - { label: Logo, name: logo, widget: image }
 
   # ─────────────────────────────────────────────
   - name: equipo
@@ -391,6 +404,14 @@ collections:
             fields:
               - { label: Mes, name: month, widget: string }
               - { label: Resumen del mes, name: text, widget: text }
+          - label: Videos oficiales del equipo (sección "En video")
+            name: videos
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: "ID de YouTube (lo que va después de v= en el enlace)", name: youtubeId, widget: string }
 
   # ─────────────────────────────────────────────
   - name: welcome
@@ -400,8 +421,21 @@ collections:
         label: Sección de bienvenida
         file: src/data/content.json
         fields:
-          - { label: Título de la sección, name: welcomeTitle, widget: string, default: "Bienvenidos al proyecto Ice and Fire" }
-          - { label: Descripción de la sección, name: welcomeDescription, widget: text, default: "Ciencia, tecnología y educación para prevenir incendios forestales." }
+          - label: Portada (Bienvenida)
+            name: home
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string, default: "Bienvenidos al proyecto Ice and Fire" }
+              - { label: Descripción, name: description, widget: text, default: "Ciencia, tecnología y educación para prevenir incendios forestales." }
+              - label: "Video de bienvenida (sube un archivo o pega un enlace de YouTube)"
+                name: video
+                widget: file
+                required: false
+                choose_url: true
+                media_folder: "/public/videos"
+                public_folder: "/videos"
+                hint: "Si lo dejas vacío, se usa automáticamente el primer video de un integrante que esté cargado."
+              - { label: Agradecimientos, name: acknowledgments, widget: text, required: false }
           - label: Pregunta de investigación
             name: researchQuestion
             widget: text
@@ -412,6 +446,7 @@ collections:
             fields:
               - { label: Ámbito, name: scope, widget: string }
               - { label: Descripción, name: text, widget: text }
+              - { label: Fuente, name: source, widget: string, required: false }
 
   # ─────────────────────────────────────────────
   - name: imagenes
@@ -429,3 +464,23 @@ collections:
             name: posterImages
             widget: list
             field: { label: Imagen del póster, name: image, widget: image }
+
+  # ─────────────────────────────────────────────
+  - name: evidencias
+    label: "📎 Evidencias"
+    files:
+      - name: evidencias
+        label: Evidencias del proceso
+        file: src/data/content.json
+        fields:
+          - label: Evidencias
+            name: evidence
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text, required: false }
+              - { label: Fecha, name: date, widget: string, required: false }
+              - { label: Foto, name: image, widget: image, required: false }
+              - { label: "Archivo adjunto (PDF u otro)", name: file, widget: file, required: false }

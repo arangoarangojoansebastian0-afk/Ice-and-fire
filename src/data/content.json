@@ -78,7 +78,8 @@
   "site": {
     "shortName": "Ice and Fire",
     "logo": "/images/uploads/captura-de-pantalla-2026-08-14-103707.png",
-    "name": "Ice and Fire"
+    "name": "Ice and Fire",
+    "socialLinks": []
   },
   "references": [
     "Aguilar-Garavito, M., Quintana, A., Córdova, D., & Rodríguez-Buriticá, S. (2018). Entender el fuego es promover nuestra resiliencia. Instituto Humboldt.",
@@ -548,6 +549,23 @@
   ],
   "home": {
     "title": "Ice and fire",
-    "description": "Ciencia, tecnología y educación para prevenir incendios forestales."
-  }
+    "description": "Ciencia, tecnología y educación para prevenir incendios forestales.",
+    "video": "",
+    "acknowledgments": ""
+  },
+  "partnerLogos": [
+    {
+      "name": "Institución Universitaria ITM",
+      "logo": "/images/logos/itm.png"
+    },
+    {
+      "name": "Alcaldía de Medellín",
+      "logo": "/images/logos/alcaldia-medellin.png"
+    },
+    {
+      "name": "Secretaría de Educación",
+      "logo": "/images/logos/secretaria-educacion.png"
+    }
+  ],
+  "evidence": []
 }

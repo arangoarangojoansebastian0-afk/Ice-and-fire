@@ -3,8 +3,21 @@ import Logo from "./Logo";
 import content from "../data/content.json";
 import { Mail, ArrowUpRight } from "lucide-react";
 import { CONTACT_EMAIL, buildGmailComposeUrl } from "../sections/Contact";
+import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon } from "./SocialIcons";
+import type { SocialLink } from "../types/cms";
+
+const socialIcons = {
+  github: GithubIcon,
+  linkedin: LinkedinIcon,
+  instagram: InstagramIcon,
+  twitter: TwitterIcon,
+  email: Mail,
+};
 
 export default function Footer() {
+  const partnerLogos = content.partnerLogos || [];
+  const socialLinks = (content.site.socialLinks || []) as SocialLink[];
+
   return (
     <footer className="border-t border-white/5 bg-void-2 px-6 py-12 lg:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
@@ -66,6 +79,7 @@ export default function Footer() {
               <li><Link to="/investigacion#antecedentes" className="hover:text-ink">Antecedentes</Link></li>
               <li><Link to="/spray-fire" className="hover:text-ink">Spray Fire</Link></li>
               <li><Link to="/videojuego" className="hover:text-ink">Videojuego</Link></li>
+              <li><Link to="/bibliografia" className="hover:text-ink">Bibliografía</Link></li>
             </ul>
           </div>
           <div>
@@ -94,8 +108,55 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl border-t border-white/5 pt-6 text-xs text-ink-faint">
-        © {new Date().getFullYear()} Equipo Ice and Fire — I.E. Colegio Loyola para la Ciencia y la Innovación.
+      {partnerLogos.length > 0 && (
+        <div className="mx-auto mt-10 flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/5 pt-8">
+          {partnerLogos.map((partner) => (
+            <img
+              key={partner.name}
+              src={partner.logo}
+              alt={partner.name}
+              title={partner.name}
+              className="h-10 w-auto object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 sm:h-12"
+            />
+          ))}
+        </div>
+      )}
+
+      <div
+        className={`mx-auto flex max-w-7xl flex-col-reverse items-start gap-4 pt-6 text-xs text-ink-faint sm:flex-row sm:items-center sm:justify-between ${
+          partnerLogos.length > 0 ? "mt-6" : "mt-10 border-t border-white/5 pt-6"
+        }`}
+      >
+        <p>
+          © {new Date().getFullYear()} Equipo Ice and Fire — I.E. Colegio Loyola para la Ciencia y la Innovación.
+        </p>
+
+        {socialLinks.length > 0 && (
+          <div className="flex items-center gap-4">
+            {socialLinks.map((link, idx) => {
+              const Icon = socialIcons[link.platform];
+              if (!Icon) return null;
+              const href =
+                link.platform === "email"
+                  ? link.url.startsWith("mailto:")
+                    ? link.url
+                    : `mailto:${link.url}`
+                  : link.url;
+              return (
+                <a
+                  key={idx}
+                  href={href}
+                  target={link.platform === "email" ? undefined : "_blank"}
+                  rel="noreferrer"
+                  className="text-ink-muted transition-colors hover:text-ink"
+                  aria-label={link.platform}
+                >
+                  <Icon size={18} />
+                </a>
+              );
+            })}
+          </div>
+        )}
       </div>
     </footer>
   );
