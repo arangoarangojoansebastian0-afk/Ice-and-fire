@@ -75,12 +75,19 @@ export default function CmsSectionPage() {
     return <p className="px-6 py-32 text-center text-ink-muted">Redirigiendo…</p>;
   }
 
-  const configuredSections: PageSection[] =
-    page.sections && Array.isArray(page.sections)
-      ? page.sections
-      : page.section
-        ? [{ section: page.section, visible: true, order: 0 }]
-        : [];
+  // Handle pages with type: "section" that contain sections
+  let configuredSections: PageSection[] = [];
+  
+  if (page.type === "section" && page.sections) {
+    // This is a section-based page with defined sections
+    configuredSections = Array.isArray(page.sections) ? page.sections : [];
+  } else if (page.section) {
+    // This is a single section page
+    configuredSections = [{ section: page.section, visible: true, order: 0 }];
+  } else {
+    // Default case - no specific sections defined
+    configuredSections = [];
+  }
 
   const orderedSections = [...configuredSections]
     .filter((item) => item.visible !== false && typeof item.section === "string")
