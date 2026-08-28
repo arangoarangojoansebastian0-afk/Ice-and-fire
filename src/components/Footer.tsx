@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import content from "../data/content.json";
 import { Mail, ArrowUpRight } from "lucide-react";
 import { CONTACT_EMAIL, buildGmailComposeUrl } from "../sections/Contact";
 
@@ -9,8 +10,16 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
         <div>
           <div className="flex items-center gap-2 font-display text-lg font-semibold text-ink">
-            <Logo size={22} />
-            Ice &amp; Fire
+            {content.site.logo ? (
+              <img
+                src={content.site.logo}
+                alt={content.site.name}
+                className="h-6 w-6 rounded-md object-contain"
+              />
+            ) : (
+              <Logo size={22} />
+            )}
+            {content.site.shortName || content.site.name}
           </div>
           <p className="mt-3 max-w-sm text-sm text-ink-muted">
             Proyecto de investigación del grado 8°4 — I.E. Colegio Loyola para
@@ -64,15 +73,15 @@ export default function Footer() {
             <ul className="space-y-2 text-ink-muted">
               <li><Link to="/equipo" className="hover:text-ink">Quiénes somos</Link></li>
               <li><Link to="/equipo#videos" className="hover:text-ink">Videos</Link></li>
-              <li><Link to="/equipo#bitacoras" className="hover:text-ink">Bitácoras</Link></li>
-              <li><Link to="/equipo#cronograma" className="hover:text-ink">Cronograma</Link></li>
-              <li><Link to="/equipo#poster" className="hover:text-ink">Póster</Link></li>
+              <li><Link to="/bitacora" className="hover:text-ink">Bitácora</Link></li>
+              <li><Link to="/bitacora#cronograma" className="hover:text-ink">Cronograma</Link></li>
+              <li><Link to="/poster" className="hover:text-ink">Póster</Link></li>
             </ul>
           </div>
           <div>
             <p className="mb-3 font-semibold text-ink">Contacto</p>
             <ul className="space-y-2 text-ink-muted">
-              <li><Link to="/equipo#galeria" className="hover:text-ink">Galería</Link></li>
+              <li><Link to="/galeria" className="hover:text-ink">Galería</Link></li>
             </ul>
           </div>
           <div>

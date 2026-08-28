@@ -3,7 +3,7 @@
     {
       "inMenu": true,
       "blocks": [],
-      "name": "Equipo",
+      "name": "Quiénes somos",
       "slug": "equipo",
       "sections": [
         {
@@ -14,57 +14,22 @@
           "order": 10
         },
         {
-          "id": "history",
-          "label": "Historia",
-          "section": "History",
-          "visible": true,
-          "order": 20
-        },
-        {
-          "id": "schedule",
-          "label": "Cronograma",
-          "section": "Schedule",
-          "visible": true,
-          "order": 30
-        },
-        {
-          "id": "timeline",
-          "label": "Línea de tiempo",
-          "section": "Timeline",
-          "visible": true,
-          "order": 40
-        },
-        {
           "id": "multimedia",
           "label": "Videos",
           "section": "Videos",
           "visible": true,
-          "order": 50
-        },
-        {
-          "id": "gallery",
-          "label": "Galería",
-          "section": "Gallery",
-          "visible": true,
-          "order": 60
-        },
-        {
-          "id": "poster",
-          "label": "Póster",
-          "section": "Poster",
-          "visible": true,
-          "order": 70
+          "order": 20
         }
       ],
       "order": 10,
       "visible": true,
       "type": "section",
-      "description": "Integrantes, historia, cronograma y contenido multimedia del equipo."
+      "description": "Conoce a los integrantes del equipo Ice and Fire."
     },
     {
       "inMenu": true,
       "blocks": [],
-      "name": "Investigación",
+      "name": "Proyecto",
       "slug": "investigacion",
       "sections": [
         {
@@ -118,6 +83,58 @@
     {
       "inMenu": true,
       "blocks": [],
+      "name": "Póster",
+      "slug": "poster",
+      "sections": [
+        {
+          "id": "poster",
+          "label": "Póster",
+          "section": "Poster",
+          "visible": true,
+          "order": 10
+        }
+      ],
+      "order": 25,
+      "visible": true,
+      "type": "section",
+      "description": "Resumen visual de la investigación."
+    },
+    {
+      "inMenu": true,
+      "blocks": [],
+      "name": "Bitácora",
+      "slug": "bitacora",
+      "sections": [
+        {
+          "id": "history",
+          "label": "Historia",
+          "section": "History",
+          "visible": true,
+          "order": 10
+        },
+        {
+          "id": "schedule",
+          "label": "Cronograma",
+          "section": "Schedule",
+          "visible": true,
+          "order": 20
+        },
+        {
+          "id": "timeline",
+          "label": "Línea de tiempo",
+          "section": "Timeline",
+          "visible": true,
+          "order": 30
+        }
+      ],
+      "order": 35,
+      "visible": true,
+      "type": "section",
+      "description": "Historia, cronograma y línea de tiempo del equipo."
+    },
+    {
+      "inMenu": true,
+      "blocks": [],
       "name": "STEAM+H",
       "slug": "steam-h",
       "sections": [
@@ -129,10 +146,29 @@
           "order": 10
         }
       ],
-      "order": 30,
+      "order": 40,
       "visible": true,
       "type": "section",
       "description": "Integración de ciencia, tecnología, ingeniería, artes, matemáticas y humanidades."
+    },
+    {
+      "inMenu": true,
+      "blocks": [],
+      "name": "Galería",
+      "slug": "galeria",
+      "sections": [
+        {
+          "id": "gallery",
+          "label": "Galería",
+          "section": "Gallery",
+          "visible": true,
+          "order": 10
+        }
+      ],
+      "order": 45,
+      "visible": true,
+      "type": "section",
+      "description": "Fotos del equipo y del proceso."
     },
     {
       "inMenu": true,
@@ -167,7 +203,7 @@
           "order": 10
         }
       ],
-      "order": 40,
+      "order": 50,
       "visible": false,
       "type": "section",
       "description": "La solución física y científica del proyecto."
@@ -186,7 +222,7 @@
           "order": 10
         }
       ],
-      "order": 50,
+      "order": 55,
       "visible": false,
       "type": "section",
       "description": "Llamas en el Bosque."

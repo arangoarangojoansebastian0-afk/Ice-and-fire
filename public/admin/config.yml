@@ -393,20 +393,25 @@ collections:
               - { label: Resumen del mes, name: text, widget: text }
 
   # ─────────────────────────────────────────────
-  - name: videos
-    label: "🎬 Videos"
+  - name: welcome
+    label: "👋 Bienvenida"
     files:
-      - name: videos
-        label: Videos del equipo
+      - name: welcome
+        label: Sección de bienvenida
         file: src/data/content.json
         fields:
-          - label: Videos generales (YouTube)
-            name: videos
+          - { label: Título de la sección, name: welcomeTitle, widget: string, default: "Bienvenidos al proyecto Ice and Fire" }
+          - { label: Descripción de la sección, name: welcomeDescription, widget: text, default: "Ciencia, tecnología y educación para prevenir incendios forestales." }
+          - label: Pregunta de investigación
+            name: researchQuestion
+            widget: text
+          - label: Contexto del proyecto
+            name: contextTiers
             widget: list
-            summary: "{{fields.title}}"
+            summary: "{{fields.scope}}"
             fields:
-              - { label: Título, name: title, widget: string }
-              - { label: "ID de YouTube (lo que va después de v=)", name: youtubeId, widget: string }
+              - { label: Ámbito, name: scope, widget: string }
+              - { label: Descripción, name: text, widget: text }
 
   # ─────────────────────────────────────────────
   - name: imagenes

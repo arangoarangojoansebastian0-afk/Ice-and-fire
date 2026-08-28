@@ -22,6 +22,8 @@ import Poster from "../sections/Poster";
 import Contact from "../sections/Contact";
 import Hero from "../sections/Hero";
 import Bibliography from "../sections/Bibliography";
+import Welcome from "../sections/Welcome";
+import Evidence from "../sections/Evidence";
 
 import type { Page, PageSection, SectionType } from "../types/cms";
 
@@ -44,6 +46,8 @@ const sections: Record<SectionType, React.ComponentType> = {
   Contact,
   Hero,
   Bibliography,
+  Welcome,
+  Evidence,
 };
 
 export default function CmsSectionPage() {

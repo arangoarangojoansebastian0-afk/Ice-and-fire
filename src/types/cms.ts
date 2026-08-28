@@ -16,7 +16,9 @@ export type SectionType =
   | "Poster"
   | "Contact"
   | "Hero"
-  | "Bibliography";
+  | "Bibliography"
+  | "Welcome"
+  | "Evidence";
 
 export type BlockType =
   | "text"

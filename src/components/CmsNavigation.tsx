@@ -70,7 +70,18 @@ export default function CmsNavigation() {
 
         {/* MENÚ */}
         <div className="flex min-w-max flex-1 items-center gap-2">
-          
+
+          <Link
+            to="/"
+            className={`whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${
+              location.pathname === "/"
+                ? "bg-white/10 opacity-100"
+                : "opacity-80 hover:bg-white/10 hover:opacity-100"
+            }`}
+          >
+            Inicio
+          </Link>
+
           {standalonePages.map((page) => (
             <Link
               key={page.slug}
