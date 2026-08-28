@@ -1,4 +1,18 @@
 {
+  "partnerLogos": [
+    {
+      "name": "Institución Universitaria ITM",
+      "logo": "/images/logos/itm.png"
+    },
+    {
+      "name": "Alcaldía de Medellín",
+      "logo": "/images/logos/alcaldia-medellin.png"
+    },
+    {
+      "name": "Secretaría de Educación",
+      "logo": "/images/logos/secretaria-educacion.png"
+    }
+  ],
   "gameLevels": [
     {
       "name": "Zona de Frontera",
@@ -306,6 +320,12 @@
     "Envase portátil en spray, fácil de aplicar sin equipo especializado.",
     "Bajo costo comparado con retardantes comerciales."
   ],
+  "evidence": [
+    {
+      "title": "Archivo de planteamiento de problema",
+      "file": "/images/uploads/planteamiento-de-problema-equipo-ice-and-fire.docx"
+    }
+  ],
   "schedule": [
     {
       "date": "28/08/2026",
@@ -552,20 +572,5 @@
     "description": "Ciencia, tecnología y educación para prevenir incendios forestales.",
     "video": "",
     "acknowledgments": ""
-  },
-  "partnerLogos": [
-    {
-      "name": "Institución Universitaria ITM",
-      "logo": "/images/logos/itm.png"
-    },
-    {
-      "name": "Alcaldía de Medellín",
-      "logo": "/images/logos/alcaldia-medellin.png"
-    },
-    {
-      "name": "Secretaría de Educación",
-      "logo": "/images/logos/secretaria-educacion.png"
-    }
-  ],
-  "evidence": []
+  }
 }
