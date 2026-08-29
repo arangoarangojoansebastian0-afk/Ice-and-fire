@@ -290,6 +290,11 @@
   ],
   "generalObjective": "Desarrollar una alternativa integral para la prevención y mitigación de incendios forestales, mediante la formulación de un spray ignífugo natural y biodegradable y el diseño de un videojuego educativo e interactivo, con el propósito de fortalecer la educación y conciencia ambiental de la comunidad, fomentar prácticas responsables y contribuir a la prevención y reducción de los incendios forestales.",
   "gallery": [],
+  "supportForm": {
+    "title": "¿Qué opinas sobre los incendios causados por el ser humano?",
+    "description": "Ayúdanos con este formulario a diseñar el videojuego educativo del proyecto: tus respuestas nos dan ideas reales para enseñar, divertir y proponer soluciones.",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSc5IHDNxq2_oS416Eb3kfckInwxLqGyqs_nmC120ThLDcTVLQ/viewform"
+  },
   "steamHIntro": "El modelo STEAM+H es la práctica pedagógica del Colegio Loyola que integra distintas áreas del conocimiento para enriquecer el aprendizaje: en cualquier asignatura se pueden aplicar métodos y herramientas propios de otras materias.",
   "ideasConsidered": [
     {
@@ -482,7 +487,7 @@
   "team": [
     {
       "name": "Joan Sebastián Arango",
-      "role": "Líder",
+      "role": "Líder.",
       "photo": "/images/uploads/img_20260729_064923-1-.jpg",
       "blurb": "Mi función como líder es dirigir y coordinar al equipo durante el desarrollo del proyecto. Me encargo de organizar las tareas, tomar decisiones importantes y asegurarme de que todos cumplan con sus responsabilidades. También escucho las ideas de mis compañeros, ayudo a resolver problemas y mantengo al equipo enfocado en nuestros objetivos. Además, represento al grupo en reuniones, exposiciones y actividades del proyecto.\n",
       "visible": true,
@@ -572,10 +577,5 @@
     "description": "Ciencia, tecnología y educación para prevenir incendios forestales.",
     "video": "",
     "acknowledgments": ""
-  },
-  "supportForm": {
-    "title": "¿Qué opinas sobre los incendios causados por el ser humano?",
-    "description": "Ayúdanos con este formulario a diseñar el videojuego educativo del proyecto: tus respuestas nos dan ideas reales para enseñar, divertir y proponer soluciones.",
-    "url": "https://docs.google.com/forms/d/e/1FAIpQLSc5IHDNxq2_oS416Eb3kfckInwxLqGyqs_nmC120ThLDcTVLQ/viewform"
   }
 }
