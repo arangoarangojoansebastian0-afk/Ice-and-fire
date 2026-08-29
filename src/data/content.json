@@ -1,4 +1,18 @@
 {
+  "partnerLogos": [
+    {
+      "name": "Institución Universitaria ITM",
+      "logo": "/images/logos/itm.png"
+    },
+    {
+      "name": "Alcaldía de Medellín",
+      "logo": "/images/logos/alcaldia-medellin.png"
+    },
+    {
+      "name": "Secretaría de Educación",
+      "logo": "/images/logos/secretaria-educacion.png"
+    }
+  ],
   "gameLevels": [
     {
       "name": "Zona de Frontera",
@@ -143,7 +157,7 @@
     "Fogatas y quemas agrícolas mal controladas, especialmente en épocas de sequía.",
     "Deforestación para ampliar terrenos de ganadería y agricultura a gran escala.",
     "Minería ilegal y tala de madera, que alteran el suelo y las fuentes de agua.",
-    "Urbanización informal en zonas de ladera, que deja pastizales secos altamente inflamables.",
+    "Urbanización informal en zonas de ladera, que deja pastizales secos altamente inflamable.",
     "Falta de educación ambiental y de estrategias atractivas para enseñar a prevenir incendios."
   ],
   "methodologyPhaseB": [
@@ -305,6 +319,12 @@
     "Biodegradable: no dejar residuos químicos persistentes en el ecosistema.",
     "Envase portátil en spray, fácil de aplicar sin equipo especializado.",
     "Bajo costo comparado con retardantes comerciales."
+  ],
+  "evidence": [
+    {
+      "title": "Archivo de planteamiento de problema",
+      "file": "/images/uploads/planteamiento-de-problema-equipo-ice-and-fire.docx"
+    }
   ],
   "schedule": [
     {
@@ -553,21 +573,6 @@
     "video": "",
     "acknowledgments": ""
   },
-  "partnerLogos": [
-    {
-      "name": "Institución Universitaria ITM",
-      "logo": "/images/logos/itm.png"
-    },
-    {
-      "name": "Alcaldía de Medellín",
-      "logo": "/images/logos/alcaldia-medellin.png"
-    },
-    {
-      "name": "Secretaría de Educación",
-      "logo": "/images/logos/secretaria-educacion.png"
-    }
-  ],
-  "evidence": [],
   "supportForm": {
     "title": "¿Qué opinas sobre los incendios causados por el ser humano?",
     "description": "Ayúdanos con este formulario a diseñar el videojuego educativo del proyecto: tus respuestas nos dan ideas reales para enseñar, divertir y proponer soluciones.",
