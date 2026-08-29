@@ -18,7 +18,8 @@ export type SectionType =
   | "Hero"
   | "Bibliography"
   | "Welcome"
-  | "Evidence";
+  | "Evidence"
+  | "SupportForm";
 
 export type BlockType =
   | "text"

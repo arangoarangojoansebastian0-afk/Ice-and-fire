@@ -236,7 +236,7 @@ export default function TeamMember() {
   src={getYouTubeEmbedUrl(member.video) || ""}
   title={member.name}
   allowFullScreen
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 />
 
 

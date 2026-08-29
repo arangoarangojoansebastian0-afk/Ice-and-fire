@@ -51,7 +51,7 @@ collections:
                 name: section
                 widget: select
                 required: false
-                options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence]
+                options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence, SupportForm]
               - label: "Si combina varias secciones existentes"
                 name: sections
                 widget: list
@@ -63,7 +63,7 @@ collections:
                   - label: Sección
                     name: section
                     widget: select
-                    options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence]
+                    options: [Problem, History, Journey, Research, Antecedents, Methodology, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence, SupportForm]
                   - { label: Visible, name: visible, widget: boolean, default: true }
                   - { label: Orden, name: order, widget: number, default: 10 }
               - label: "Si se arma con bloques (tipo = blocks)"
@@ -307,6 +307,16 @@ collections:
             fields:
               - { label: Paso, name: step, widget: string }
               - { label: Detalle, name: detail, widget: text }
+          - label: "Formulario de apoyo a la investigación (se incrusta en la página Proyecto)"
+            name: supportForm
+            widget: object
+            fields:
+              - { label: Título que se muestra arriba del formulario, name: title, widget: string }
+              - { label: Texto de introducción, name: description, widget: text, required: false }
+              - label: "Enlace del formulario (Google Forms → Enviar → ícono de enlace)"
+                name: url
+                widget: string
+                hint: "Pega el link que termina en /viewform. No hace falta agregar ?embedded=true, se agrega solo."
 
   # ─────────────────────────────────────────────
   - name: bibliografia

@@ -73,6 +73,13 @@
           "section": "Game",
           "visible": true,
           "order": 60
+        },
+        {
+          "id": "apoya-la-investigacion",
+          "label": "Ayúdanos a investigar",
+          "section": "SupportForm",
+          "visible": true,
+          "order": 70
         }
       ],
       "order": 20,

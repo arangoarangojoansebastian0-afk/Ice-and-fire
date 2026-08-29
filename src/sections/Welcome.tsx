@@ -40,7 +40,7 @@ export default function Welcome() {
                   className="h-full w-full"
                   src={getYouTubeEmbedUrl(welcomeVideo)}
                   title={home.title || "Video de bienvenida"}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
               ) : (

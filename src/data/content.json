@@ -567,5 +567,10 @@
       "logo": "/images/logos/secretaria-educacion.png"
     }
   ],
-  "evidence": []
+  "evidence": [],
+  "supportForm": {
+    "title": "¿Qué opinas sobre los incendios causados por el ser humano?",
+    "description": "Ayúdanos con este formulario a diseñar el videojuego educativo del proyecto: tus respuestas nos dan ideas reales para enseñar, divertir y proponer soluciones.",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSc5IHDNxq2_oS416Eb3kfckInwxLqGyqs_nmC120ThLDcTVLQ/viewform"
+  }
 }

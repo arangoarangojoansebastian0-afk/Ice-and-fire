@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import pagesData from "../data/pages.json";
 import CmsBlockRenderer from "../components/CmsBlockRenderer";
+import NotFound from "./NotFound";
 
 import Problem from "../sections/Problem";
 import History from "../sections/History";
@@ -23,6 +24,7 @@ import Hero from "../sections/Hero";
 import Bibliography from "../sections/Bibliography";
 import Welcome from "../sections/Welcome";
 import Evidence from "../sections/Evidence";
+import SupportForm from "../sections/SupportForm";
 
 import type { Page, PageSection, SectionType } from "../types/cms";
 
@@ -47,46 +49,13 @@ const sections: Record<SectionType, React.ComponentType> = {
   Bibliography,
   Welcome,
   Evidence,
+  SupportForm,
 };
 
 export default function CmsSectionPage() {
   const { slug } = useParams();
   const pages = pagesData.pages as Page[];
-  
-  // Debug: mostrar qué slug estamos recibiendo
-  console.log("Slug recibido:", slug);
-  console.log("Páginas disponibles:", pages);
-
-  // Buscar página por slug
   const page = pages.find((p) => p.slug === slug);
-  console.log("Página encontrada:", page);
-
-  if (!page || !page.visible) {
-    console.log("Página no encontrada o no visible, mostrando mensaje de error");
-    return (
-      <div className="flex min-h-[70vh] flex-col items-center justify-center px-6 text-center">
-        <div className="text-fire-400 mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 2v20"></path>
-            <path d="m19 12-7 7-7-7"></path>
-          </svg>
-        </div>
-        <h1 className="mt-6 font-display text-4xl font-semibold text-ink">
-          Esta página se apagó
-        </h1>
-        <p className="mt-3 max-w-sm text-sm text-ink-muted">
-          No encontramos lo que buscabas. Vuelve al inicio para seguir
-          explorando el proyecto.
-        </p>
-        <a
-          href="/"
-          className="mt-8 rounded-full bg-gradient-to-r from-fire-500 to-fire-300 px-6 py-3 text-sm font-semibold text-void"
-        >
-          Volver al inicio
-        </a>
-      </div>
-    );
-  }
 
   const externalUrl =
     page?.type === "external" &&
@@ -99,6 +68,10 @@ export default function CmsSectionPage() {
       window.location.assign(externalUrl);
     }
   }, [externalUrl]);
+
+  if (!page || !page.visible) {
+    return <NotFound />;
+  }
 
   if (externalUrl) {
     return <p className="px-6 py-32 text-center text-ink-muted">Redirigiendo…</p>;
