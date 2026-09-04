@@ -328,7 +328,7 @@
   "evidence": [
     {
       "title": "Archivo de planteamiento de problema",
-      "file": "https://docs.google.com/document/d/1mQlC0zQ92xMt-ROIpTObGWHaigZ7_rZd/edit?usp=sharing&ouid=104325874932641978039&rtpof=true&sd=true"
+      "file": "/images/uploads/planteamiento-de-problema-equipo-ice-and-fire.docx"
     }
   ],
   "schedule": [
@@ -550,6 +550,10 @@
         {
           "platform": "instagram",
           "url": "https://www.instagram.com/velez222026/"
+        },
+        {
+          "platform": "email",
+          "url": "miguel.velezd@iecolegioloyola.edu.co"
         }
       ],
       "order": 40,
