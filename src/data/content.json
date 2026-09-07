@@ -105,6 +105,10 @@
       {
         "url": "https://www.tiktok.com/@iceandfire_equipo",
         "platform": "tiktok"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/@equipo_iceandfire"
       }
     ]
   },
