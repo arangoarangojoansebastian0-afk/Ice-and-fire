@@ -25,12 +25,37 @@ export function GithubIcon({ size = 20, className }: IconProps) {
   );
 }
 
-export function LinkedinIcon({ size = 20, className }: IconProps) {
+export function TiktokIcon({ size = 20, className }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" className={className} {...base}>
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v2a5.9 5.9 0 0 1 2-2Z" />
-      <rect x="2" y="9" width="4" height="12" />
-      <circle cx="4" cy="4" r="2" />
+      <path d="M16 3v10.5a3.5 3.5 0 1 1-3.5-3.5" />
+      <path d="M16 3c.2 2.2 1.8 4 4 4.3" />
+    </svg>
+  );
+}
+
+export function YoutubeIcon({ size = 20, className }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" className={className} {...base}>
+      <rect x="2" y="5" width="20" height="14" rx="4" />
+      <path d="M10 9.5l5 2.5-5 2.5v-5Z" />
+    </svg>
+  );
+}
+
+export function WhatsappIcon({ size = 20, className }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" className={className} {...base}>
+      <path d="M4 20l1.3-3.8A8 8 0 1 1 8.7 19L4 20Z" />
+      <path d="M9 9.5c0 3 2.5 5.5 5.5 5.5" />
+    </svg>
+  );
+}
+
+export function FacebookIcon({ size = 20, className }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" className={className} {...base}>
+      <path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5a.5.5 0 0 1 .5-.5H16Z" />
     </svg>
   );
 }

@@ -3,14 +3,17 @@ import Logo from "./Logo";
 import content from "../data/content.json";
 import { Mail, ArrowUpRight } from "lucide-react";
 import { CONTACT_EMAIL, buildGmailComposeUrl } from "../sections/Contact";
-import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon } from "./SocialIcons";
+import { GithubIcon, InstagramIcon, TwitterIcon, TiktokIcon, YoutubeIcon, WhatsappIcon, FacebookIcon } from "./SocialIcons";
 import type { SocialLink } from "../types/cms";
 
 const socialIcons = {
   github: GithubIcon,
-  linkedin: LinkedinIcon,
   instagram: InstagramIcon,
   twitter: TwitterIcon,
+  tiktok: TiktokIcon,
+  youtube: YoutubeIcon,
+  whatsapp: WhatsappIcon,
+  facebook: FacebookIcon,
   email: Mail,
 };
 

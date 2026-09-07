@@ -149,7 +149,7 @@ collections:
                   - label: Plataforma
                     name: platform
                     widget: select
-                    options: [github, linkedin, instagram, twitter, email]
+                    options: [github, instagram, twitter, tiktok, youtube, whatsapp, facebook, email]
                   - { label: "Enlace o correo", name: url, widget: string }
           - label: Logos institucionales (pie de página)
             name: partnerLogos
@@ -203,7 +203,7 @@ collections:
                   - label: Plataforma
                     name: platform
                     widget: select
-                    options: [github, linkedin, instagram, twitter, email]
+                    options: [github, instagram, twitter, tiktok, youtube, whatsapp, facebook, email]
                   - { label: "Enlace o correo", name: url, widget: string }
 
   # ─────────────────────────────────────────────

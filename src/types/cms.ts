@@ -32,7 +32,7 @@ export type BlockType =
   | "reusable";
 
 export interface SocialLink {
-  platform: "github" | "linkedin" | "instagram" | "twitter" | "email";
+  platform: "github" | "instagram" | "twitter" | "email" | "tiktok" | "youtube" | "whatsapp" | "facebook";
   url: string;
 }
 
