@@ -97,7 +97,16 @@
     "shortName": "Ice and Fire",
     "logo": "/images/uploads/nuevo-logo.jpg",
     "name": "Ice and Fire",
-    "socialLinks": []
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/iceandfire_equipo/"
+      },
+      {
+        "url": "https://www.tiktok.com/@iceandfire_equipo",
+        "platform": "instagram"
+      }
+    ]
   },
   "references": [
     "Aguilar-Garavito, M., Quintana, A., Córdova, D., & Rodríguez-Buriticá, S. (2018). Entender el fuego es promover nuestra resiliencia. Instituto Humboldt.",
