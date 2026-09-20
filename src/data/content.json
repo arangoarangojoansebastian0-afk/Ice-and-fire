@@ -594,13 +594,14 @@
     },
     {
       "name": "Samuel Tano Gómez",
-      "role": "Comunicador",
-      "photo": "/images/uploads/img_20260729_064726-1-.jpg",
-      "blurb": "Mi función como comunicador es transmitir de manera clara la información relacionada con nuestro proyecto. Me encargo de explicar nuestras ideas, objetivos, procesos y resultados tanto dentro como fuera del equipo. También puedo participar en la preparación de exposiciones, presentaciones, carteles, publicaciones y otros medios que nos ayuden a dar a conocer nuestro trabajo. Debo asegurarme de que la información sea entendible y esté bien organizada. Además, ayudo a mantener una buena comunicación entre todos los integrantes del equipo para evitar confusiones o pérdida de información. Durante las presentaciones, soy uno de los encargados de explicar el proyecto y responder las preguntas que puedan surgir.",
-      "visible": true,
-      "order": 50,
       "socialLinks": [],
-      "video": "https://youtube.com/shorts/8VnBCrMpdOg"
+      "order": 50,
+      "visible": true,
+      "photo": "/images/uploads/img_20260729_064726-1-.jpg",
+      "biography": "Soy Samuel Alejandro Tano Gómez,\n\nNací el 21/02/2013 en Montería, Córdoba. Las personas más importantes en mi vida son mi mamá, mi papá y mis hermanos. \n\nMi primer recuerdo: Cuando conocí el mar por primera vez en San Bernardo del Viento. Este recuerdo fue el 28/04/19. Fue unos de mis mejores momentos, en esos años yo jugaba mucho al fútbol y a las escondidas para ese tiempo yo vivía en Tierralta, Córdoba.\n\nA la edad de 5 años viví otro momento emocionante en mi vida: Junto a mi familia visitamos el parque Explora en Medellín. Allí conocí a una Anaconda y una tarántula por primera vez  y esta visita fue impactante.\n\nMi etapa escolar empezó desde preescolar y primaria, en la cual aprendí muchas cosas básicas y avanzadas como: el respeto y la logaritmación.\n\nEn secundaria, he aprendido muchas cosas más avanzadas, por ejemplo, las Ecuaciones Químicas o los Polinomios Aritméticos.\n\nMe gusta mucho los videojuegos, los deportes, el estudio. \nTengo un mayor reto que es seguir adelante y destacarme. \n\nMis cualidades y mis aportes que le voy a dar a mi equipo:\nla solución científica o química para el proyecto y solucionar también mis conocimientos en los temas específicos para el proyecto.\n\nY dar mis mejores esfuerzos para que logremos nuestros objetivos.",
+      "role": "Comunicador",
+      "video": "https://youtube.com/shorts/8VnBCrMpdOg",
+      "blurb": "Mi función como comunicador es transmitir de manera clara la información relacionada con nuestro proyecto. Me encargo de explicar nuestras ideas, objetivos, procesos y resultados tanto dentro como fuera del equipo. También puedo participar en la preparación de exposiciones, presentaciones, carteles, publicaciones y otros medios que nos ayuden a dar a conocer nuestro trabajo. Debo asegurarme de que la información sea entendible y esté bien organizada. Además, ayudo a mantener una buena comunicación entre todos los integrantes del equipo para evitar confusiones o pérdida de información. Durante las presentaciones, soy uno de los encargados de explicar el proyecto y responder las preguntas que puedan surgir."
     }
   ],
   "home": {
