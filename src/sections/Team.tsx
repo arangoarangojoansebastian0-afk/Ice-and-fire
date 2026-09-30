@@ -51,6 +51,8 @@ export default function Team() {
                       src={member.photo}
                       alt={member.name}
                       className="w-full aspect-square object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   )}
 

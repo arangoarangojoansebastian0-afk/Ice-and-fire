@@ -52,6 +52,8 @@ export default function Evidence() {
                     src={item.image}
                     alt={item.title}
                     className="h-48 w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 ) : item.file ? (
                   <a

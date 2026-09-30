@@ -80,8 +80,8 @@ export default function Footer() {
             <ul className="space-y-2 text-ink-muted">
               <li><Link to="/investigacion" className="hover:text-ink">Investigación</Link></li>
               <li><Link to="/investigacion#antecedentes" className="hover:text-ink">Antecedentes</Link></li>
-              <li><Link to="/spray-fire" className="hover:text-ink">Spray Fire</Link></li>
-              <li><Link to="/videojuego" className="hover:text-ink">Videojuego</Link></li>
+              <li><Link to="/investigacion#spray" className="hover:text-ink">Spray Fire</Link></li>
+              <li><Link to="/investigacion#videojuego" className="hover:text-ink">Videojuego</Link></li>
               <li><Link to="/bibliografia" className="hover:text-ink">Bibliografía</Link></li>
             </ul>
           </div>
@@ -111,8 +111,18 @@ export default function Footer() {
         </div>
       </div>
 
-      {partnerLogos.length > 0 && (
+      {(partnerLogos.length > 0 || content.site.logo) && (
         <div className="mx-auto mt-10 flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/5 pt-8">
+          {content.site.logo && (
+            <img
+              src={content.site.logo}
+              alt={`Logo de ${content.site.name}`}
+              title={content.site.name}
+              className="h-14 w-14 rounded-lg object-contain"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
           {partnerLogos.map((partner) => (
             <img
               key={partner.name}
@@ -120,6 +130,8 @@ export default function Footer() {
               alt={partner.name}
               title={partner.name}
               className="h-10 w-auto object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 sm:h-12"
+              loading="lazy"
+              decoding="async"
             />
           ))}
         </div>

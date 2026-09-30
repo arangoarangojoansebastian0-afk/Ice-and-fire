@@ -86,25 +86,27 @@ export default function Welcome() {
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-ink-faint">
               Nombres y roles
             </h3>
-            <div className="mt-5 flex flex-wrap gap-4">
+            <div className="mt-5 grid grid-cols-1 gap-3 min-[480px]:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
               {team.map((member) => (
                 <Link
                   key={member.name}
                   to={`/equipo/${slugify(member.name)}`}
-                  className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] py-2 pl-2 pr-4 transition-colors hover:border-fire-400/40 hover:bg-white/[0.06]"
+                  className="group flex min-w-0 w-full items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] py-2 pl-2 pr-4 transition-colors hover:border-fire-400/40 hover:bg-white/[0.06]"
                 >
                   {member.photo ? (
                     <img
                       src={member.photo}
                       alt={member.name}
                       className="h-11 w-11 rounded-xl object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-sm font-semibold text-ink">
                       {member.name.charAt(0)}
                     </span>
                   )}
-                  <span>
+                  <span className="min-w-0 break-words">
                     <span className="block text-sm font-semibold text-ink group-hover:text-fire-300">
                       {member.name}
                     </span>

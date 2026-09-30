@@ -8,7 +8,8 @@ export default function ScrollToHash() {
     if (!hash) return;
 
     const target = document.getElementById(hash.slice(1));
-    target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    target?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
   }, [hash]);
 
   return null;

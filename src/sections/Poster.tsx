@@ -33,7 +33,7 @@ export default function Poster() {
                   rel="noreferrer"
                   className="block overflow-hidden rounded-2xl border border-white/10"
                 >
-                  <img src={src} alt="Póster Ice and Fire" className="w-full" />
+                  <img src={src} alt="Póster Ice and Fire" className="w-full" loading="lazy" decoding="async" />
                 </a>
               ))}
             </div>
