@@ -13,6 +13,7 @@ export type SectionType =
   | "Timeline"
   | "Videos"
   | "Gallery"
+  | "GaleriaTabs"
   | "Team"
   | "Poster"
   | "Contact"

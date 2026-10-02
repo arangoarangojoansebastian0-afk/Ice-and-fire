@@ -18,6 +18,7 @@ import Schedule from "../sections/Schedule";
 import Timeline from "../sections/Timeline";
 import Videos from "../sections/Videos";
 import Gallery from "../sections/Gallery";
+import GaleriaTabs from "../sections/GaleriaTabs";
 import Team from "../sections/Team";
 import Poster from "../sections/Poster";
 import Contact from "../sections/Contact";
@@ -44,6 +45,7 @@ const sections: Record<SectionType, React.ComponentType> = {
   Timeline,
   Videos,
   Gallery,
+  GaleriaTabs,
   Team,
   Poster,
   Contact,

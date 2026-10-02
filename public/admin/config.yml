@@ -51,7 +51,7 @@ collections:
                 name: section
                 widget: select
                 required: false
-                options: [Problem, History, Journey, Research, Antecedents, Methodology, Interconnection, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence, SupportForm]
+                options: [Problem, History, Journey, Research, Antecedents, Methodology, Interconnection, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, GaleriaTabs, Team, Poster, Contact, Hero, Bibliography, Evidence, SupportForm]
               - label: "Si combina varias secciones existentes"
                 name: sections
                 widget: list
@@ -63,7 +63,7 @@ collections:
                   - label: Sección
                     name: section
                     widget: select
-                    options: [Problem, History, Journey, Research, Antecedents, Methodology, Interconnection, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, Team, Poster, Contact, Hero, Bibliography, Evidence, SupportForm]
+                    options: [Problem, History, Journey, Research, Antecedents, Methodology, Interconnection, Spray, Game, Steam, Schedule, Timeline, Videos, Gallery, GaleriaTabs, Team, Poster, Contact, Hero, Bibliography, Evidence, SupportForm]
                   - { label: Visible, name: visible, widget: boolean, default: true }
                   - { label: Orden, name: order, widget: number, default: 10 }
               - label: "Si se arma con bloques (tipo = blocks)"
