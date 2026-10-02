@@ -21,6 +21,13 @@
           "label": "Historia"
         },
         {
+          "visible": true,
+          "order": 10,
+          "section": "Journey",
+          "id": "Viaje",
+          "label": "Viaje"
+        },
+        {
           "id": "multimedia",
           "label": "Videos",
           "section": "Videos",
