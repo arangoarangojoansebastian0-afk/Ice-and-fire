@@ -1,0 +1,1217 @@
+{
+ "categories": [
+  {
+   "id": "01_Incendios_Medellin_Antioquia",
+   "name": "Incendios en Medellín y Antioquia"
+  },
+  {
+   "id": "02_Bomberos_y_extincion",
+   "name": "Bomberos y extinción"
+  },
+  {
+   "id": "03_Bosques_quemados_y_danos",
+   "name": "Bosques quemados y daños"
+  },
+  {
+   "id": "04_Prevencion",
+   "name": "Prevención"
+  },
+  {
+   "id": "05_Spray_y_retardantes",
+   "name": "Spray y retardantes"
+  },
+  {
+   "id": "06_Ingredientes_naturales",
+   "name": "Ingredientes naturales"
+  },
+  {
+   "id": "07_Educacion_ambiental",
+   "name": "Educación ambiental"
+  },
+  {
+   "id": "08_Videojuegos_educativos",
+   "name": "Videojuegos educativos"
+  }
+ ],
+ "images": [
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Cerro El Picacho Medellin",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Cerro_El_Picacho_Medellin.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Cerro_El_Picacho_Medellin_t.jpg",
+   "author": "Luis90f",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cerro_El_Picacho_Medellin.jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Chíquiza incendio",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Chiquiza_incendio.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Chiquiza_incendio_t.jpg",
+   "author": "Petruss",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Ch%C3%ADquiza_incendio.jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Donnie Creek fire ESA24921348",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Donnie_Creek_fire_ESA24921348.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Donnie_Creek_fire_ESA24921348_t.jpg",
+   "author": "European Space Agency",
+   "license": "Attribution",
+   "source": "https://commons.wikimedia.org/wiki/File:Donnie_Creek_fire_ESA24921348.jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Fire detections from MODIS South America",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Fire_detections_from_MODIS_South_America.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Fire_detections_from_MODIS_South_America_t.jpg",
+   "author": "NASA",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_detections_from_MODIS_(South_America).png"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Fires in Venezuela and Colombia MODIS 2016-01-26",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Fires_in_Venezuela_and_Colombia_MODIS_2016-01-26.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Fires_in_Venezuela_and_Colombia_MODIS_2016-01-26_t.jpg",
+   "author": "Jeff Schmaltz, MODIS Land Rapid Response Team, NASA GSFC",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Fires_in_Venezuela_and_Colombia_(MODIS_2016-01-26).jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Forest Fire - La Calera Road - Feb 2016 - Eastern Hills Bogotá",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Forest_Fire_-_La_Calera_Road_-_Feb_2016_-_Eastern_Hills_Bogota.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Forest_Fire_-_La_Calera_Road_-_Feb_2016_-_Eastern_Hills_Bogota_t.jpg",
+   "author": "Tisquesusa",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Forest_Fire_-_La_Calera_Road_-_Feb_2016_-_Eastern_Hills,_Bogot%C3%A1.jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Incendio forestal en Colombia",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Incendio_forestal_en_Colombia.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Incendio_forestal_en_Colombia_t.jpg",
+   "author": "CristianoRonaldoPremiumSK",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Incendio_forestal_en_Colombia.jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Panorámica de Medellín desde el Cerro El Picacho",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Panoramica_de_Medellin_desde_el_Cerro_El_Picacho.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Panoramica_de_Medellin_desde_el_Cerro_El_Picacho_t.jpg",
+   "author": "Luis90f",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_de_Medell%C3%ADn_desde_el_Cerro_El_Picacho.jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Panorámica de Medellín desde la zona nor-oriental",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Panoramica_de_Medellin_desde_la_zona_nor-oriental.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Panoramica_de_Medellin_desde_la_zona_nor-oriental_t.jpg",
+   "author": "Pipepunk Andres Felipe Patiño Londoño",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_de_Medell%C3%ADn_desde_la_zona_nor-oriental.jpg"
+  },
+  {
+   "category": "01_Incendios_Medellin_Antioquia",
+   "title": "Vista Picacho",
+   "src": "/images/banco/01_Incendios_Medellin_Antioquia/Vista_Picacho.jpg",
+   "thumb": "/images/banco/01_Incendios_Medellin_Antioquia/Vista_Picacho_t.jpg",
+   "author": "Camilogc04",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Vista_Picacho.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Bomberos Forestales",
+   "src": "/images/banco/02_Bomberos_y_extincion/Bomberos_Forestales.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Bomberos_Forestales_t.jpg",
+   "author": "Bobjgalindo",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bomberos_Forestales.JPG"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Bomberos Villa Alemana",
+   "src": "/images/banco/02_Bomberos_y_extincion/Bomberos_Villa_Alemana.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Bomberos_Villa_Alemana_t.jpg",
+   "author": "Milodon3",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bomberos_Villa_Alemana.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "CH-46E refilling a Bambi bucket 20071026",
+   "src": "/images/banco/02_Bomberos_y_extincion/CH-46E_refilling_a_Bambi_bucket_20071026.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/CH-46E_refilling_a_Bambi_bucket_20071026_t.jpg",
+   "author": "Jim Greenhill from Arlington and Durango, USA",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:CH-46E_refilling_a_Bambi_bucket_20071026.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Cal-Fire Wildfire Training - Bambi Bucket 150412-Z-FO231-112",
+   "src": "/images/banco/02_Bomberos_y_extincion/Cal-Fire_Wildfire_Training_-_Bambi_Bucket_150412-Z-FO231-112.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Cal-Fire_Wildfire_Training_-_Bambi_Bucket_150412-Z-FO231-112_t.jpg",
+   "author": "Senior Airman Rachael Kane",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Cal-Fire_Wildfire_Training_-_Bambi_Bucket_150412-Z-FO231-112.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Cal-Fire Wildfire Training - Bambi Bucket 150412-Z-FO231-223",
+   "src": "/images/banco/02_Bomberos_y_extincion/Cal-Fire_Wildfire_Training_-_Bambi_Bucket_150412-Z-FO231-223.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Cal-Fire_Wildfire_Training_-_Bambi_Bucket_150412-Z-FO231-223_t.jpg",
+   "author": "Senior Airman Rachael Kane",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Cal-Fire_Wildfire_Training_-_Bambi_Bucket_150412-Z-FO231-223.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Firefighter Ashton Bay March 2017",
+   "src": "/images/banco/02_Bomberos_y_extincion/Firefighter_Ashton_Bay_March_2017.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Firefighter_Ashton_Bay_March_2017_t.jpg",
+   "author": "StevenTerblanche",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Firefighter,_Ashton_Bay,_March_2017.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Firefighters at High Park Wildfire June 10 2012",
+   "src": "/images/banco/02_Bomberos_y_extincion/Firefighters_at_High_Park_Wildfire_June_10_2012.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Firefighters_at_High_Park_Wildfire_June_10_2012_t.jpg",
+   "author": "U.S. Forest Service",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Firefighters_at_High_Park_Wildfire_June_10,_2012.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Helitack crew members rig a helicopter for bucket drops 28811837813",
+   "src": "/images/banco/02_Bomberos_y_extincion/Helitack_crew_members_rig_a_helicopter_for_bucket_drops_28811837813.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Helitack_crew_members_rig_a_helicopter_for_bucket_drops_28811837813_t.jpg",
+   "author": "Yellowstone National Park",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Helitack_crew_members_rig_a_helicopter_for_bucket_drops_(28811837813).jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Incendio forestal bomberos",
+   "src": "/images/banco/02_Bomberos_y_extincion/Incendio_forestal_bomberos.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Incendio_forestal_bomberos_t.jpg",
+   "author": "Pabvigar",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Incendio_forestal_bomberos.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Incendio zona sur",
+   "src": "/images/banco/02_Bomberos_y_extincion/Incendio_zona_sur.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Incendio_zona_sur_t.jpg",
+   "author": "Panquequesitos",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Incendio_zona_sur.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Otsuchi wildfire Firefighters fighting a fire 20260427",
+   "src": "/images/banco/02_Bomberos_y_extincion/Otsuchi_wildfire_Firefighters_fighting_a_fire_20260427.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Otsuchi_wildfire_Firefighters_fighting_a_fire_20260427_t.jpg",
+   "author": "総務省消防庁",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Otsuchi_wildfire_Firefighters_fighting_a_fire_20260427.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Otsuchi wildfire Firefighters fighting a fire 20260429",
+   "src": "/images/banco/02_Bomberos_y_extincion/Otsuchi_wildfire_Firefighters_fighting_a_fire_20260429.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Otsuchi_wildfire_Firefighters_fighting_a_fire_20260429_t.jpg",
+   "author": "総務省消防庁",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Otsuchi_wildfire_Firefighters_fighting_a_fire_20260429.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Otsutchi wildfire Firefighters extinguishing remaining fires 20260430",
+   "src": "/images/banco/02_Bomberos_y_extincion/Otsutchi_wildfire_Firefighters_extinguishing_remaining_fires_20260430.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Otsutchi_wildfire_Firefighters_extinguishing_remaining_fires_20260430_t.jpg",
+   "author": "総務省消防庁",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Otsutchi_wildfire,_Firefighters_extinguishing_remaining_fires_20260430.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Preparando el simulacro de incendio forestal Alpa Corral 2024",
+   "src": "/images/banco/02_Bomberos_y_extincion/Preparando_el_simulacro_de_incendio_forestal_Alpa_Corral_2024.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Preparando_el_simulacro_de_incendio_forestal_Alpa_Corral_2024_t.jpg",
+   "author": "Huincul",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Preparando_el_simulacro_de_incendio_forestal._Alpa_Corral._2024.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Simulacro de incendio forestal Alpa Corral 2024",
+   "src": "/images/banco/02_Bomberos_y_extincion/Simulacro_de_incendio_forestal_Alpa_Corral_2024.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Simulacro_de_incendio_forestal_Alpa_Corral_2024_t.jpg",
+   "author": "Huincul",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Simulacro_de_incendio_forestal._Alpa_Corral._2024.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "Soberanes wildfire firefighters - 2016-07-23",
+   "src": "/images/banco/02_Bomberos_y_extincion/Soberanes_wildfire_firefighters_-_2016-07-23.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/Soberanes_wildfire_firefighters_-_2016-07-23_t.jpg",
+   "author": "TJRC",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Soberanes_wildfire_firefighters_-_2016-07-23.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "US Navy 031029-N-4441P-011 A Sea King helicopter UH-3H assigned to the",
+   "src": "/images/banco/02_Bomberos_y_extincion/US_Navy_031029-N-4441P-011_A_Sea_King_helicopter_UH-3H_assigned_to_the.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/US_Navy_031029-N-4441P-011_A_Sea_King_helicopter_UH-3H_assigned_to_the_t.jpg",
+   "author": "U.S. Navy photo by Photographer’s Mate 2nd Class Michael J. Pusnik, Jr.",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:US_Navy_031029-N-4441P-011_A_Sea_King_helicopter_(UH-3H)_assigned_to_the_%22Golden_Gators%22_of_Reserve_Helicopter_Combat_Support_Squadron_Eighty_Five_(HC-85)_uses_a_%22Bambi%22_bucket_to_conduct_water_drops_on_brush_fires.jpg"
+  },
+  {
+   "category": "02_Bomberos_y_extincion",
+   "title": "US Navy 031029-N-5067K-109 A UH-3H Sea King helicopter loads its Bambi",
+   "src": "/images/banco/02_Bomberos_y_extincion/US_Navy_031029-N-5067K-109_A_UH-3H_Sea_King_helicopter_loads_its_Bambi.jpg",
+   "thumb": "/images/banco/02_Bomberos_y_extincion/US_Navy_031029-N-5067K-109_A_UH-3H_Sea_King_helicopter_loads_its_Bambi_t.jpg",
+   "author": "U.S. Navy photo",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:US_Navy_031029-N-5067K-109_A_UH-3H_Sea_King_helicopter_loads_its_Bambi_bucket.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Aftermath of Colorado s Most Destructive Wildfire 9152317817",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Aftermath_of_Colorado_s_Most_Destructive_Wildfire_9152317817.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Aftermath_of_Colorado_s_Most_Destructive_Wildfire_9152317817_t.jpg",
+   "author": "NASA Goddard Space Flight Center from Greenbelt, MD, USA",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Aftermath_of_Colorado%E2%80%99s_Most_Destructive_Wildfire_(9152317817).jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Aftermath of the 1910 Fires 4930338720",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Aftermath_of_the_1910_Fires_4930338720.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Aftermath_of_the_1910_Fires_4930338720_t.jpg",
+   "author": "Forest Service - Northern Region",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Aftermath_of_the_1910_Fires_(4930338720).jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "FEMA - B-Roll of Hawaii Wildfire - 4",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/FEMA_-_B-Roll_of_Hawaii_Wildfire_-_4.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/FEMA_-_B-Roll_of_Hawaii_Wildfire_-_4_t.jpg",
+   "author": "Dominick Del Vecchio",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:FEMA_-_B-Roll_of_Hawaii_Wildfire_-_4.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "FEMA - B-Roll of Hawaii Wildfire - 5",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/FEMA_-_B-Roll_of_Hawaii_Wildfire_-_5.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/FEMA_-_B-Roll_of_Hawaii_Wildfire_-_5_t.jpg",
+   "author": "Dominick Del Vecchio",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:FEMA_-_B-Roll_of_Hawaii_Wildfire_-_5.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Fire damaged in forest in Bötzow 2021-07-04 02",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_02.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_02_t.jpg",
+   "author": "Leonhard Lenz",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_damaged_in_forest_in_B%C3%B6tzow_2021-07-04_02.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Fire damaged in forest in Bötzow 2021-07-04 07",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_07.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_07_t.jpg",
+   "author": "Leonhard Lenz",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_damaged_in_forest_in_B%C3%B6tzow_2021-07-04_07.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Fire damaged in forest in Bötzow 2021-07-04 09",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_09.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_09_t.jpg",
+   "author": "Leonhard Lenz",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_damaged_in_forest_in_B%C3%B6tzow_2021-07-04_09.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Fire damaged in forest in Bötzow 2021-07-04 13",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_13.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_13_t.jpg",
+   "author": "Leonhard Lenz",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_damaged_in_forest_in_B%C3%B6tzow_2021-07-04_13.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Fire damaged in forest in Bötzow 2021-07-04 24",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_24.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_24_t.jpg",
+   "author": "Leonhard Lenz",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_damaged_in_forest_in_B%C3%B6tzow_2021-07-04_24.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Fire damaged in forest in Bötzow 2021-07-04 25",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_25.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Fire_damaged_in_forest_in_Botzow_2021-07-04_25_t.jpg",
+   "author": "Leonhard Lenz",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_damaged_in_forest_in_B%C3%B6tzow_2021-07-04_25.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Maui community of Lahaina burned by wildfire - 53119801025",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Maui_community_of_Lahaina_burned_by_wildfire_-_53119801025.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Maui_community_of_Lahaina_burned_by_wildfire_-_53119801025_t.jpg",
+   "author": "State Farm",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Maui_community_of_Lahaina_burned_by_wildfire_-_53119801025.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Maui community of Lahaina burned by wildfire - 53119882503",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Maui_community_of_Lahaina_burned_by_wildfire_-_53119882503.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Maui_community_of_Lahaina_burned_by_wildfire_-_53119882503_t.jpg",
+   "author": "State Farm",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Maui_community_of_Lahaina_burned_by_wildfire_-_53119882503.jpg"
+  },
+  {
+   "category": "03_Bosques_quemados_y_danos",
+   "title": "Monte quemado",
+   "src": "/images/banco/03_Bosques_quemados_y_danos/Monte_quemado.jpg",
+   "thumb": "/images/banco/03_Bosques_quemados_y_danos/Monte_quemado_t.jpg",
+   "author": "CatrielGB",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Monte_quemado.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "2013-05-10 08 26 17 Fire danger sign at Brendan T Byrne State Forest h",
+   "src": "/images/banco/04_Prevencion/2013-05-10_08_26_17_Fire_danger_sign_at_Brendan_T_Byrne_State_Forest_h.jpg",
+   "thumb": "/images/banco/04_Prevencion/2013-05-10_08_26_17_Fire_danger_sign_at_Brendan_T_Byrne_State_Forest_h_t.jpg",
+   "author": "Famartin",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2013-05-10_08_26_17_Fire_danger_sign_at_Brendan_T._Byrne_State_Forest_headquarters.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Beaver Creek Fire 2013 fire danger sign 1",
+   "src": "/images/banco/04_Prevencion/Beaver_Creek_Fire_2013_fire_danger_sign_1.jpg",
+   "thumb": "/images/banco/04_Prevencion/Beaver_Creek_Fire_2013_fire_danger_sign_1_t.jpg",
+   "author": "U.S. Department of Agriculture - Lance Cheung",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Beaver_Creek_Fire_2013_fire_danger_sign_1.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Fire Danger Rating Sign Klamath California",
+   "src": "/images/banco/04_Prevencion/Fire_Danger_Rating_Sign_Klamath_California.jpg",
+   "thumb": "/images/banco/04_Prevencion/Fire_Danger_Rating_Sign_Klamath_California_t.jpg",
+   "author": "Unknown authorUnknown author",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_Danger_Rating_Sign_Klamath,_California.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Fire Danger Sign - Kisatchie National Forest 51718693730",
+   "src": "/images/banco/04_Prevencion/Fire_Danger_Sign_-_Kisatchie_National_Forest_51718693730.jpg",
+   "thumb": "/images/banco/04_Prevencion/Fire_Danger_Sign_-_Kisatchie_National_Forest_51718693730_t.jpg",
+   "author": "US Forest Service - Southern Region",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_Danger_Sign_-_Kisatchie_National_Forest_(51718693730).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Forest Fire Danger Sign",
+   "src": "/images/banco/04_Prevencion/Forest_Fire_Danger_Sign.jpg",
+   "thumb": "/images/banco/04_Prevencion/Forest_Fire_Danger_Sign_t.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Forest_Fire_Danger_Sign.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Lanzamiento Regional del Plan de Prevención y Combate de Incendios For",
+   "src": "/images/banco/04_Prevencion/Lanzamiento_Regional_del_Plan_de_Prevencion_y_Combate_de_Incendios_For.jpg",
+   "thumb": "/images/banco/04_Prevencion/Lanzamiento_Regional_del_Plan_de_Prevencion_y_Combate_de_Incendios_For_t.jpg",
+   "author": "Delegación Presidencial Provincial de Cardenal Caro",
+   "license": "CC BY 3.0 cl",
+   "source": "https://commons.wikimedia.org/wiki/File:Lanzamiento_Regional_del_Plan_de_Prevenci%C3%B3n_y_Combate_de_Incendios_Forestales_Temporada_2022_%E2%80%93_2023_2.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Lanzamiento Regional del Plan de Prevención y Combate de Incendios For 2",
+   "src": "/images/banco/04_Prevencion/Lanzamiento_Regional_del_Plan_de_Prevencion_y_Combate_de_Incendios_For_2.jpg",
+   "thumb": "/images/banco/04_Prevencion/Lanzamiento_Regional_del_Plan_de_Prevencion_y_Combate_de_Incendios_For_2_t.jpg",
+   "author": "Delegación Presidencial Provincial de Cardenal Caro",
+   "license": "CC BY 3.0 cl",
+   "source": "https://commons.wikimedia.org/wiki/File:Lanzamiento_Regional_del_Plan_de_Prevenci%C3%B3n_y_Combate_de_Incendios_Forestales_Temporada_2022_%E2%80%93_2023_3.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Lanzamiento Regional del Plan de Prevención y Combate de Incendios For 3",
+   "src": "/images/banco/04_Prevencion/Lanzamiento_Regional_del_Plan_de_Prevencion_y_Combate_de_Incendios_For_3.jpg",
+   "thumb": "/images/banco/04_Prevencion/Lanzamiento_Regional_del_Plan_de_Prevencion_y_Combate_de_Incendios_For_3_t.jpg",
+   "author": "Delegación Presidencial Provincial de Cardenal Caro",
+   "license": "CC BY 3.0 cl",
+   "source": "https://commons.wikimedia.org/wiki/File:Lanzamiento_Regional_del_Plan_de_Prevenci%C3%B3n_y_Combate_de_Incendios_Forestales_Temporada_2022_%E2%80%93_2023_1.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "NBS Wildfire Risk Management",
+   "src": "/images/banco/04_Prevencion/NBS_Wildfire_Risk_Management.jpg",
+   "thumb": "/images/banco/04_Prevencion/NBS_Wildfire_Risk_Management_t.jpg",
+   "author": "Claudia Schioppa/CMCC Foundation",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:NBS_Wildfire_Risk_Management.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Rueda de prensa sobre la campaña de prevención y extinción de incendio",
+   "src": "/images/banco/04_Prevencion/Rueda_de_prensa_sobre_la_campana_de_prevencion_y_extincion_de_incendio.jpg",
+   "thumb": "/images/banco/04_Prevencion/Rueda_de_prensa_sobre_la_campana_de_prevencion_y_extincion_de_incendio_t.jpg",
+   "author": "Gobierno de Castilla-La Mancha",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rueda_de_prensa_sobre_la_campa%C3%B1a_de_prevenci%C3%B3n_y_extinci%C3%B3n_de_incendios_forestales_(53320266639).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Rueda de prensa sobre la campaña de prevención y extinción de incendio 2",
+   "src": "/images/banco/04_Prevencion/Rueda_de_prensa_sobre_la_campana_de_prevencion_y_extincion_de_incendio_2.jpg",
+   "thumb": "/images/banco/04_Prevencion/Rueda_de_prensa_sobre_la_campana_de_prevencion_y_extincion_de_incendio_2_t.jpg",
+   "author": "Gobierno de Castilla-La Mancha",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rueda_de_prensa_sobre_la_campa%C3%B1a_de_prevenci%C3%B3n_y_extinci%C3%B3n_de_incendios_forestales_(53320382495).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Rueda de prensa sobre la campaña de prevención y extinción de incendio 3",
+   "src": "/images/banco/04_Prevencion/Rueda_de_prensa_sobre_la_campana_de_prevencion_y_extincion_de_incendio_3.jpg",
+   "thumb": "/images/banco/04_Prevencion/Rueda_de_prensa_sobre_la_campana_de_prevencion_y_extincion_de_incendio_3_t.jpg",
+   "author": "José Ramón Márquez // JCCM - Gobierno de Castilla-La Mancha",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rueda_de_prensa_sobre_la_campa%C3%B1a_de_prevenci%C3%B3n_y_extinci%C3%B3n_de_incendios_forestales_(53320153243).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Tahoe National Forest fire danger sign - 2021-10-17 - Sarah Stierch",
+   "src": "/images/banco/04_Prevencion/Tahoe_National_Forest_fire_danger_sign_-_2021-10-17_-_Sarah_Stierch.jpg",
+   "thumb": "/images/banco/04_Prevencion/Tahoe_National_Forest_fire_danger_sign_-_2021-10-17_-_Sarah_Stierch_t.jpg",
+   "author": "Missvain",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tahoe_National_Forest_fire_danger_sign_-_2021-10-17_-_Sarah_Stierch.jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Trailer with wildfire prevention messaging on the side 52955923451",
+   "src": "/images/banco/04_Prevencion/Trailer_with_wildfire_prevention_messaging_on_the_side_52955923451.jpg",
+   "thumb": "/images/banco/04_Prevencion/Trailer_with_wildfire_prevention_messaging_on_the_side_52955923451_t.jpg",
+   "author": "BLMUtah",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Trailer_with_wildfire_prevention_messaging_on_the_side_(52955923451).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Wildfire prevention night Frisbee toss 53847015822",
+   "src": "/images/banco/04_Prevencion/Wildfire_prevention_night_Frisbee_toss_53847015822.jpg",
+   "thumb": "/images/banco/04_Prevencion/Wildfire_prevention_night_Frisbee_toss_53847015822_t.jpg",
+   "author": "BLMUtah",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Wildfire_prevention_night_Frisbee_toss_(53847015822).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Wildfire prevention night frisbee toss 53848342080",
+   "src": "/images/banco/04_Prevencion/Wildfire_prevention_night_frisbee_toss_53848342080.jpg",
+   "thumb": "/images/banco/04_Prevencion/Wildfire_prevention_night_frisbee_toss_53848342080_t.jpg",
+   "author": "BLMUtah",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Wildfire_prevention_night_frisbee_toss_(53848342080).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Wildfire prevention signage at Virgin River Canyon Recreation Area 555",
+   "src": "/images/banco/04_Prevencion/Wildfire_prevention_signage_at_Virgin_River_Canyon_Recreation_Area_555.jpg",
+   "thumb": "/images/banco/04_Prevencion/Wildfire_prevention_signage_at_Virgin_River_Canyon_Recreation_Area_555_t.jpg",
+   "author": "BLMArizona",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Wildfire_prevention_signage_at_Virgin_River_Canyon_Recreation_Area_(55532944529).jpg"
+  },
+  {
+   "category": "04_Prevencion",
+   "title": "Wildfire prevention signage at Virgin River Canyon Recreation Area 555 2",
+   "src": "/images/banco/04_Prevencion/Wildfire_prevention_signage_at_Virgin_River_Canyon_Recreation_Area_555_2.jpg",
+   "thumb": "/images/banco/04_Prevencion/Wildfire_prevention_signage_at_Virgin_River_Canyon_Recreation_Area_555_2_t.jpg",
+   "author": "BLMArizona",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Wildfire_prevention_signage_at_Virgin_River_Canyon_Recreation_Area_(55532787441).jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Air tanker retardant drop 50263105808",
+   "src": "/images/banco/05_Spray_y_retardantes/Air_tanker_retardant_drop_50263105808.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Air_tanker_retardant_drop_50263105808_t.jpg",
+   "author": "BLM Oregon & Washington",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Air_tanker_retardant_drop_(50263105808).jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Airplane dropping fire retardant on Flagstaff Fire",
+   "src": "/images/banco/05_Spray_y_retardantes/Airplane_dropping_fire_retardant_on_Flagstaff_Fire.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Airplane_dropping_fire_retardant_on_Flagstaff_Fire_t.jpg",
+   "author": "Runningonbrains",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Airplane_dropping_fire_retardant_on_Flagstaff_Fire.jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "B-17 fire retardant drop",
+   "src": "/images/banco/05_Spray_y_retardantes/B-17_fire_retardant_drop.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/B-17_fire_retardant_drop_t.jpg",
+   "author": "U.S. Forest Service",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:B-17_fire_retardant_drop.JPG"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Badanie palności PVC z ekologicznym związkiem zmniejszającym palność 0",
+   "src": "/images/banco/05_Spray_y_retardantes/Badanie_palnosci_PVC_z_ekologicznym_zwiazkiem_zmniejszajacym_palnosc_0.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Badanie_palnosci_PVC_z_ekologicznym_zwiazkiem_zmniejszajacym_palnosc_0_t.jpg",
+   "author": "BogTar201213",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Badanie_palno%C5%9Bci_PVC_z_ekologicznym_zwi%C4%85zkiem_zmniejszaj%C4%85cym_palno%C5%9B%C4%87_03.jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Badanie palności PVC z ekologicznym związkiem zmniejszającym palność 0 2",
+   "src": "/images/banco/05_Spray_y_retardantes/Badanie_palnosci_PVC_z_ekologicznym_zwiazkiem_zmniejszajacym_palnosc_0_2.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Badanie_palnosci_PVC_z_ekologicznym_zwiazkiem_zmniejszajacym_palnosc_0_2_t.jpg",
+   "author": "BogTar201213",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Badanie_palno%C5%9Bci_PVC_z_ekologicznym_zwi%C4%85zkiem_zmniejszaj%C4%85cym_palno%C5%9B%C4%87_02.jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Badanie palności PVC z ekologicznym związkiem zmniejszającym palność 0 3",
+   "src": "/images/banco/05_Spray_y_retardantes/Badanie_palnosci_PVC_z_ekologicznym_zwiazkiem_zmniejszajacym_palnosc_0_3.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Badanie_palnosci_PVC_z_ekologicznym_zwiazkiem_zmniejszajacym_palnosc_0_3_t.jpg",
+   "author": "BogTar201213",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Badanie_palno%C5%9Bci_PVC_z_ekologicznym_zwi%C4%85zkiem_zmniejszaj%C4%85cym_palno%C5%9B%C4%87_01.jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Fire retardant drop 3878775193",
+   "src": "/images/banco/05_Spray_y_retardantes/Fire_retardant_drop_3878775193.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Fire_retardant_drop_3878775193_t.jpg",
+   "author": "Dan Russell; Coconino National Forest",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fire_retardant_drop_(3878775193).jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Flame Retardant Research - LDH materials 16241017250",
+   "src": "/images/banco/05_Spray_y_retardantes/Flame_Retardant_Research_-_LDH_materials_16241017250.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Flame_Retardant_Research_-_LDH_materials_16241017250_t.jpg",
+   "author": "National Institute of Standards and Technology",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Flame_Retardant_Research_-_LDH_materials_(16241017250).jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Modrite Fire airtanker retardant drop",
+   "src": "/images/banco/05_Spray_y_retardantes/Modrite_Fire_airtanker_retardant_drop.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Modrite_Fire_airtanker_retardant_drop_t.jpg",
+   "author": "U.S. Forest Service",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Modrite_Fire_airtanker_retardant_drop.jpg"
+  },
+  {
+   "category": "05_Spray_y_retardantes",
+   "title": "Retardant drop from aircraft",
+   "src": "/images/banco/05_Spray_y_retardantes/Retardant_drop_from_aircraft.jpg",
+   "thumb": "/images/banco/05_Spray_y_retardantes/Retardant_drop_from_aircraft_t.jpg",
+   "author": "",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Retardant_drop_from_aircraft.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Пищевая сода",
+   "src": "/images/banco/06_Ingredientes_naturales/img.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/img_t.jpg",
+   "author": "BarbariSka88",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B8%D1%89%D0%B5%D0%B2%D0%B0%D1%8F_%D1%81%D0%BE%D0%B4%D0%B0.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "A local lake was bentonite mine pit",
+   "src": "/images/banco/06_Ingredientes_naturales/A_local_lake_was_bentonite_mine_pit.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/A_local_lake_was_bentonite_mine_pit_t.jpg",
+   "author": "Crawford P. Wray",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:A_local_lake_was_bentonite_mine_pit.JPG"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Aloe-Vera-Sitia-Crete-Greece",
+   "src": "/images/banco/06_Ingredientes_naturales/Aloe-Vera-Sitia-Crete-Greece.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Aloe-Vera-Sitia-Crete-Greece_t.jpg",
+   "author": "Petro Stelte",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Aloe-Vera-Sitia-Crete-Greece.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Aloe Vera in January Madeira Portugal",
+   "src": "/images/banco/06_Ingredientes_naturales/Aloe_Vera_in_January_Madeira_Portugal.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Aloe_Vera_in_January_Madeira_Portugal_t.jpg",
+   "author": "Ввласенко",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Aloe_Vera_in_January._Madeira,_Portugal.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Aloe vera Lanzarote",
+   "src": "/images/banco/06_Ingredientes_naturales/Aloe_vera_Lanzarote.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Aloe_vera_Lanzarote_t.jpg",
+   "author": "H. Zell",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Aloe_vera_Lanzarote.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Aloe vera flower bud",
+   "src": "/images/banco/06_Ingredientes_naturales/Aloe_vera_flower_bud.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Aloe_vera_flower_bud_t.jpg",
+   "author": "Fir0002",
+   "license": "GFDL 1.2",
+   "source": "https://commons.wikimedia.org/wiki/File:Aloe_vera_flower_bud.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Baked clay ayilo on display in Ghana",
+   "src": "/images/banco/06_Ingredientes_naturales/Baked_clay_ayilo_on_display_in_Ghana.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Baked_clay_ayilo_on_display_in_Ghana_t.jpg",
+   "author": "Edithobayaa1",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Baked_clay_%E2%80%9Cayilo%E2%80%9D_on_display_in_Ghana.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Baking soda and vinegar",
+   "src": "/images/banco/06_Ingredientes_naturales/Baking_soda_and_vinegar.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Baking_soda_and_vinegar_t.jpg",
+   "author": "katerha",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Baking_soda_and_vinegar.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Bentonite Clay gullies",
+   "src": "/images/banco/06_Ingredientes_naturales/Bentonite_Clay_gullies.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Bentonite_Clay_gullies_t.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bentonite_Clay_gullies.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Bentonite clay to make slurry",
+   "src": "/images/banco/06_Ingredientes_naturales/Bentonite_clay_to_make_slurry.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Bentonite_clay_to_make_slurry_t.jpg",
+   "author": "Agne27",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bentonite_clay_to_make_slurry.JPG"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Cape Town ZA Table Mountain Aloe vera -- 2024 -- 2869",
+   "src": "/images/banco/06_Ingredientes_naturales/Cape_Town_ZA_Table_Mountain_Aloe_vera_--_2024_--_2869.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Cape_Town_ZA_Table_Mountain_Aloe_vera_--_2024_--_2869_t.jpg",
+   "author": "Dietmar Rabich",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain,_Aloe_vera_--_2024_--_2869.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Corn Starch Poster",
+   "src": "/images/banco/06_Ingredientes_naturales/Corn_Starch_Poster.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Corn_Starch_Poster_t.jpg",
+   "author": "Odoulorenzo",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Corn_Starch_Poster.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Corn Starch mixture",
+   "src": "/images/banco/06_Ingredientes_naturales/Corn_Starch_mixture.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Corn_Starch_mixture_t.jpg",
+   "author": "Ayapici",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Corn_Starch_mixture.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Cornstarch mixed with water",
+   "src": "/images/banco/06_Ingredientes_naturales/Cornstarch_mixed_with_water.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Cornstarch_mixed_with_water_t.jpg",
+   "author": "Picasa author kalaya",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cornstarch_mixed_with_water.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Cyanotype reproduction of seaweed Ptilota Plumosa and Title Page of Pr",
+   "src": "/images/banco/06_Ingredientes_naturales/Cyanotype_reproduction_of_seaweed_Ptilota_Plumosa_and_Title_Page_of_Pr.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Cyanotype_reproduction_of_seaweed_Ptilota_Plumosa_and_Title_Page_of_Pr_t.jpg",
+   "author": "Royal Philosophical Society of Glasgow",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Cyanotype_reproduction_of_seaweed_(Ptilota_Plumosa)_and_Title_Page_of_Proceedings_of_the_Royal_Philosophical_Society_of_Glasgow,_Vol._XXI,_1889-90.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Dancing Seaweed 2",
+   "src": "/images/banco/06_Ingredientes_naturales/Dancing_Seaweed_2.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Dancing_Seaweed_2_t.jpg",
+   "author": "StevenPMatthews",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Dancing_Seaweed_2.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Food color in corn starch",
+   "src": "/images/banco/06_Ingredientes_naturales/Food_color_in_corn_starch.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Food_color_in_corn_starch_t.jpg",
+   "author": "Ayapici",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Food_color_in_corn_starch.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Harvesting seaweed in Jambiani",
+   "src": "/images/banco/06_Ingredientes_naturales/Harvesting_seaweed_in_Jambiani.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Harvesting_seaweed_in_Jambiani_t.jpg",
+   "author": "Yann Macherez",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Harvesting_seaweed_in_Jambiani.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Korean seaweed Gim",
+   "src": "/images/banco/06_Ingredientes_naturales/Korean_seaweed_Gim.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Korean_seaweed_Gim_t.jpg",
+   "author": "Startandstar",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Korean_seaweed_Gim.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Marine algae in Gullmarsfjorden at Sämstad 4",
+   "src": "/images/banco/06_Ingredientes_naturales/Marine_algae_in_Gullmarsfjorden_at_Samstad_4.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Marine_algae_in_Gullmarsfjorden_at_Samstad_4_t.jpg",
+   "author": "W.carter",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Marine_algae_in_Gullmarsfjorden_at_S%C3%A4mstad_4.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Puerto del Carmen Lanzarote Aloe",
+   "src": "/images/banco/06_Ingredientes_naturales/Puerto_del_Carmen_Lanzarote_Aloe.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Puerto_del_Carmen_Lanzarote_Aloe_t.jpg",
+   "author": "Luis Miguel Bugallo Sánchez (Lmbuga)",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Puerto_del_Carmen._Lanzarote._Aloe.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Seaweed On The Shipwrecks",
+   "src": "/images/banco/06_Ingredientes_naturales/Seaweed_On_The_Shipwrecks.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Seaweed_On_The_Shipwrecks_t.jpg",
+   "author": "Silverish Lily",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Seaweed_On_The_Shipwrecks.png"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Sodium Bicarbonate 1",
+   "src": "/images/banco/06_Ingredientes_naturales/Sodium_Bicarbonate_1.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Sodium_Bicarbonate_1_t.jpg",
+   "author": "Intropin",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sodium_Bicarbonate_(1).JPG"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Sodium bicarbonate",
+   "src": "/images/banco/06_Ingredientes_naturales/Sodium_bicarbonate.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Sodium_bicarbonate_t.jpg",
+   "author": "Thavox",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Sodium_bicarbonate.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Sodium bicarbonate CN",
+   "src": "/images/banco/06_Ingredientes_naturales/Sodium_bicarbonate_CN.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Sodium_bicarbonate_CN_t.jpg",
+   "author": "Tszrkx",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Sodium_bicarbonate_CN.JPG"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Sodium bicarbonate CN brightened",
+   "src": "/images/banco/06_Ingredientes_naturales/Sodium_bicarbonate_CN_brightened.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Sodium_bicarbonate_CN_brightened_t.jpg",
+   "author": "Tszrkx",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sodium_bicarbonate_CN_brightened.png"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Stärkemehl 800 fach Polfilter",
+   "src": "/images/banco/06_Ingredientes_naturales/Starkemehl_800_fach_Polfilter.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Starkemehl_800_fach_Polfilter_t.jpg",
+   "author": "Jan Homann",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:St%C3%A4rkemehl_800_fach_Polfilter.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Starch Works Historic Marker 20240717 102220",
+   "src": "/images/banco/06_Ingredientes_naturales/Starch_Works_Historic_Marker_20240717_102220.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Starch_Works_Historic_Marker_20240717_102220_t.jpg",
+   "author": "XanderAi",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Starch_Works_Historic_Marker_20240717_102220.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Sulphur bentonite pastilles",
+   "src": "/images/banco/06_Ingredientes_naturales/Sulphur_bentonite_pastilles.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Sulphur_bentonite_pastilles_t.jpg",
+   "author": "Tigersul",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sulphur_bentonite_pastilles.jpg"
+  },
+  {
+   "category": "06_Ingredientes_naturales",
+   "title": "Volcanic Tuff of Green River Formation in Wyoming",
+   "src": "/images/banco/06_Ingredientes_naturales/Volcanic_Tuff_of_Green_River_Formation_in_Wyoming.jpg",
+   "thumb": "/images/banco/06_Ingredientes_naturales/Volcanic_Tuff_of_Green_River_Formation_in_Wyoming_t.jpg",
+   "author": "James St. John (https://www.flickr.com/people/jsjgeology/)",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Volcanic_Tuff_of_Green_River_Formation_in_Wyoming.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Educacion ambiental niños",
+   "src": "/images/banco/07_Educacion_ambiental/Educacion_ambiental_ninos.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Educacion_ambiental_ninos_t.jpg",
+   "author": "Geremias Bustos",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Educacion_ambiental_ni%C3%B1os.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Environmental Education Birding Session with students at William L Fin",
+   "src": "/images/banco/07_Educacion_ambiental/Environmental_Education_Birding_Session_with_students_at_William_L_Fin.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Environmental_Education_Birding_Session_with_students_at_William_L_Fin_t.jpg",
+   "author": "USFWS Headquarters",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Environmental_Education_Birding_Session_with_students_at_William_L_Finley_NWR_by_George_Gentry_USFWS_Pacific_(54181765353).jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Environmental Education Session with Tyson Jerry and Local Students",
+   "src": "/images/banco/07_Educacion_ambiental/Environmental_Education_Session_with_Tyson_Jerry_and_Local_Students.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Environmental_Education_Session_with_Tyson_Jerry_and_Local_Students_t.jpg",
+   "author": "Tydziedzic",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Environmental_Education_Session_with_Tyson_Jerry_and_Local_Students.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Environmental education program Sage Hen 1 26924947870",
+   "src": "/images/banco/07_Educacion_ambiental/Environmental_education_program_Sage_Hen_1_26924947870.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Environmental_education_program_Sage_Hen_1_26924947870_t.jpg",
+   "author": "Intermountain Region US Forest Service",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Environmental_education_program_Sage_Hen_1_(26924947870).jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Environmental education program Sage Hen 2 26924948020",
+   "src": "/images/banco/07_Educacion_ambiental/Environmental_education_program_Sage_Hen_2_26924948020.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Environmental_education_program_Sage_Hen_2_26924948020_t.jpg",
+   "author": "Intermountain Region US Forest Service",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Environmental_education_program_Sage_Hen_2_(26924948020).jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Environmental education program Sage Hen 3 27130733211",
+   "src": "/images/banco/07_Educacion_ambiental/Environmental_education_program_Sage_Hen_3_27130733211.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Environmental_education_program_Sage_Hen_3_27130733211_t.jpg",
+   "author": "Intermountain Region US Forest Service",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Environmental_education_program_Sage_Hen_3_(27130733211).jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Environmental education students viewing shorebirds",
+   "src": "/images/banco/07_Educacion_ambiental/Environmental_education_students_viewing_shorebirds.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Environmental_education_students_viewing_shorebirds_t.jpg",
+   "author": "Laubenstein Ron, U.S. Fish and Wildlife Service",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Environmental_education_students_viewing_shorebirds.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Ghana tree planting 12",
+   "src": "/images/banco/07_Educacion_ambiental/Ghana_tree_planting_12.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Ghana_tree_planting_12_t.jpg",
+   "author": "Antorsu10",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Ghana_tree_planting_12.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Laudelina del Carmen Araneda Gutiérrez",
+   "src": "/images/banco/07_Educacion_ambiental/Laudelina_del_Carmen_Araneda_Gutierrez.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Laudelina_del_Carmen_Araneda_Gutierrez_t.jpg",
+   "author": "Patrimonio San Bernardo",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Laudelina_del_Carmen_Araneda_Guti%C3%A9rrez.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Nivín Conciencia ambiental en la educación primaria",
+   "src": "/images/banco/07_Educacion_ambiental/Nivin_Conciencia_ambiental_en_la_educacion_primaria.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Nivin_Conciencia_ambiental_en_la_educacion_primaria_t.jpg",
+   "author": "Escuela de Nivín",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Niv%C3%ADn._Conciencia_ambiental_en_la_educaci%C3%B3n_primaria.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Planting tree 2",
+   "src": "/images/banco/07_Educacion_ambiental/Planting_tree_2.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Planting_tree_2_t.jpg",
+   "author": "Fquasie",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Planting_tree_2.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Planting tree 3",
+   "src": "/images/banco/07_Educacion_ambiental/Planting_tree_3.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Planting_tree_3_t.jpg",
+   "author": "Fquasie",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Planting_tree_3.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Planting trees in schools",
+   "src": "/images/banco/07_Educacion_ambiental/Planting_trees_in_schools.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Planting_trees_in_schools_t.jpg",
+   "author": "Nana Darkoaaa",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Planting_trees_in_schools.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Sala para niños",
+   "src": "/images/banco/07_Educacion_ambiental/Sala_para_ninos.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Sala_para_ninos_t.jpg",
+   "author": "Mariel Corona",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sala_para_ni%C3%B1os.JPG"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Sala para niños 2",
+   "src": "/images/banco/07_Educacion_ambiental/Sala_para_ninos_2.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Sala_para_ninos_2_t.jpg",
+   "author": "Mariel Corona",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sala_para_ni%C3%B1os_2.JPG"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "SalonDeClaseAcuexcomatl",
+   "src": "/images/banco/07_Educacion_ambiental/SalonDeClaseAcuexcomatl.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/SalonDeClaseAcuexcomatl_t.jpg",
+   "author": "Lauricdd",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:SalonDeClaseAcuexcomatl.JPG"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "School pupils involved in tree planting exercise",
+   "src": "/images/banco/07_Educacion_ambiental/School_pupils_involved_in_tree_planting_exercise.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/School_pupils_involved_in_tree_planting_exercise_t.jpg",
+   "author": "Kwameghana(Bright Kwame Ayisi)",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:School_pupils_involved_in_tree_planting_exercise.jpg"
+  },
+  {
+   "category": "07_Educacion_ambiental",
+   "title": "Tree planting at school in Arusha",
+   "src": "/images/banco/07_Educacion_ambiental/Tree_planting_at_school_in_Arusha.jpg",
+   "thumb": "/images/banco/07_Educacion_ambiental/Tree_planting_at_school_in_Arusha_t.jpg",
+   "author": "Rwebogora",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tree_planting_at_school_in_Arusha.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Children playing a game on an iPad",
+   "src": "/images/banco/08_Videojuegos_educativos/Children_playing_a_game_on_an_iPad.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Children_playing_a_game_on_an_iPad_t.jpg",
+   "author": "Brad Flickinger",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Children_playing_a_game_on_an_iPad.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Children playing games at Gamescom 2026 in Cologne P1260603",
+   "src": "/images/banco/08_Videojuegos_educativos/Children_playing_games_at_Gamescom_2026_in_Cologne_P1260603.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Children_playing_games_at_Gamescom_2026_in_Cologne_P1260603_t.jpg",
+   "author": "User:Celestinesucess",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Children_playing_games_at_Gamescom_2026_in_Cologne_(P1260603).jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Children playing video games",
+   "src": "/images/banco/08_Videojuegos_educativos/Children_playing_video_games.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Children_playing_video_games_t.jpg",
+   "author": "Gamesingear",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Children_playing_video_games.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Children playing video games TV s",
+   "src": "/images/banco/08_Videojuegos_educativos/Children_playing_video_games_TV_s.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Children_playing_video_games_TV_s_t.jpg",
+   "author": "Gamesingear",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Children_playing_video_games_%26_TV%27s.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Children playing video games in a video game trailer",
+   "src": "/images/banco/08_Videojuegos_educativos/Children_playing_video_games_in_a_video_game_trailer.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Children_playing_video_games_in_a_video_game_trailer_t.jpg",
+   "author": "Gamesingear",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Children_playing_video_games_in_a_video_game_trailer.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Childs playing shooting in video games DPRK",
+   "src": "/images/banco/08_Videojuegos_educativos/Childs_playing_shooting_in_video_games_DPRK.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Childs_playing_shooting_in_video_games_DPRK_t.jpg",
+   "author": "David Clayton Ellsworth",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Childs_playing_shooting_in_video_games_DPRK.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Game Developers Conference 2010 - Day 1 4421144732",
+   "src": "/images/banco/08_Videojuegos_educativos/Game_Developers_Conference_2010_-_Day_1_4421144732.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Game_Developers_Conference_2010_-_Day_1_4421144732_t.jpg",
+   "author": "Official GDC",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Game_Developers_Conference_2010_-_Day_1_(4421144732).jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Katze Q - teaser b",
+   "src": "/images/banco/08_Videojuegos_educativos/Katze_Q_-_teaser_b.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Katze_Q_-_teaser_b_t.jpg",
+   "author": "Philipp Stollenmayer",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Katze_Q_-_teaser_b.png"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "REPLAYING the game logo",
+   "src": "/images/banco/08_Videojuegos_educativos/REPLAYING_the_game_logo.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/REPLAYING_the_game_logo_t.jpg",
+   "author": "",
+   "license": "",
+   "source": ""
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "The game Player character",
+   "src": "/images/banco/08_Videojuegos_educativos/The_game_Player_character.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/The_game_Player_character_t.jpg",
+   "author": "",
+   "license": "",
+   "source": ""
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "The game logo",
+   "src": "/images/banco/08_Videojuegos_educativos/The_game_logo.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/The_game_logo_t.jpg",
+   "author": "",
+   "license": "",
+   "source": ""
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Tomy-Tutor-Console-1",
+   "src": "/images/banco/08_Videojuegos_educativos/Tomy-Tutor-Console-1.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Tomy-Tutor-Console-1_t.jpg",
+   "author": "Evan-Amos",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Tomy-Tutor-Console-1.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Tomy-Tutor-Console-2",
+   "src": "/images/banco/08_Videojuegos_educativos/Tomy-Tutor-Console-2.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Tomy-Tutor-Console-2_t.jpg",
+   "author": "Evan-Amos",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Tomy-Tutor-Console-2.jpg"
+  },
+  {
+   "category": "08_Videojuegos_educativos",
+   "title": "Tomy-Tutor-wControllers",
+   "src": "/images/banco/08_Videojuegos_educativos/Tomy-Tutor-wControllers.jpg",
+   "thumb": "/images/banco/08_Videojuegos_educativos/Tomy-Tutor-wControllers_t.jpg",
+   "author": "Evan-Amos",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Tomy-Tutor-wControllers.jpg"
+  }
+ ]
+}
