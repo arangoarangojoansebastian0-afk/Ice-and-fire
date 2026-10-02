@@ -410,9 +410,10 @@ collections:
           - label: Bitácoras (línea de tiempo mensual)
             name: timeline
             widget: list
-            summary: "{{fields.month}}"
+            summary: "{{fields.month}} {{fields.year}}"
             fields:
-              - { label: Mes, name: month, widget: string }
+              - { label: Año, name: year, widget: number, value_type: int, default: 2026, min: 2024, max: 2035 }
+              - { label: Mes, name: month, widget: select, options: [Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre] }
               - { label: Resumen del mes, name: text, widget: text }
           - label: Videos oficiales del equipo (sección "En video")
             name: videos
