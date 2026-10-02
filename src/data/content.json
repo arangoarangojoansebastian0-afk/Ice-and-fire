@@ -42,35 +42,43 @@
   "timeline": [
     {
       "month": "Enero",
-      "text": "Actualización de los recursos del equipo; salida de un integrante fundador e ingreso de un nuevo compañero al proyecto."
+      "text": "Actualización de los recursos del equipo; salida de un integrante fundador e ingreso de un nuevo compañero al proyecto.",
+      "year": 2025
     },
     {
       "month": "Marzo",
-      "text": "Trabajo continuo de documentación y organización del equipo."
+      "text": "Trabajo continuo de documentación y organización del equipo.",
+      "year": 2025
     },
     {
       "month": "Abril",
-      "text": "Formalización del documento de estructura metodológica del proyecto, con la pregunta de investigación y objetivos definidos."
+      "text": "Formalización del documento de estructura metodológica del proyecto, con la pregunta de investigación y objetivos definidos.",
+      "year": 2025
     },
     {
       "month": "Junio",
-      "text": "Avance en la investigación y en la construcción del marco teórico del proyecto."
+      "text": "Avance en la investigación y en la construcción del marco teórico del proyecto.",
+      "year": 2025
     },
     {
       "month": "Julio",
-      "text": "Continuación del proceso de investigación y trabajo en equipo."
+      "text": "Continuación del proceso de investigación y trabajo en equipo.",
+      "year": 2025
     },
     {
       "month": "Agosto",
-      "text": "Registro de avances y ajustes del equipo sobre el proyecto."
+      "text": "Registro de avances y ajustes del equipo sobre el proyecto.",
+      "year": 2025
     },
     {
       "month": "Septiembre",
-      "text": "Seguimiento del proyecto y del trabajo colaborativo."
+      "text": "Seguimiento del proyecto y del trabajo colaborativo.",
+      "year": 2025
     },
     {
       "month": "Octubre",
-      "text": "Cierre del ciclo de bitácoras del periodo, con evaluación del equipo en la muestra institucional."
+      "text": "Cierre del ciclo de bitácoras del periodo, con evaluación del equipo en la muestra institucional.",
+      "year": 2025
     }
   ],
   "researchQuestion": "¿De qué manera la prueba de una fórmula de spray ignífugo natural y la evaluación pedagógica de un videojuego educativo pueden aportar a la prevención de incendios forestales y a la educación ambiental en Medellín?",
@@ -566,11 +574,15 @@
   "videos": [
     {
       "title": "Presentación del proyecto ",
-      "youtubeId": "MZOyoywIDJQ"
+      "youtubeId": "Qa9pKyYV3nc"
     },
     {
       "title": "Nuestro anterior video",
       "youtubeId": "TfiEPPK5n-c"
+    },
+    {
+      "title": "Video de bienvenida ",
+      "youtubeId": "N-VkJ2as79s"
     }
   ],
   "interconnection": {
