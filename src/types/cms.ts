@@ -72,12 +72,24 @@ export interface CmsBlock {
   reusableBlockId?: string;
 }
 
+// Tipos del editor de diseño
+export type LayoutAlign = "start" | "center" | "end" | "stretch";
+export type LayoutWidth = "full" | "half" | "third" | "quarter";
+
+export interface CmsLayout {
+  align?: LayoutAlign;
+  width?: LayoutWidth;
+  offset?: number;
+  [key: string]: string | number | boolean | undefined;
+}
+
 export interface PageSection {
   id?: string;
   section?: SectionType;
   label?: string;
   visible?: boolean;
   order?: number;
+  layout?: CmsLayout;
 }
 
 export interface Page {
