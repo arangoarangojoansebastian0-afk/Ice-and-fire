@@ -14,18 +14,18 @@
           "order": 10
         },
         {
-          "id": "multimedia",
-          "label": "Videos",
-          "section": "Videos",
-          "visible": true,
-          "order": 20
-        },
-        {
           "visible": true,
           "order": 10,
           "section": "History",
           "id": "Historia ",
           "label": "Historia"
+        },
+        {
+          "id": "multimedia",
+          "label": "Videos",
+          "section": "Videos",
+          "visible": true,
+          "order": 20
         }
       ],
       "order": 10,
