@@ -73,7 +73,7 @@
       "text": "Cierre del ciclo de bitácoras del periodo, con evaluación del equipo en la muestra institucional."
     }
   ],
-  "researchQuestion": "¿Cómo desarrollar un spray ignífugo natural y biodegradable, junto con el diseño de un videojuego educativo, que contribuya a la prevención de incendios forestales y al fortalecimiento de la educación ambiental en las comunidades de Medellín?",
+  "researchQuestion": "¿De qué manera la implementación articulada de un spray ignífugo natural y el videojuego educativo ‘Llamas en el Bosque’ puede contribuir a la prevención de incendios forestales y al fortalecimiento de la educación ambiental en Medellín?",
   "contextTiers": [
     {
       "scope": "Global",
@@ -202,7 +202,8 @@
   "specificObjectives": [
     "Diseñar y formular una mezcla ignífuga a partir de ingredientes biodegradables y de origen natural.",
     "Evaluar la eficacia física y ambiental del spray frente a distintos tipos de vegetación propensa a incendios en zonas de ladera de Medellín.",
-    "Diseñar e implementar la narrativa, mecánica y componentes interactivos del videojuego \"Llamas en el Bosque\".",
+    "Diseñar e implementar la narrativa",
+    "mecánica y componentes interactivos del videojuego \"Llamas en el Bosque\".",
     "Evaluar el impacto educativo del videojuego en la sensibilización ambiental de la comunidad objetivo."
   ],
   "antecedents": [
