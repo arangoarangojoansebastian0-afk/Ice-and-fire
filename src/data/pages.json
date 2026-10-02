@@ -19,6 +19,13 @@
           "section": "Videos",
           "visible": true,
           "order": 20
+        },
+        {
+          "visible": true,
+          "order": 10,
+          "section": "History",
+          "id": "Historia ",
+          "label": "Historia"
         }
       ],
       "order": 10,
@@ -113,13 +120,6 @@
       "slug": "bitacora",
       "sections": [
         {
-          "id": "history",
-          "label": "Historia",
-          "section": "History",
-          "visible": true,
-          "order": 10
-        },
-        {
           "id": "schedule",
           "label": "Cronograma",
           "section": "Schedule",
@@ -137,7 +137,7 @@
       "order": 35,
       "visible": true,
       "type": "section",
-      "description": "Historia, cronograma y línea de tiempo del equipo."
+      "description": "cronograma y línea de tiempo del equipo."
     },
     {
       "inMenu": true,
