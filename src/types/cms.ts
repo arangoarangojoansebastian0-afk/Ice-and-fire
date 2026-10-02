@@ -5,6 +5,7 @@ export type SectionType =
   | "Research"
   | "Antecedents"
   | "Methodology"
+  | "Interconnection"
   | "Spray"
   | "Game"
   | "Steam"

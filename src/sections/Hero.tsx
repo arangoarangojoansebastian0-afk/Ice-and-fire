@@ -57,7 +57,7 @@ export default function Hero() {
             >
               <span className="hero-kicker">
                 <span className="hero-kicker-dot" />
-                Proyecto de investigación · Colegio Loyola · Medellín
+                XVI Muestra Institucional de Proyectos de Investigación 2026 · Colegio Loyola
               </span>
             </motion.div>
 
@@ -87,6 +87,9 @@ export default function Hero() {
               transition={{ duration: reduceMotion ? 0 : 0.7, delay: reduceMotion ? 0 : 0.25 }}
               className="mt-7 max-w-2xl text-lg leading-8 text-ink-muted sm:text-xl"
             >
+              <span className="mb-2 block font-display text-xl font-semibold text-ink sm:text-2xl">
+                {heroData.title}
+              </span>
               {heroData.description}
             </motion.p>
 
@@ -113,7 +116,7 @@ export default function Hero() {
             >
               <div className="hero-stat">
                 <Flame size={16} className="text-fire-300" />
-                <span>Prevención</span>
+                <span>Mitigación</span>
               </div>
               <div className="hero-stat">
                 <Sprout size={16} className="text-forest-400" />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
-import { bigNumbers, causes, consequences, contextTiers } from "../data/content";
+import { bigNumbers, causes, consequences, contextTiers, problemSummary, sdgs } from "../data/content";
 import { Flame } from "lucide-react";
 
 export default function Problem() {
@@ -15,11 +15,16 @@ export default function Problem() {
           <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
             El fuego no empieza solo. Casi siempre, lo empezamos nosotros.
           </h2>
-          <p className="mt-4 max-w-xl text-ink-muted">
-            En las laderas y cerros tutelares de Medellín, un descuido —una
-            botella, una colilla, una fogata mal apagada— puede convertirse en
-            una emergencia que dura días.
+          <p className="mt-4 max-w-2xl text-ink-muted">
+            {problemSummary}
           </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {sdgs.map((o) => (
+              <span key={o.n} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs text-ink-muted">
+                ODS {o.n} · {o.name}
+              </span>
+            ))}
+          </div>
         </Reveal>
 
         <Reveal delay={0.05}>

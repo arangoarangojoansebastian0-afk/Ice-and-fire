@@ -73,7 +73,7 @@
       "text": "Cierre del ciclo de bitácoras del periodo, con evaluación del equipo en la muestra institucional."
     }
   ],
-  "researchQuestion": "¿Cómo la articulación de fases interdependientes entre el desarrollo técnico de un spray ignífugo natural y su simulación en el videojuego educativo ‘Llamas en el Bosque’ responde a la falta de conciencia ciudadana y de herramientas de control para prevenir los incendios forestales de origen antrópico en Medellín?",
+  "researchQuestion": "¿De qué manera la prueba de una fórmula de spray ignífugo natural y la evaluación pedagógica de un videojuego educativo pueden aportar a la prevención de incendios forestales y a la educación ambiental en Medellín?",
   "contextTiers": [
     {
       "scope": "Global",
@@ -117,16 +117,17 @@
   "references": [
     "Aguilar-Garavito, M., Quintana, A., Córdova, D., & Rodríguez-Buriticá, S. (2018). Entender el fuego es promover nuestra resiliencia. Instituto Humboldt.",
     "Alcaldía de Medellín. (2026). La Administración Distrital refuerza el plan de contingencia por temporada de menos lluvias.",
-    "Costes, L., Laoutid, F., Brohez, S., & Dubois, P. (2017). Bio-based flame retardants: When nature meets fire protection. Materials Science and Engineering: R: Reports, 117, 1–25.",
+    "Alongi, J., & Han, Z. (2017). Flame retardancy of biomolecules. En Bio-based flame retardants (pp. 45–78). Elsevier.",
     "Ballard, H. L., Evans, E., Sturtevant, V. E., & Jakes, P. (2012). The evolution of Smokey Bear: Environmental education about wildfire for youth. The Journal of Environmental Education, 43(4), 227–240.",
+    "Costes, L., Laoutid, F., Brohez, S., & Dubois, P. (2017). Bio-based flame retardants: When nature meets fire protection. Materials Science and Engineering: R: Reports, 117, 1–25.",
     "Departamento Administrativo de Gestión del Riesgo de Desastres (DAGRD). (2026). Reporte oficial de atención a emergencias e incendios de cobertura vegetal en los cerros tutelares. Alcaldía de Medellín.",
-    "Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). (2020). Global Forest Resources Assessment 2020: Informe principal.",
     "Gobierno Nacional de Colombia. (2026). Decreto oficial de declaratoria de desastre nacional por variabilidad climática y condiciones extremas. UNGRD.",
     "Huang, T., Feng, Z., Paes, D., Ying, F., Zhao, X., Kinateder, M., Langer, E. R., & Lovreglio, R. (2025). Gamification for wildfire education and safety training: A systematic literature review and meta-analysis. Journal of Computer Assisted Learning, 41(5).",
     "Instituto de Hidrología, Meteorología y Estudios Ambientales (IDEAM). (2021). Calidad del agua en Colombia.",
     "Instituto de Investigación de Recursos Biológicos Alexander von Humboldt. (2018). Biodiversidad 2018: Estado y tendencias de la biodiversidad continental de Colombia.",
     "Ministerio de Ambiente y Desarrollo Sostenible. (2021). Los incendios forestales: causas antrópicas, deforestación y efectos sobre la biodiversidad en Colombia.",
     "Mukherjee, S., Uddin, K. M. A., Turku, I., Rohumaa, A., & Lipponen, J. (2025). Bio-based flame retardants derived from forest industry: An approach towards circular economy. Resources, Environment and Sustainability, 21.",
+    "Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). (2020). Global Forest Resources Assessment 2020: Informe principal.",
     "Organización Panamericana de la Salud (OPS/OMS). (2022). Calidad del aire.",
     "Pacheco, R., Skulska, I., Sequeira, A. C., & Colaço, M. C. (2024). Wildfire education: A review across the globe. En Fire Hazards: Socio-Economic and Regional Issues (pp. 29–41). Springer.",
     "Programa de las Naciones Unidas para el Medio Ambiente (PNUMA) & GRID-Arendal. (2022). Spreading like wildfire: The rising threat of extraordinary landscape fires.",
@@ -150,7 +151,7 @@
     },
     {
       "step": "4. Registro de variables",
-      "detail": "Se mide el tiempo de ignición y el porcentaje de vegetación consumida, registrando los datos en una bitácora de laboratorio."
+      "detail": "Se mide el tiempo de ignición y el porcentaje de vegetación consumida, comparando biomasa tratada frente a no tratada (objetivo 2)."
     }
   ],
   "bigNumbers": [
@@ -171,13 +172,10 @@
     }
   ],
   "causes": [
-    "Dejar botellas de vidrio o colillas encendidas sobre pasto seco, que generan un 'efecto lupa' con la radiación solar.",
-    "Vegetación seca acumulada sin ningún tratamiento que retarde la combustión.",
-    "Fogatas y quemas agrícolas mal controladas, especialmente en épocas de sequía.",
-    "Deforestación para ampliar terrenos de ganadería y agricultura a gran escala.",
-    "Minería ilegal y tala de madera, que alteran el suelo y las fuentes de agua.",
-    "Urbanización informal en zonas de ladera, que deja pastizales secos altamente inflamable.",
-    "Falta de educación ambiental y de estrategias atractivas para enseñar a prevenir incendios."
+    "Limitada cultura y educación ambiental: fogatas mal manejadas, quemas agrícolas sin supervisión y residuos (vidrio, colillas) dejados sobre vegetación seca (UNGRD, 2024).",
+    "Expansión urbana no planificada y deforestación, que fragmentan los ecosistemas y alteran los microclimas que conservan la humedad del suelo.",
+    "Minería ilegal y extracción maderera, que modifican la topografía y las redes hídricas (UNAD, 2024).",
+    "Acumulación de biomasa seca y suelos áridos: condiciones óptimas para que el fuego se propague ante cualquier ignición accidental o negligente."
   ],
   "methodologyPhaseB": [
     {
@@ -186,11 +184,11 @@
     },
     {
       "step": "2. Pilotaje",
-      "detail": "Selección de una muestra escolar de 15 compañeros de grado octavo para probar el videojuego."
+      "detail": "Selección de un grupo muestra para probar el videojuego (15 compañeros de grado octavo)."
     },
     {
       "step": "3. Evaluación del impacto",
-      "detail": "Encuesta antes y después de jugar (pre-test y post-test) para verificar el aprendizaje sobre causas y prevención de incendios."
+      "detail": "Cuestionarios pretest y postest para analizar el cambio en el nivel de conocimientos sobre prevención de incendios (objetivo 4)."
     }
   ],
   "sprayLimitations": [
@@ -198,13 +196,12 @@
     "Su efectividad frente a lluvia y tiempo de exposición aún está en fase de prueba.",
     "Los resultados de laboratorio todavía no están consolidados (ver Metodología)."
   ],
-  "gamePurpose": "Más que entretenimiento, \"Llamas en el Bosque\" es la otra mitad de la solución: mientras el spray actúa sobre el terreno, el juego actúa sobre la conciencia de quien lo juega, mostrando de forma interactiva por qué se originan los incendios y cómo prevenirlos.",
+  "gamePurpose": "Es la etapa inicial del sistema: busca identificar y modificar las conductas de riesgo que originan la mayoría de los incendios. Sus escenarios se apoyan en los resultados del spray (eficacia, condiciones de aplicación y límites), y a la vez define dónde y cómo tendría sentido usarlo.",
   "specificObjectives": [
-    "Diseñar y formular una mezcla ignífuga a partir de ingredientes biodegradables y de origen natural.",
-    "Evaluar la eficacia física y ambiental del spray frente a distintos tipos de vegetación propensa a incendios en zonas de ladera de Medellín.",
-    "Diseñar e implementar la narrativa",
-    "mecánica y componentes interactivos del videojuego \"Llamas en el Bosque\".",
-    "Evaluar el impacto educativo del videojuego en la sensibilización ambiental de la comunidad objetivo."
+    "Formular una mezcla retardante a partir de insumos biodegradables y de origen natural, analizando su comportamiento físico sobre muestras de biomasa vegetal bajo condiciones controladas.",
+    "Determinar la capacidad de retardo a la ignición del spray natural mediante pruebas comparativas de exposición al fuego en materiales vegetales representativos de las zonas de ladera de Medellín.",
+    "Diseñar la narrativa y los componentes interactivos del videojuego educativo Llamas en el Bosque, enfocados en la simulación de escenarios de prevención y gestión del riesgo de origen antrópico.",
+    "Analizar el cambio en el nivel de conocimientos sobre prevención de incendios en un grupo muestra tras la interacción con el videojuego educativo."
   ],
   "antecedents": [
     {
@@ -289,26 +286,26 @@
   "consequences": [
     {
       "title": "Degradación del suelo",
-      "text": "Los incendios de alta intensidad destruyen la materia orgánica del suelo y eliminan los nutrientes necesarios para que la vegetación se regenere.",
+      "text": "Los incendios de alta intensidad destruyen la materia orgánica y los nutrientes; el suelo expuesto pierde capacidad de retener agua y de regenerar árboles, hongos y plantas nativas.",
       "source": "FAO, 2020"
     },
     {
       "title": "Pérdida de biodiversidad",
-      "text": "La fragmentación del hábitat causada por el fuego provoca pérdidas severas en la fauna y flora nativas de los ecosistemas andinos.",
+      "text": "Aumenta la fragmentación del hábitat y disminuyen las especies en áreas de importancia ecológica, afectando las redes tróficas y los refugios naturales.",
       "source": "Instituto Humboldt, 2018"
     },
     {
-      "title": "Contaminación del agua",
-      "text": "La escorrentía posterior a un incendio arrastra cenizas y sedimentos hacia quebradas y ríos, afectando su calidad y potabilidad.",
+      "title": "Contaminación de fuentes hídricas",
+      "text": "La escorrentía arrastra cenizas y sedimentos a los cauces, con riesgos para el abastecimiento de agua de las comunidades y la fauna.",
       "source": "IDEAM, 2021"
     },
     {
-      "title": "Calidad del aire",
-      "text": "Las partículas finas liberadas por la quema de biomasa incrementan las consultas médicas urgentes por afecciones respiratorias.",
+      "title": "Deterioro de la calidad del aire",
+      "text": "El material particulado (PM2.5) de la quema de biomasa incrementa las consultas urgentes por afecciones respiratorias en poblaciones vulnerables.",
       "source": "OPS/OMS, 2022"
     }
   ],
-  "generalObjective": "Implementar un sistema por fases interdependientes integrando el desarrollo físico de un spray ignífugo natural y su validación recíproca en el videojuego educativo “Llamas en el Bosque” para superar la falta de herramientas de acción temprana y de conciencia ciudadana, contribuyendo a la prevención de los incendios forestales de origen antrópico en Medellín.",
+  "generalObjective": "Evaluar la efectividad de una formulación ignífuga de origen natural y el impacto pedagógico de un videojuego educativo como estrategia orientada a la prevención de incendios forestales y al fortalecimiento de la educación ambiental en Medellín.",
   "gallery": [
     "/images/uploads/img_20250218_120439.jpg",
     "/images/uploads/img_20250422_105926923.jpg",
@@ -511,7 +508,7 @@
       "text": "El proyecto combina un producto científico (el spray) con una herramienta educativa (el videojuego), presentado ante la comunidad institucional con buena acogida."
     }
   ],
-  "sprayWhy": "Los métodos actuales de prevención suelen ser costosos, contaminantes o poco accesibles en zonas rurales. Spray Fire busca ser una alternativa natural, biodegradable y de bajo costo que cualquier comunidad pueda aplicar antes de que empiece el fuego.",
+  "sprayWhy": "Los métodos actuales de prevención suelen ser costosos, contaminantes o poco accesibles en zonas rurales. Spray Fire busca ser una alternativa natural, biodegradable y de bajo costo que cualquier comunidad pueda aplicar antes de que empiece el fuego. Es la etapa final del sistema: sus resultados experimentales alimentan los escenarios del videojuego, y el videojuego lo hace conocido entre quienes serían sus usuarios.",
   "gameMechanics": [
     "Apagado de incendios con agua, tierra y herramientas especializadas.",
     "Rescate de animales y personas atrapadas.",
@@ -608,9 +605,145 @@
     }
   ],
   "home": {
-    "title": "Ice and fire",
-    "description": "Ciencia, tecnología y educación para prevenir incendios forestales.",
+    "title": "Sistema Integrado de Mitigación y Educación contra Incendios Forestales en Medellín",
+    "description": "Ice and Fire articula un videojuego educativo y un spray ignífugo natural en fases interdependientes para prevenir los incendios forestales de origen antrópico en Medellín.",
     "video": "https://youtu.be/MZOyoywIDJQ",
     "acknowledgments": "Agradecemos a nuestros docentes Jorge Iván Rodríguez Alemán, Kelly Andrea López Cardona, Yina Raquel Lopera Vallejo, Franky Alexander Cerquera Tello y Ullenid Jiménez Vásquez por su orientación y acompañamiento.\nTambién agradecemos al ITM y a la Alcaldía de Medellín por su apoyo a la investigación y la educación científica."
+  },
+  "problemSummary": "En los cerros y laderas de Medellín, los incendios forestales de origen antrópico —quemas, fogatas y colillas— destruyen la biodiversidad. Ante esta vulnerabilidad, la falta de herramientas de acción temprana y de espacios pedagógicos perpetúa el riesgo. Como señala la UNGRD (2024), la gestión del riesgo exige articular la innovación técnica con la apropiación comunitaria.",
+  "justification": [
+    "Los incendios forestales son uno de los retos ambientales contemporáneos por su impacto en ecosistemas, biodiversidad y calidad de vida urbana. Según el PNUMA (2022), las alteraciones climáticas y las sequías prolongadas aumentan la vulnerabilidad de los paisajes, por lo que se vuelve indispensable reducir el riesgo antes de la ignición.",
+    "En Colombia la mayoría de los eventos de fuego tiene origen antrópico, por lo que la atención de emergencias debe complementarse con acciones educativas y tecnológicas. En Medellín, las temporadas de menor precipitación exponen los cerros tutelares y las laderas a un riesgo elevado.",
+    "Por eso el proyecto es un proceso en etapas articuladas: parte de la prevención desde el comportamiento humano (el videojuego, apoyado en la gamificación; Huang et al., 2025; Pacheco et al., 2024) y llega a la intervención física sobre el combustible vegetal (un spray retardante de base biológica; Alongi & Han, 2017; Mukherjee et al., 2025).",
+    "Aunque la propuesta escolar no sustituye los protocolos institucionales de emergencia, explora alternativas preventivas de baja toxicidad y contribuye a los ODS 13 y 15."
+  ],
+  "interdependence": [
+    {
+      "title": "El videojuego necesita del spray",
+      "text": "Sin una solución tangible, la educación se queda en lo teórico. Los escenarios, decisiones y mensajes del juego se apoyan en la eficacia, las condiciones de aplicación y los límites del spray."
+    },
+    {
+      "title": "El spray necesita del videojuego",
+      "text": "El juego define el contexto de uso: qué vegetación y zonas son prioritarias, quién lo aplicaría y bajo qué riesgo; además lo hace conocido y aceptado por sus futuros usuarios."
+    }
+  ],
+  "conceptualFramework": [
+    {
+      "group": "Problemática socioambiental",
+      "items": [
+        {
+          "title": "Incendios forestales de origen antrópico",
+          "text": "Perturbaciones causadas directa o indirectamente por la imprudencia humana: no son eventos naturales, sino resultado de dinámicas socioambientales inadecuadas (MinAmbiente, 2021; UNGRD, 2024). Justifican intervenir los cerros tutelares combinando barreras físicas y educación."
+        },
+        {
+          "title": "Estrés hídrico y biomasa combustible",
+          "text": "La falta continua de lluvia deshidrata la vegetación y la convierte en combustible seco e inflamable (FAO, 2020; PNUMA, 2022). Guía la elección de la biomasa de ladera usada en las pruebas."
+        }
+      ]
+    },
+    {
+      "group": "Química verde",
+      "items": [
+        {
+          "title": "Química verde y sostenibilidad",
+          "text": "Diseño de productos y procesos que reducen o eliminan sustancias nocivas, con materias primas renovables y moléculas biodegradables (Mukherjee et al., 2025). Es el criterio para elegir los ingredientes del spray."
+        },
+        {
+          "title": "Retardantes de llama de base biológica",
+          "text": "Mezclas a partir de biopolímeros y macromoléculas naturales (almidones, proteínas, celulosa) que alteran la combustión sin emitir halógenos tóxicos (Costes et al., 2017)."
+        }
+      ]
+    },
+    {
+      "group": "Fenómenos termoquímicos",
+      "items": [
+        {
+          "title": "Pirólisis vegetal",
+          "text": "Descomposición de la celulosa, hemicelulosa y lignina por calor, que libera gases inflamables que alimentan el fuego (Alongi & Han, 2017). Señala qué debe interrumpir el spray."
+        },
+        {
+          "title": "Retardo a la ignición y charring",
+          "text": "Tiempo que resiste el material tratado antes de encenderse; el charring forma una capa carbonosa aislante (Alongi & Han, 2017; Costes et al., 2017). Es la variable central del objetivo 2."
+        }
+      ]
+    },
+    {
+      "group": "Componente pedagógico",
+      "items": [
+        {
+          "title": "Gamificación y simulaciones ambientales",
+          "text": "Mecánicas de videojuego en contextos formativos: el usuario aprende tomando decisiones en un entorno seguro (Huang et al., 2025; Pacheco et al., 2024). Sustenta Llamas en el Bosque."
+        },
+        {
+          "title": "Apropiación cognitiva y evaluación",
+          "text": "Se mide con cuestionarios pretest y postest para ver si cambió la comprensión sobre el riesgo (Ballard et al., 2012; Huang et al., 2025). Guía el objetivo 4."
+        }
+      ]
+    }
+  ],
+  "sdgs": [
+    {
+      "n": 13,
+      "name": "Acción por el clima"
+    },
+    {
+      "n": 15,
+      "name": "Vida de ecosistemas terrestres"
+    }
+  ],
+  "posterAntecedents": [
+    {
+      "title": "Incendios y cambio climático",
+      "text": "Las altas temperaturas y las sequías extremas pueden aumentar la frecuencia e intensidad de los incendios forestales.",
+      "source": "PNUMA & GRID-Arendal, 2022"
+    },
+    {
+      "title": "Incendios forestales en Medellín",
+      "text": "Menor precipitación y mayor temperatura aumentan el estrés hídrico y el riesgo de incendios en zonas de cobertura vegetal.",
+      "source": "Alcaldía de Medellín, 2026"
+    },
+    {
+      "title": "Retardantes de origen biológico",
+      "text": "Pueden emplear materiales naturales, proteínas y celulosa para ayudar a retrasar la propagación del fuego.",
+      "source": "Costes et al., 2017"
+    },
+    {
+      "title": "Educación mediante videojuegos",
+      "text": "Los videojuegos y simulaciones interactivas apoyan el aprendizaje sobre prevención de riesgos y problemas ambientales.",
+      "source": "Pacheco et al., 2024; Huang et al., 2025"
+    }
+  ],
+  "phases": [
+    {
+      "n": 1,
+      "name": "Videojuego Llamas en el Bosque",
+      "text": "Etapa inicial: identificar y modificar las conductas de riesgo que originan la mayoría de los incendios."
+    },
+    {
+      "n": 2,
+      "name": "Spray ignífugo natural",
+      "text": "Etapa final: intervención física sobre el combustible vegetal con un retardante de base biológica."
+    }
+  ],
+  "interconnection": {
+    "title": "Cómo se conectan el juego y el spray",
+    "intro": "Ice and Fire no son dos proyectos separados: son un solo sistema donde cada fase le da algo a la otra y recibe algo a cambio.",
+    "gameToSpray": {
+      "label": "El videojuego le da al spray",
+      "items": [
+        "El contexto de uso: qué vegetación y zonas de ladera son prioritarias.",
+        "Quién lo aplicaría y bajo qué condiciones de riesgo.",
+        "Conocimiento y aceptación entre las personas que serían sus usuarios."
+      ]
+    },
+    "sprayToGame": {
+      "label": "El spray le da al videojuego",
+      "items": [
+        "Resultados reales: su eficacia y su capacidad de retardo a la ignición.",
+        "Condiciones de aplicación y límites, que se vuelven escenarios y decisiones del juego.",
+        "Rigor científico: el contenido del juego se apoya en datos experimentales."
+      ]
+    },
+    "closing": "Sin el spray, la educación se queda en lo teórico; sin el juego, el spray no tiene un contexto ni usuarios que lo conozcan. Por eso el sistema va de la educación a la acción."
   }
 }

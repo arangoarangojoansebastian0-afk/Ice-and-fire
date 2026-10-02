@@ -6,9 +6,12 @@ import {
   generalObjective,
   specificObjectives,
   antecedents,
+  justification,
+  interdependence,
+  conceptualFramework,
 } from "../data/content";
 
-const tabs = ["Pregunta", "Objetivos", "Antecedentes"] as const;
+const tabs = ["Pregunta", "Objetivos", "Justificación", "Marco conceptual", "Antecedentes"] as const;
 type Tab = (typeof tabs)[number];
 
 export default function Research() {
@@ -73,6 +76,43 @@ export default function Research() {
                     ))}
                   </ul>
                 </div>
+              </div>
+            )}
+
+            {tab === "Justificación" && (
+              <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+                <div className="space-y-4">
+                  {justification.map((p, i) => (
+                    <p key={i} className="text-sm leading-relaxed text-ink-muted">{p}</p>
+                  ))}
+                </div>
+                <div className="space-y-3">
+                  <p className="text-sm font-semibold text-ice-300">Dos fases que se necesitan entre sí</p>
+                  {interdependence.map((x) => (
+                    <div key={x.title} className="rounded-xl border border-white/10 p-4">
+                      <p className="text-sm font-semibold text-ink">{x.title}</p>
+                      <p className="mt-1.5 text-xs leading-relaxed text-ink-muted">{x.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {tab === "Marco conceptual" && (
+              <div className="space-y-8">
+                {conceptualFramework.map((g) => (
+                  <div key={g.group}>
+                    <p className="text-sm font-semibold text-ice-300">{g.group}</p>
+                    <div className="mt-3 grid gap-4 md:grid-cols-2">
+                      {g.items.map((it) => (
+                        <div key={it.title} className="rounded-xl border border-white/10 p-4">
+                          <p className="text-sm font-semibold text-ink">{it.title}</p>
+                          <p className="mt-1.5 text-xs leading-relaxed text-ink-muted">{it.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
-import { antecedents, references } from "../data/content";
+import { antecedents, references, posterAntecedents } from "../data/content";
 import { ChevronDown, BookOpen } from "lucide-react";
 
 export default function Antecedents() {
@@ -22,7 +22,17 @@ export default function Antecedents() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {posterAntecedents.map((a) => (
+            <div key={a.title} className="rounded-xl border border-white/10 bg-white/[0.04] p-5">
+              <p className="text-sm font-semibold text-ice-300">{a.title}</p>
+              <p className="mt-2 text-xs leading-relaxed text-ink-muted">{a.text}</p>
+              <p className="mt-3 text-[11px] italic text-ink-faint">{a.source}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {antecedents.map((a, i) => (
             <Reveal key={a.author} delay={i * 0.05}>
               <div className="flex h-full gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-5">

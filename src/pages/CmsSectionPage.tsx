@@ -10,6 +10,7 @@ import Journey from "../sections/Journey";
 import Research from "../sections/Research";
 import Antecedents from "../sections/Antecedents";
 import Methodology from "../sections/Methodology";
+import Interconnection from "../sections/Interconnection";
 import Spray from "../sections/Spray";
 import Game from "../sections/Game";
 import Steam from "../sections/Steam";
@@ -35,6 +36,7 @@ const sections: Record<SectionType, React.ComponentType> = {
   Research,
   Antecedents,
   Methodology,
+  Interconnection,
   Spray,
   Game,
   Steam,

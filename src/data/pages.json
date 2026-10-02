@@ -72,21 +72,28 @@
           "label": "Spray Fire",
           "section": "Spray",
           "visible": true,
-          "order": 50
+          "order": 60
         },
         {
           "id": "game",
           "label": "Videojuego",
           "section": "Game",
           "visible": true,
-          "order": 60
+          "order": 70
         },
         {
           "id": "apoya-la-investigacion",
           "label": "Ayúdanos a investigar",
           "section": "SupportForm",
           "visible": true,
-          "order": 70
+          "order": 80
+        },
+        {
+          "id": "interconexion",
+          "label": "Interconexión",
+          "section": "Interconnection",
+          "visible": true,
+          "order": 45
         }
       ],
       "order": 20,

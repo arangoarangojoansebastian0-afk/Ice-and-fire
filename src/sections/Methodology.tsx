@@ -59,28 +59,27 @@ export default function Methodology() {
         <Reveal>
           <Eyebrow tone="fire">Metodología</Eyebrow>
           <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
-            Dos frentes, un mismo objetivo
+            Dos etapas interdependientes
           </h2>
           <p className="mt-4 max-w-xl text-ink-muted">
-            Toca cada paso para ver el detalle. El spray se valida en el
-            laboratorio; el videojuego, con los propios compañeros de curso.
+            El proyecto parte de la prevención desde el comportamiento humano (videojuego) y llega a la intervención física sobre el combustible vegetal (spray). Cada etapa alimenta a la otra. Toca un paso para ver el detalle.
           </p>
         </Reveal>
 
         <Reveal delay={0.15}>
           <div className="mt-14 flex flex-col gap-10 rounded-2xl border border-white/10 bg-white/[0.02] p-8 lg:flex-row lg:gap-16">
             <PhaseTrack
-              title="Laboratorio del Spray Fire"
-              subtitle="Fase A"
-              steps={methodologyPhaseA}
-              tone="fire"
+              title="Pilotaje de Llamas en el Bosque"
+              subtitle="Etapa inicial"
+              steps={methodologyPhaseB}
+              tone="ice"
             />
             <div className="hidden w-px bg-white/10 lg:block" />
             <PhaseTrack
-              title="Pilotaje de Llamas en el Bosque"
-              subtitle="Fase B"
-              steps={methodologyPhaseB}
-              tone="ice"
+              title="Laboratorio del Spray Fire"
+              subtitle="Etapa final"
+              steps={methodologyPhaseA}
+              tone="fire"
             />
           </div>
         </Reveal>
