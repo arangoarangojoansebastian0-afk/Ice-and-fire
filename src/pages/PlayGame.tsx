@@ -37,7 +37,8 @@ export default function PlayGame() {
         </div>
 
         <p className="mt-4 text-center text-sm text-ink-muted">
-          Si el juego no se ajusta a tu pantalla, utiliza el modo de pantalla completa.
+          Si el juego no se ajusta a tu pantalla, utiliza el modo de pantalla completa en configuraciones.
+          el juego se puede tardar unos segundos en cargar dependiendo de tu conexión a internet.
         </p>
       </div>
     </section>
