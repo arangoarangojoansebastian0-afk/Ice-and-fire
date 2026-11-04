@@ -2,7 +2,7 @@
 {
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/juego",
       "headers": [
         {
           "key": "Cross-Origin-Opener-Policy",
