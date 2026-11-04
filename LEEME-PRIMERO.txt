@@ -1,0 +1,23 @@
+ICE AND FIRE — ARCHIVOS MODIFICADOS
+
+Este ZIP contiene únicamente los archivos necesarios para incorporar la integración del videojuego y los ajustes visuales/textuales. No incluye .git, node_modules ni el proyecto completo.
+
+INSTRUCCIONES
+1. Extrae el contenido de este ZIP en la raíz de tu proyecto: C:\Users\PC\Downloads\icefire-web. Acepta combinar carpetas y reemplazar los archivos cuando Windows lo solicite.
+2. IMPORTANTE: no reemplaces src/data/content.json con una copia antigua. Para aplicar los textos cortos de los contextos sin perder cambios recientes de GitHub, deja contextos-actualizados.json y aplicar-contextos.mjs en la raíz y ejecuta:
+   node aplicar-contextos.mjs
+3. Comprueba y compila:
+   npm run build
+4. Revisa los archivos modificados y sube:
+   git status
+   git add .
+   git commit -m "Integra videojuego y mejora contenidos"
+   git push origin main
+
+EL JUEGO
+- Los archivos de Godot quedan en public/juego/.
+- La dirección prevista es /juego.
+- vercel.json en la raíz contiene las cabeceras COOP/COEP requeridas por la exportación con hilos.
+- No elimines archivos .wasm, .pck, .js ni worklets de public/juego/.
+
+Si npm run build falla, no hagas commit todavía; comparte el error.

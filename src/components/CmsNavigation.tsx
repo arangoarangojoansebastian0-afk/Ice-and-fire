@@ -102,6 +102,14 @@ export default function CmsNavigation() {
             Inicio
           </Link>
 
+          <Link
+            to="/juego"
+            aria-current={location.pathname === "/juego" ? "page" : undefined}
+            className={`site-nav-link whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${location.pathname === "/juego" ? "is-active" : ""}`}
+          >
+            Jugar
+          </Link>
+
           {standalonePages.map((page) => (
             <Link
               key={page.slug}
@@ -205,6 +213,7 @@ export default function CmsNavigation() {
         {mobileOpen && (
           <div id="mobile-navigation" className="compact-nav-panel mobile-nav-panel absolute inset-x-3 top-[calc(100%+0.5rem)] z-[100] max-h-[min(75vh,36rem)] overflow-y-auto rounded-2xl border border-white/10 bg-[#0b1220] p-3 shadow-2xl">
             <Link to="/" onClick={() => setMobileOpen(false)} className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${location.pathname === "/" ? "is-active" : ""}`} aria-current={location.pathname === "/" ? "page" : undefined}>Inicio</Link>
+            <Link to="/juego" onClick={() => setMobileOpen(false)} className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${location.pathname === "/juego" ? "is-active" : ""}`} aria-current={location.pathname === "/juego" ? "page" : undefined}>Jugar</Link>
             {standalonePages.map((page) => (
               <Link key={page.slug} to={`/${page.slug}`} onClick={() => setMobileOpen(false)} className={pageLinkClass(page.slug)} aria-current={isActive(page.slug) ? "page" : undefined}>{page.name}</Link>
             ))}

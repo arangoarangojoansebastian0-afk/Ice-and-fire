@@ -75,6 +75,11 @@ export default function Welcome() {
                   <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                     {tier.text}
                   </p>
+                  {tier.source && (
+                    <p className="mt-3 border-t border-white/10 pt-3 text-[11px] leading-relaxed text-ink-faint">
+                      Fuentes: {tier.source}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

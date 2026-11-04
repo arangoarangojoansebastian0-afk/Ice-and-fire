@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
 import { gameLevels, gameMechanics, gamePurpose } from "../data/content";
-import { Gamepad2, Flame } from "lucide-react";
+import { Gamepad2, Flame, Play } from "lucide-react";
 
 export default function Game() {
   const [level, setLevel] = useState(0);
@@ -94,9 +95,16 @@ export default function Game() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <div className="rounded-xl border border-dashed border-white/15 bg-white/[0.02] p-4 text-xs text-ink-faint">
-                Capturas del juego y enlace para jugar —{" "}
-                <span className="text-ink-muted">próximamente</span>
+              <div className="rounded-2xl border border-ice-400/20 bg-ice-400/[0.06] p-6">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="font-display text-lg font-semibold text-ink">¿Listo para jugar?</p>
+                    <p className="mt-1 text-sm text-ink-muted">Abre el videojuego directamente en tu navegador.</p>
+                  </div>
+                  <Link to="/juego" className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-ice-300 px-5 py-3 text-sm font-bold text-void transition hover:bg-ice-200">
+                    <Play size={16} fill="currentColor" /> Jugar ahora
+                  </Link>
+                </div>
               </div>
             </Reveal>
           </div>
