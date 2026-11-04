@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
@@ -12,8 +13,6 @@ export default function CmsNavigation() {
 
   const pages = pagesData.pages as Page[];
 
-  // Una página solo se muestra como desplegable si realmente tiene hijos.
-  // El tipo "section" describe su contenido, no su jerarquía del menú.
   const getChildren = (parentSlug: string) =>
     pages
       .filter(
@@ -27,7 +26,7 @@ export default function CmsNavigation() {
   const groups = pages
     .filter(
       (page) =>
-        !!page.parent === false &&
+        !page.parent &&
         page.visible &&
         page.inMenu &&
         getChildren(page.slug).length > 0
@@ -45,7 +44,11 @@ export default function CmsNavigation() {
     .sort((a, b) => a.order - b.order);
 
   const isActive = (slug: string) =>
-    location.pathname === `/${slug}` || location.pathname.startsWith(`/${slug}/`);
+    location.pathname === `/${slug}` ||
+    location.pathname.startsWith(`/${slug}/`);
+
+  const isGameInfoActive = location.pathname === "/conoce-el-juego";
+  const isGameActive = location.pathname === "/juego";
 
   useEffect(() => {
     setMobileOpen(false);
@@ -54,20 +57,26 @@ export default function CmsNavigation() {
 
   useEffect(() => {
     if (!mobileOpen) return;
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setMobileOpen(false);
     };
+
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [mobileOpen]);
 
   const pageLinkClass = (slug: string) =>
-    `site-nav-link block w-full rounded-xl px-4 py-3 text-left text-sm transition ${isActive(slug) ? "is-active" : ""}`;
+    `site-nav-link block w-full rounded-xl px-4 py-3 text-left text-sm transition ${
+      isActive(slug) ? "is-active" : ""
+    }`;
 
   return (
     <header className="site-nav sticky top-0 z-50 border-b backdrop-blur-xl">
-      <nav aria-label="Navegación principal" className="relative mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-5">
-        
+      <nav
+        aria-label="Navegación principal"
+        className="relative mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-5"
+      >
         {/* LOGO */}
         <Link
           to="/"
@@ -87,29 +96,41 @@ export default function CmsNavigation() {
           </span>
         </Link>
 
-        {/* MENÚ */}
+        {/* MENÚ DE ESCRITORIO */}
         <div className="desktop-nav-menu flex min-w-0 flex-1 items-center gap-1 overflow-x-auto">
-
           <Link
             to="/"
             aria-current={location.pathname === "/" ? "page" : undefined}
             className={`site-nav-link whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${
-              location.pathname === "/"
-                ? "is-active"
-                : ""
+              location.pathname === "/" ? "is-active" : ""
             }`}
           >
             Inicio
           </Link>
 
+          {/* APARTADO INFORMATIVO */}
+          <Link
+            to="/conoce-el-juego"
+            aria-current={isGameInfoActive ? "page" : undefined}
+            className={`site-nav-link whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${
+              isGameInfoActive ? "is-active" : ""
+            }`}
+          >
+            Conoce el juego
+          </Link>
+
+          {/* APARTADO PARA JUGAR */}
           <Link
             to="/juego"
-            aria-current={location.pathname === "/juego" ? "page" : undefined}
-            className={`site-nav-link whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${location.pathname === "/juego" ? "is-active" : ""}`}
+            aria-current={isGameActive ? "page" : undefined}
+            className={`site-nav-link whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${
+              isGameActive ? "is-active" : ""
+            }`}
           >
             Jugar
           </Link>
 
+          {/* PÁGINAS INDEPENDIENTES DEL CMS */}
           {standalonePages.map((page) => (
             <Link
               key={page.slug}
@@ -123,32 +144,26 @@ export default function CmsNavigation() {
             </Link>
           ))}
 
+          {/* GRUPOS DESPLEGABLES */}
           {groups.map((group) => {
             const children = getChildren(group.slug);
             const isOpen = openGroup === group.slug;
 
             return (
-              <div
-                key={group.slug}
-                className="relative shrink-0"
-              >
-                {/* BOTÓN DEL GRUPO */}
+              <div key={group.slug} className="relative shrink-0">
                 <button
                   type="button"
                   aria-haspopup="menu"
                   aria-expanded={isOpen}
                   aria-controls={`desktop-submenu-${group.slug}`}
                   onClick={() =>
-                    setOpenGroup(
-                      isOpen ? null : group.slug
-                    )
+                    setOpenGroup(isOpen ? null : group.slug)
                   }
                   className={`site-nav-link flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${
                     isOpen ? "is-active" : ""
                   }`}
                 >
                   {group.name}
-
                   <ChevronDown
                     size={15}
                     className={`transition-transform duration-200 ${
@@ -157,14 +172,12 @@ export default function CmsNavigation() {
                   />
                 </button>
 
-                {/* DROPDOWN FLOTANTE */}
                 {isOpen && (
                   <div
                     id={`desktop-submenu-${group.slug}`}
                     className="absolute left-1/2 top-full z-[100] mt-3 w-64 -translate-x-1/2 rounded-2xl border border-white/10 bg-[#0b0b0b] p-2 shadow-2xl"
                     role="menu"
                   >
-                    {/* PEQUEÑA PUNTA */}
                     <div className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-l border-t border-white/10 bg-[#0b0b0b]" />
 
                     <div className="relative">
@@ -199,6 +212,7 @@ export default function CmsNavigation() {
           })}
         </div>
 
+        {/* BOTÓN DEL MENÚ MÓVIL */}
         <button
           type="button"
           className="compact-nav-toggle ml-auto min-h-11 min-w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-ink transition hover:bg-white/[0.08] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fire-300"
@@ -207,28 +221,121 @@ export default function CmsNavigation() {
           aria-controls="mobile-navigation"
           onClick={() => setMobileOpen((open) => !open)}
         >
-          {mobileOpen ? <X size={21} aria-hidden="true" /> : <Menu size={21} aria-hidden="true" />}
+          {mobileOpen ? (
+            <X size={21} aria-hidden="true" />
+          ) : (
+            <Menu size={21} aria-hidden="true" />
+          )}
         </button>
 
+        {/* MENÚ MÓVIL */}
         {mobileOpen && (
-          <div id="mobile-navigation" className="compact-nav-panel mobile-nav-panel absolute inset-x-3 top-[calc(100%+0.5rem)] z-[100] max-h-[min(75vh,36rem)] overflow-y-auto rounded-2xl border border-white/10 bg-[#0b1220] p-3 shadow-2xl">
-            <Link to="/" onClick={() => setMobileOpen(false)} className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${location.pathname === "/" ? "is-active" : ""}`} aria-current={location.pathname === "/" ? "page" : undefined}>Inicio</Link>
-            <Link to="/juego" onClick={() => setMobileOpen(false)} className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${location.pathname === "/juego" ? "is-active" : ""}`} aria-current={location.pathname === "/juego" ? "page" : undefined}>Jugar</Link>
+          <div
+            id="mobile-navigation"
+            className="compact-nav-panel mobile-nav-panel absolute inset-x-3 top-[calc(100%+0.5rem)] z-[100] max-h-[min(75vh,36rem)] overflow-y-auto rounded-2xl border border-white/10 bg-[#0b1220] p-3 shadow-2xl"
+          >
+            <Link
+              to="/"
+              onClick={() => setMobileOpen(false)}
+              className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${
+                location.pathname === "/" ? "is-active" : ""
+              }`}
+            >
+              Inicio
+            </Link>
+
+            <Link
+              to="/conoce-el-juego"
+              onClick={() => setMobileOpen(false)}
+              className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${
+                isGameInfoActive ? "is-active" : ""
+              }`}
+            >
+              Conoce el juego
+            </Link>
+
+            <Link
+              to="/juego"
+              onClick={() => setMobileOpen(false)}
+              className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${
+                isGameActive ? "is-active" : ""
+              }`}
+            >
+              Jugar
+            </Link>
+
             {standalonePages.map((page) => (
-              <Link key={page.slug} to={`/${page.slug}`} onClick={() => setMobileOpen(false)} className={pageLinkClass(page.slug)} aria-current={isActive(page.slug) ? "page" : undefined}>{page.name}</Link>
+              <Link
+                key={page.slug}
+                to={`/${page.slug}`}
+                onClick={() => setMobileOpen(false)}
+                className={pageLinkClass(page.slug)}
+              >
+                {page.name}
+              </Link>
             ))}
+
             {groups.map((group) => {
               const children = getChildren(group.slug);
               const expanded = openGroup === group.slug;
+
               return (
-                <div key={group.slug} className="mt-1 border-t border-white/[0.07] pt-1">
-                  <button type="button" className={`site-nav-link flex min-h-11 w-full items-center justify-between rounded-xl px-4 py-3 text-left text-sm ${isActive(group.slug) || expanded ? "is-active" : ""}`} aria-expanded={expanded} aria-controls={`mobile-submenu-${group.slug}`} onClick={() => setOpenGroup(expanded ? null : group.slug)}>
-                    {group.name}<ChevronDown size={16} aria-hidden="true" className={`transition-transform ${expanded ? "rotate-180" : ""}`} />
+                <div
+                  key={group.slug}
+                  className="mt-1 border-t border-white/[0.07] pt-1"
+                >
+                  <button
+                    type="button"
+                    className={`site-nav-link flex min-h-11 w-full items-center justify-between rounded-xl px-4 py-3 text-left text-sm ${
+                      isActive(group.slug) || expanded
+                        ? "is-active"
+                        : ""
+                    }`}
+                    aria-expanded={expanded}
+                    aria-controls={`mobile-submenu-${group.slug}`}
+                    onClick={() =>
+                      setOpenGroup(expanded ? null : group.slug)
+                    }
+                  >
+                    {group.name}
+                    <ChevronDown
+                      size={16}
+                      aria-hidden="true"
+                      className={`transition-transform ${
+                        expanded ? "rotate-180" : ""
+                      }`}
+                    />
                   </button>
-                  {expanded && <div id={`mobile-submenu-${group.slug}`} className="mb-2 ml-3 border-l border-white/10 pl-2">
-                    <Link to={`/${group.slug}`} onClick={() => setMobileOpen(false)} className={pageLinkClass(group.slug)} aria-current={isActive(group.slug) ? "page" : undefined}>{group.name} — página completa</Link>
-                    {children.map((child) => <Link key={child.slug} to={`/${child.slug}`} onClick={() => setMobileOpen(false)} className={`block rounded-xl px-4 py-3 text-sm transition ${isActive(child.slug) ? "bg-white/10 text-white" : "text-ink-muted hover:bg-white/[0.06] hover:text-ink"}`} aria-current={isActive(child.slug) ? "page" : undefined}>{child.name}</Link>)}
-                  </div>}
+
+                  {expanded && (
+                    <div
+                      id={`mobile-submenu-${group.slug}`}
+                      className="mb-2 ml-3 border-l border-white/10 pl-2"
+                    >
+                      <Link
+                        to={`/${group.slug}`}
+                        onClick={() => setMobileOpen(false)}
+                        className={pageLinkClass(group.slug)}
+                      >
+                        {group.name} — página completa
+                      </Link>
+
+                      {children.map((child) => (
+                        <Link
+                          key={child.slug}
+                          to={`/${child.slug}`}
+                          onClick={() => setMobileOpen(false)}
+                          className={`block rounded-xl px-4 py-3 text-sm transition ${
+                            isActive(child.slug)
+                              ? "bg-white/10 text-white"
+                              : "text-ink-muted hover:bg-white/[0.06] hover:text-ink"
+                          }`}
+                        >
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               );
             })}

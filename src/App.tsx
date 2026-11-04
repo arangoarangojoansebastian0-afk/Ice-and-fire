@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Hero from "./sections/Hero";
@@ -10,6 +11,8 @@ import Terms from "./pages/Terms";
 import ScrollToHash from "./components/ScrollToHash";
 import Welcome from "./sections/Welcome";
 import NotFound from "./pages/NotFound";
+import Game from "./sections/Game";
+import PlayGame from "./pages/PlayGame";
 
 function Home() {
   return (
@@ -32,6 +35,10 @@ export default function App() {
           <Route path="/privacidad" element={<Privacy />} />
           <Route path="/terminos" element={<Terms />} />
           <Route path="/equipo/:id" element={<TeamMember />} />
+
+          <Route path="/juego" element={<PlayGame />} />
+          <Route path="/conoce-el-juego" element={<Game />} />
+
           <Route path="/:slug" element={<CmsSectionPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

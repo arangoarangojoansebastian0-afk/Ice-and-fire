@@ -1,15 +1,6 @@
+
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
-    {
-      "source": "/juego",
-      "destination": "/juego/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
+  
   "headers": [
     {
       "source": "/juego",
@@ -36,6 +27,44 @@
           "value": "require-corp"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/juego",
+      "destination": "/juego/index.html"
+    },
+    {
+      "source": "/conoce-el-juego",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/equipo/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/privacidad",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/terminos",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+  "source": "/admin",
+  "destination": "/admin/index.html"
+},
+{
+  "source": "/admin/",
+  "destination": "/admin/index.html"
+},
+    {
+      "source": "/:slug",
+      "destination": "/index.html"
     }
   ]
 }
