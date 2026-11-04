@@ -47,7 +47,7 @@ export default function CmsNavigation() {
     location.pathname === `/${slug}` ||
     location.pathname.startsWith(`/${slug}/`);
 
-  const isGameInfoActive = location.pathname === "/conoce-el-juego";
+  
   const isGameActive = location.pathname === "/juego";
 
   useEffect(() => {
@@ -109,15 +109,7 @@ export default function CmsNavigation() {
           </Link>
 
           {/* APARTADO INFORMATIVO */}
-          <Link
-            to="/conoce-el-juego"
-            aria-current={isGameInfoActive ? "page" : undefined}
-            className={`site-nav-link whitespace-nowrap rounded-lg px-3 py-2 text-sm transition ${
-              isGameInfoActive ? "is-active" : ""
-            }`}
-          >
-            Conoce el juego
-          </Link>
+          
 
           {/* APARTADO PARA JUGAR */}
           <Link
@@ -244,15 +236,7 @@ export default function CmsNavigation() {
               Inicio
             </Link>
 
-            <Link
-              to="/conoce-el-juego"
-              onClick={() => setMobileOpen(false)}
-              className={`site-nav-link block rounded-xl px-4 py-3 text-sm ${
-                isGameInfoActive ? "is-active" : ""
-              }`}
-            >
-              Conoce el juego
-            </Link>
+            
 
             <Link
               to="/juego"
